@@ -1,17 +1,6 @@
 body{
   background:aqua;
-  color:blue;
-}
-.mobile.navBtn{
-  display:table;
-  margin:0 auto;
-}
-.mobile.navBtn{
-  position:fixed;
-  top:0;
-  right:100;
-  left:100;
-  z-index:1030;
+  color:white;
 }
 .fixed-top{
 position:fixed;
@@ -22,6 +11,8 @@ z-index:1030;
 }
 .section{
   text-align:center;
+  color:white;
+  font-family: 'Lobster Two', cursive;
 }
 #myMenu{
   /* display: flex; */
@@ -35,7 +26,42 @@ z-index:1030;
 #myMenu .active a{
   color: white
 }
-
+#fp-nav ul li a{
+  color: white!important;
+  background-color: transparent;
+}
+.navbarZIndex{
+  z-index: 200;
+}
+.team{
+  position:absolute;
+  top: 15px;;
+  right:0;
+  left:10;
+  }
+.team{
+  background: transparent;
+  border-radius: 20px;
+  color:beige;
+}
+.team:hover{
+  border-color: white;
+  box-shadow: 0px 10px 500px white;
+}
+.team a{
+  text-decoration: none;
+  color:gray;
+  font-weight: 500;
+}
+.team a:hover{
+  color:white;
+}
+.fp-right ul li a fp-sr-only{
+  color:white;
+}
+.fp-sr-only:hover{
+  color:white;
+}
 #link:hover{
   color:azure;
   transition-delay:1ms;
@@ -67,19 +93,31 @@ z-index:1030;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
+  
 }
 
 .up {
   transform: rotate(-135deg);
   -webkit-transform: rotate(-135deg);
+  border-color:gray;
   }
 .down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+  border-color:gray;
+}
+.up:hover{
+  border-color:whitesmoke;
+}
+.down:hover{
+  border-color:whitesmoke;
 }
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+#fp-nav ul li a span{
+  background: white!important;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -102,10 +140,24 @@ z-index:1030;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.copyright{
+  position: absolute;
+    bottom: 0;
+    z-index: 200;
+    width: 100%;
+    height: 43px;
+    font-weight: 2000;
 }
-
+.copyright svg{
+  margin-right: 5px;
+ 
+}
+.icon-items{
+  position:absolute;
+  top: 15px;;
+  right:0;
+  left:10;
+  }
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
