@@ -1,19 +1,21 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
 import ReactFullpage from "@fullpage/react-fullpage";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHouse,
-  fafacebook,
+ 
   faPhoneSquare,
   faCircleInfo,
   faGears,
   faUserGroup,
   faInfoCircle,
   faGear,
+ 
   faCopyright,
+  faCoffee,
 } from "@fortawesome/free-solid-svg-icons";
+import {faFacebook, faInstagram, faLinkedin, faTwitter} from "@fortawesome/free-brands-svg-icons";
 import Particles from "react-tsparticles";
 import {
   Button,
@@ -51,7 +53,7 @@ function App() {
         options={{
           background: {
             color: {
-              value: "#0d47a1",
+              value: "white",
             },
           },
           fpsLimit: 120,
@@ -102,7 +104,7 @@ function App() {
               enable: true,
               outMode: "bounce",
               random: false,
-              speed: 6,
+              speed: 4,
               straight: false,
             },
             number: {
@@ -296,16 +298,16 @@ function App() {
       <footer class="copyright"><FontAwesomeIcon icon={faCopyright}/>Copyright Login Corporation
     <div class="icon-items">
       <a class="icon-links" href="https://www.facebook.com/Login-Designs-2284503471807329/" target="_blank">
-        <FontAwesomeIcon icon={faGear}/>
+        <FontAwesomeIcon icon={faFacebook}/>
       </a>
      <a class="icon-links" href="https://www.linkedin.com/in/login-pvt-ltd-4b93a7172" target="_blank">
-        <FontAwesomeIcon icon={faGear}/>
+        <FontAwesomeIcon icon={faLinkedin}/>
       </a>
       <a class="icon-links" href="https://www.twitter.com/LoginLtd" target="_blank">
-        <FontAwesomeIcon icon={faGear}/>
+        <FontAwesomeIcon icon={faTwitter}/>
       </a>
       <a class="icon-links" href="https://www.instagram.com/loginpvtltd/?hl=en" target="_blank">
-        <FontAwesomeIcon icon={faGear}/>
+      <FontAwesomeIcon icon={faInstagram}/>
       </a>
     </div>
     </footer>

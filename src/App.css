@@ -12,6 +12,10 @@ z-index:1030;
 .section{
   text-align:center;
   color:white;
+  padding-left: 10%;
+  padding-right: 5%;
+  margin-left: 20;
+  margin-right: 20;
   font-family: 'Lobster Two', cursive;
 }
 #myMenu{
@@ -154,9 +158,16 @@ z-index:1030;
 }
 .icon-items{
   position:absolute;
-  top: 15px;;
+  top: 15px;
   right:0;
   left:10;
+  height: 50px;
+  bottom: 200px;
+  }
+  .lcon-links{
+    background: gray;
+    height: 20px;
+    margin-right: 10;
   }
 @keyframes App-logo-spin {
   from {
