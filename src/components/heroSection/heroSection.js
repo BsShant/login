@@ -24,7 +24,7 @@ const HeroSection=(props)=>{
           onClick={() => fullpageApi.moveSectionDown()}
         >
           <p>
-            <i class="arrow down"></i>
+           .
           </p>
         </button>
       </div>

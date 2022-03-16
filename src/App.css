@@ -20,7 +20,7 @@ z-index:1030;
 .team{
   position:absolute;
   top: 15px;;
-  right:0;
+  right: 24px;
   left:10;
   }
 .team{
@@ -47,34 +47,14 @@ z-index:1030;
   color:white;
 }
 
-.bt1{
+.bt1{ 
+  position:absolute;
+  height: 34px;
+  width: 18px;
   background: transparent;
-  border-radius: 50%;
-  border-color: transparent;
-}
-.arrow {
-  border: solid black;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
-  
-}
-
-.up {
-  transform: rotate(-135deg);
-  -webkit-transform: rotate(-135deg);
-  border-color:gray;
-  }
-.down {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  border-color:gray;
-}
-.up:hover{
-  border-color:whitesmoke;
-}
-.down:hover{
-  border-color:whitesmoke;
+  border-radius: 40px;
+  bottom: 90%;
+ border-color: white;
 }
 .App-logo {
   height: 40vmin;

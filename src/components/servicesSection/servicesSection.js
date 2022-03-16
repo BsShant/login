@@ -13,6 +13,11 @@ const ServicesSection=(props)=>{
     const {fullpageApi} = props
     return(
         <div className="section">
+           {/* <button class="bt1" onClick={() => fullpageApi.moveSectionUp()}>
+        <p>
+          <i class="arrow up"></i>
+        </p>
+      </button> */}
         <p>
           <h1>
           The More You Fear Something, The More You Are Pushing
@@ -24,7 +29,7 @@ const ServicesSection=(props)=>{
           onClick={() => fullpageApi.moveSectionDown()}
         >
           <p>
-            <i class="arrow down"></i>
+           .
           </p>
         </button>
       </div>

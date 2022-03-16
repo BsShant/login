@@ -7,3 +7,13 @@
     margin-right: 20;
     font-family: 'Lobster Two', cursive;
   }
+  .bt1{
+    color:white;
+    font-weight: bold;
+    text-align:center;
+  }
+  .bt1s{
+    position: absolute;
+    bottom: 80px;
+    right: 282px;
+  }
