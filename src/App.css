@@ -9,27 +9,7 @@ right:0;
 left:0;
 z-index:1030;
 }
-.section{
-  text-align:center;
-  color:white;
-  padding-left: 10%;
-  padding-right: 5%;
-  margin-left: 20;
-  margin-right: 20;
-  font-family: 'Lobster Two', cursive;
-}
-#myMenu{
-  /* display: flex; */
-  list-style: none;
-  /* justify-content: space-between; */
-  position: absolute;
-  left: 0;
-  top: 50%;
-  z-index: 100;
-}
-#myMenu .active a{
-  color: white
-}
+
 #fp-nav ul li a{
   color: white!important;
   background-color: transparent;
@@ -66,27 +46,7 @@ z-index:1030;
 .fp-sr-only:hover{
   color:white;
 }
-#link:hover{
-  color:azure;
-  transition-delay:1ms;
-  text-shadow: 0px 5px 200px white;
-}
-#link{
-  text-decoration: none;
-  color:grey;
-  font-weight:bold;
-  font-size: 20px;
-}
-#myMenu li{
-  height: 30px;
-  text-align: left;
-  margin-bottom: 20px;
- 
-}
-#myMenu li svg{
-  margin-right: 5px;
- 
-}
+
 .bt1{
   background: transparent;
   border-radius: 50%;
@@ -143,53 +103,6 @@ z-index:1030;
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.copyright{
-  position: absolute;
-    bottom: 0;
-    z-index: 200;
-    width: 100%;
-    height: 43px;
-    left:0;
-    right:10;
-    margin-left: 10;
-    font-weight: 2000;
-    align-content: left;
-}
-.copy{
-  position:absolute;
-  top: 1px;
-  right:10;
-  left:0;
-  height: 500px;
-  bottom: 200px;
-  color:#282c34;
-}
-.copyright svg{
-  margin-right: 5px;
- }
-.items{
-  position:absolute;
-  top: 1px;
-  right:0;
-  left:10;
-  height: 500px;
-  bottom: 200px;
-  }
-  .items .social svg{
-    margin-right: 10px;
-    height:30px;
-    width:30px;
-   }
-  .items .social{
-    background: transparent;
-    color:#282c34;
-    height: 20px;
-    margin-right: 10;
-  }
-  .items .social:hover{
-    color:white;
-  }
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
