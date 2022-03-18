@@ -11,7 +11,7 @@ import {
 
 const Menu=()=>{
     return(
-        <ul id="myMenu">
+        <ul id="myMenu" className="menu d-md-block d-none">
         <li data-menuanchor="firstPage" className="active">
           <a id="link" href="#firstPage">
             <FontAwesomeIcon icon={faHouse} className="icon" />

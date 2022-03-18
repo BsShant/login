@@ -25,10 +25,6 @@ function Particle() {
           // fpsLimit: 120,
           interactivity: {
             events: {
-              onClick: {
-                enable: true,
-                mode: "push",
-              },
               onHover: {
                 enable: true,
                 mode: "repulse",
@@ -46,7 +42,7 @@ function Particle() {
                 quantity: 4,
               },
               repulse: {
-                distance: 200,
+                distance: 75,
                 duration: 0.4,
               },
             },
@@ -60,7 +56,7 @@ function Particle() {
               distance: 150,
               enable: true,
               opacity: 0.5,
-              width: 1,
+              width: 0.5,
             },
             collisions: {
               enable: true,
@@ -70,7 +66,7 @@ function Particle() {
               enable: true,
               outMode: "bounce",
               random: false,
-              speed: 2,
+              speed: 1,
               straight: false,
             },
             number: {
@@ -81,14 +77,14 @@ function Particle() {
               value: 80,
             },
             opacity: {
-              value: 0.5,
+              value: 0.2,
             },
             shape: {
               type: "circle",
             },
             size: {
               random: true,
-              value: 5,
+              value: 2,
             },
           },
           detectRetina: true,

@@ -24,7 +24,7 @@ const AluminiSection=(props)=>{
           </h1>
         </p>
         <button
-          class="bt1"
+          class="bt1 d-md-block d-none"
           onClick={() => fullpageApi.moveSectionDown()}
         >
           <p>

@@ -4,12 +4,13 @@
     list-style: none;
     /* justify-content: space-between; */
     position: absolute;
-    left: 0;
-    top: 50%;
+    left: 41px;
+    top: 225px;
     z-index: 100;
   }
   #myMenu .active a{
-    color: white
+    color: white;
+    font-family: 'nexa light'!important;
   }
   #link:hover{
     color:azure;

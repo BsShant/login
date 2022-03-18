@@ -1,7 +1,4 @@
-body{
-  background:aqua;
-  color:white;
-}
+
 .fixed-top{
 position:fixed;
 top:0;
@@ -9,7 +6,10 @@ right:0;
 left:0;
 z-index:1030;
 }
+.container{
+ margin: left 1000px;
 
+}
 #fp-nav ul li a{
   color: white!important;
   background-color: transparent;
@@ -54,6 +54,7 @@ z-index:1030;
   background: transparent;
   border-radius: 40px;
   bottom: 90%;
+  left:50%;
  border-color: white;
 }
 .App-logo {

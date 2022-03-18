@@ -1,7 +1,7 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ReactFullpage from "@fullpage/react-fullpage";
-
+import ReactAudioPlayer from 'react-audio-player';
 import Particle from "./components/particle/particle";
 import Navigation from "./components/Navigationbar/Navbar";
 import Footer from "./components/Footer/Footer";
@@ -11,8 +11,14 @@ import ServicesSection from "./components/servicesSection/servicesSection";
 import AluminiSection from './components/aluminiSection/aluminiSection';
 import ContactSection from "./components/contactSection/contactSection";
 import Menu from "./components/Menu/Menu";
+import { useEffect, useState } from "react";
 function App() {
- 
+  const [audio] = useState(new Audio('https://logindesigns.com/front/sounds/background.mp3'));
+  useEffect(()=>{
+    audio.play()
+    audio.loop = true
+    },[])
+
   const anchors = [
     "firstPage",
     "secondPage",
@@ -20,9 +26,12 @@ function App() {
     "fourthPage",
     "fifthPage",
   ];
- 
+
   return (
+    
     <div className="Appmenu">
+        
+
       <Particle />
       <Navigation/>
      <Menu/>
@@ -42,18 +51,21 @@ function App() {
         render={({ state, fullpageApi }) => {
           return (
             <ReactFullpage.Wrapper>
+              <div className="container">
              <HeroSection fullpageApi={fullpageApi} />
              <AboutSection fullpageApi={fullpageApi} />
              <ServicesSection fullpageApi={fullpageApi} />
              <AluminiSection fullpageApi={fullpageApi} />
               <ContactSection fullpageApi={fullpageApi}/>
+              </div>
             </ReactFullpage.Wrapper>
           );
         }}
       />
       );
+      
       <Footer/>
-    </div>
+      </div>
   );
 }
 

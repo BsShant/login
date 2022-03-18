@@ -15,11 +15,12 @@ const Navigation = () => {
     <Navbar bg="transparent" className="navbarZIndex" expand={false}>
       <Container fluid>
         <Navbar.Brand href="">
+          <div className="logo">
           <img
             src="https://logindesigns.com/front/Login logo/logo-white.png"
             width="100"
           ></img>
-
+</div>
           <button className="team d-md-block d-none">
             <a href="https://logindesigns.com/our-team">Our Team</a>
           </button>

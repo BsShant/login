@@ -1,6 +1,24 @@
+.logo{
+  margin-left: 57px;
+  margin-top: 10px;
+}
 #offcanvasNavbar{
     background:black;
     max-height: auto;
+  }
+  .team{
+    background-color: transparent;
+    border-color: white;
+    margin-top: 4px;
+  }
+  .team a{
+    color:white;
+  }
+  .team:hover{
+    border-color: gray;
+  }
+  .team a:hover{
+    color:gray;
   }
   .teambtn{
     background: transparent;
@@ -12,15 +30,15 @@
   }
   .teambtn a{
     text-decoration: none;
-    color:gray;
+    color:white;
     font-weight: 500;
   }
   .teambtn a:hover{
-    color:white;
+    color:gray;
   }
   #linkit{
     text-decoration: none;
-    color:grey;
+    color:white;
     font-weight:bold;
     font-size: 20px;
   }

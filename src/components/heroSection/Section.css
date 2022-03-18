@@ -1,13 +1,13 @@
 .section{
     text-align:center;
     color:white;
-    padding-left: 10%;
-    padding-right: 5%;
-    margin-left: 20;
-    margin-right: 20;
-    font-family: 'Lobster Two', cursive;
+}
+  h2{
+    font-family: 'Nexa Bold'!important;
   }
-
   .bt1{
     top: 468px;
+  }
+  .wel{
+    font-family: 'nexa light'!important;
   }

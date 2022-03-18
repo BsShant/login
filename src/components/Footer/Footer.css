@@ -15,10 +15,12 @@
     position:absolute;
     top: 1px;
     right:10;
-    left:33px;
+    left: 76px;
     height: 500px;
     bottom: 200px;
-    color:#282c34;
+    color:gray ;
+    opacity: 1;
+    font-family:'nexa light'!important;
   }
   
   .copyright svg{
@@ -26,23 +28,30 @@
    }
   .items{
     position:absolute;
-    top: -18px;
+    top: 1px;
     right: 16px;
     left:10;
-    height: 500px;
-    bottom: 200px;
+  
     }
     .items .social svg{
       margin-right: 10px;
-      height:30px;
-      width:30px;
      }
     .items .social{
       background: transparent;
       color:#282c34;
-      height: 20px;
+      opacity: 1;
       margin-right: 10;
     }
     .items .social:hover{
       color:white;
     }
+    .items .social svg{
+      font-size: 25px;
+    }
+    
+    @media only screen and (max-width: 400px) {
+      .items .social svg{
+        font-size: 20px!important;
+      }
+    }
+    

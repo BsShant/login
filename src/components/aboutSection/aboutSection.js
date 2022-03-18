@@ -11,10 +11,11 @@ const AboutSection=(props)=>{
         </p>
       </button> */}
       <p>
-        <h1>If There Is No Need To Decide Then Don't Decide</h1>
+        <h1>WHO ARE WE?</h1>
+        <h6>We are designers, developers, creators and much more. What we develop is extraordinary because we can't stanf ordinary. Don't believe yet? Then try us and amuse yourselves.</h6>
       </p>
       <button
-        class="bt1"
+        class="bt1 d-md-block d-none"
         onClick={() => fullpageApi.moveSectionDown()}
       >
         <p>

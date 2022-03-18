@@ -1,5 +1,12 @@
+
 import React from "react";
-import './Section.css'
+import './Section.css';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faArrowRight,
+} from "@fortawesome/free-solid-svg-icons";
+import { Container } from "react-bootstrap";
+
  
 const anchors = [
     "firstPage",
@@ -18,14 +25,38 @@ const ServicesSection=(props)=>{
           <i class="arrow up"></i>
         </p>
       </button> */}
-        <p>
-          <h1>
-          The More You Fear Something, The More You Are Pushing
-                    Yourself To Happen That Things.
-          </h1>
-        </p>
-        <button
-          class="bt1"
+          <p>
+          We feel privileged to offer creative and innovative services to you.
+          </p>
+          <Container>s
+            
+          <div class="service-media col-sm-6 c0l-xa-12">
+<div class="service ser">
+  <h5>  <FontAwesomeIcon icon={faArrowRight}/> LEGAL SERVICE"</h5>
+  <div class="service-text">
+    <ul>
+      <li>Company Registration</li>
+      <li>PAN/VAT Registration</li>
+      <li>Trademark Registration</li>
+    </ul>
+  </div>
+</div>
+<div class="service ser">
+  <h5>  <FontAwesomeIcon icon={faArrowRight}/> MULTIMEDIA SERVICE</h5>
+  <div class="service-text">
+    <ul>
+      <li>Logo and Graphic Design</li>
+      <li>Branding and Printing</li>
+      <li>Photography and Videography</li>
+      <li>Animation</li>
+    </ul>
+  </div>
+</div>
+</div>
+
+</Container>
+<button
+          class="bt1 d-md-block d-none"
           onClick={() => fullpageApi.moveSectionDown()}
         >
           <p>
@@ -33,7 +64,8 @@ const ServicesSection=(props)=>{
           </p>
         </button>
       </div>
-     
+
+    
     )
 }
 
