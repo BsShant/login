@@ -4,44 +4,26 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHouse,
   faPhoneSquare,
-  faCircleInfo,
+  faInfo,
   faGears,
   faUserGroup,
 } from "@fortawesome/free-solid-svg-icons";
-
+import { MenuListItem } from "../menuListItem/menuListItem";
 const Menu=()=>{
     return(
         <ul id="myMenu" className="menu d-md-block d-none">
-        <li data-menuanchor="firstPage" className="active">
-          <a id="link" href="#firstPage">
-            <FontAwesomeIcon icon={faHouse} className="icon" />
-            Home
-          </a>
-        </li>
-        <li data-menuanchor="secondPage">
-          <a id="link" href="#secondPage">
-            <FontAwesomeIcon icon={faCircleInfo} className="icon" />
-            About
-          </a>
-        </li>
-        <li data-menuanchor="thirdPage">
-          <a id="link" href="#thirdPage">
-            <FontAwesomeIcon icon={faGears} className="icon" />
-            Services
-          </a>
-        </li>
-        <li data-menuanchor="fourthPage">
-          <a id="link" href="#fourthPage">
-            <FontAwesomeIcon icon={faUserGroup} className="icon" />
-            Alumini
-          </a>
-        </li>
-        <li data-menuanchor="fifthPage">
-          <a id="link" href="#fifthPage">
-            <FontAwesomeIcon icon={faPhoneSquare} className="icon" />
-            Contacts
-          </a>
-        </li>
+       <MenuListItem data-menuanchor="firstPage" className="active"  href="#firstPage" icon={<FontAwesomeIcon icon={faHouse} className="icon" />}
+       name="Home"
+       />
+         <MenuListItem data-menuanchor="secondPage" href="#secondPage" icon={ <FontAwesomeIcon icon={faInfo} className="icon" />}
+       name="About"
+       />  <MenuListItem data-menuanchor="thirdPage"   href="#thirdPage" icon={ <FontAwesomeIcon icon={faGears} className="icon" />}
+       name="Services"
+       />  <MenuListItem data-menuanchor="fourthPage"  href="#fourthPage" icon={<FontAwesomeIcon icon={faUserGroup} className="icon" />}
+       name="Alumini"
+       />  <MenuListItem data-menuanchor="fifthPage"  href="#fifthPage" icon={  <FontAwesomeIcon icon={faPhoneSquare} className="icon" />}
+       name="Contacts"
+       />
       </ul>
     )
 }

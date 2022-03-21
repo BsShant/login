@@ -1,5 +1,5 @@
 import React from "react";
-import './Section.css'
+import './about.css'
 
 const AboutSection=(props)=>{
     const {fullpageApi} = props

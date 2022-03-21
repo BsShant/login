@@ -13,11 +13,12 @@ import ContactSection from "./components/contactSection/contactSection";
 import Menu from "./components/Menu/Menu";
 import { useEffect, useState } from "react";
 function App() {
-  const [audio] = useState(new Audio('https://logindesigns.com/front/sounds/background.mp3'));
+  const [audio, setAudio] = useState(new Audio('https://logindesigns.com/front/sounds/background.mp3'));
   useEffect(()=>{
     audio.play()
     audio.loop = true
     },[])
+  
 
   const anchors = [
     "firstPage",

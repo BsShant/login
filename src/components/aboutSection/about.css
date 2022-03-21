@@ -1,0 +1,11 @@
+.section{
+    text-align:center;
+    color:white;
+    left: 100px;
+    max-width: 95%;
+    display:flex;
+    flex-wrap: wrap;
+    font-family: "nexa light";
+}
+ 
+  

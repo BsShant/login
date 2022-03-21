@@ -1,0 +1,14 @@
+.section{
+    text-align:center;
+    color:white;
+    align-items: center;
+  }
+  h5{
+    margin-left: 8px;
+    }
+    .row{
+      text-align: left;
+    }
+    .cont{
+      align-items: center;
+    }

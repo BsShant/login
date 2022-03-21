@@ -1,0 +1,15 @@
+.section{
+    text-align:center;
+    color:white;
+
+  }
+  .bt1{
+    color:white;
+    font-weight: bold;
+    text-align:center;
+  }
+  .bt1s{
+    position: absolute;
+    bottom: 80px;
+    right: 282px;
+  }

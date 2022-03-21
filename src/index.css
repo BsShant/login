@@ -13,6 +13,14 @@ body {
   font-family: 'Nexa Bold';
   src: local('Nexa Bold'), url('./assets/fonts/Nexa\ Bold.otf') format('opentype')
 }
+@font-face {
+  font-family: 'Nexa Light';
+  src: local('Nexa Light'), url('./assets/fonts/Nexa\ Light.otf') format('opentype')
+}
+@font-face {
+  font-family: 'Nexa Regular';
+  src: local('Nexa Regular'), url('./assets/fonts/Nexa\ Regular.otf') format('opentype')
+}
 .Section_top{
   width:100%;
   height:100%;
@@ -23,8 +31,7 @@ body {
   background-repeat: no-repeat;
   text-align:center;
   justify-content: center;
-  animation:change 30s infinite ease-in-out;
-  animation-direction: alternate;
+  animation:change 30s infinite linear;
   position: relative;
   z-index: 0;
 
@@ -45,19 +52,25 @@ code {
 }
 @keyframes change {
   0%{
-   background-image: url('./assets/images/img21.webp');
+   background-image: url('./assets/images/1.webp');
   }
-  25%{
-    background-image: url('./assets/images/img22.webp');
+  17%{
+    background-image: url('./assets/images/2.jpg');
   }
-  50%{
-    background-image: url('./assets/images/img23.webp');
+  34%{
+    background-image: url('./assets/images/3.webp');
   }
-  75%{
-    background-image: url('./assets/images/img24.webp');
+  51%{
+    background-image: url('./assets/images/4.webp');
+  }
+  68%{
+    background-image: url('./assets/images/5.png');
+  }
+  85%{
+    background-image: url('./assets/images/6.webp');
   }
   100%{
-    background-image: url('./assets/images/img25.webp');
+    background-image: url('./assets/images/7.webp');
   }
  
 }

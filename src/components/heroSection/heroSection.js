@@ -1,5 +1,5 @@
 import React from "react";
-import './Section.css'
+import './hero.css'
  
 const anchors = [
     "firstPage",
