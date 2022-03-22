@@ -1,5 +1,37 @@
-.section{
-    text-align:center;
+.continfo{
+    text-align: left!important;
+    line-height: 2;
+    margin-top: 5%;
+}
+h4{
     color:white;
-  
+}
+.sendsms{
+    margin-left: 100;
+    background: transparent;
+      border-radius: 20px;
+      border-color:white;
+      height:40px;
+      margin-left:-64%;
+      margin-top:10%;
   }
+  .row{
+margin-top: 6%;
+margin-bottom:5%;
+  }
+  .sendsms:hover{
+    border-color: gray;
+  }
+  .sendsms p{
+    color:white;
+    margin-top:6px;
+  }
+  .sendsms p:hover{
+    color:rgba(255,255,255,.5)!important;
+  }
+
+ .contactSection .fp-controlArrow{
+     display: none;
+ }
+  
+    

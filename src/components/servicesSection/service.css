@@ -1,14 +1,88 @@
-.section{
-    text-align:center;
-    color:white;
-    align-items: center;
-  }
+p{
+  align-items: left;
+}
   h5{
     margin-left: 8px;
+    color: white !important;
     }
     .row{
       text-align: left;
     }
+    .column{
+      padding-right:15px;
+      padding-left:15px;
+    }
+    .col{
+      text-align: left;
+      padding-right:15px;
+      padding-left:15px;
+    }
     .cont{
       align-items: center;
     }
+
+.serviceNext{
+  background: transparent;
+    border-radius: 20px;
+    border-color: white!important;
+    height:40px;
+}
+.serviceNext:hover{
+  border-color:rgba(255,255,255,.5)!important;
+}
+.serviceNext p{
+  color:white!important;
+  margin-top:6px;
+}
+  .serviceNext p:hover{
+    color:rgba(255,255,255,.5)!important;
+}
+.serviceNext .p:hover{
+  color:white;
+}
+ul{
+  line-height: 1.2;
+}
+
+.servicePrev{
+  background: transparent;
+  border-radius: 20px;
+  border-color:beige;
+  height:40px;
+  width:62px;
+}
+.servicePrev p{
+  color:white;
+  margin-top:6px;
+}
+.servicePrev p:hover{
+  color:gray;
+}
+.servicePrev:hover{
+  border-color:gray;
+}
+.serviceFullScreen{
+  display: block;
+}
+.serviceSmallScreen{
+display: none;
+}
+@media (max-width: 768px) {
+  .serviceFullScreen {
+    display: none!important;
+  }
+  .serviceSection{
+    padding-top: 80px;
+  }
+  .serviceSmallScreen{
+    display: block!important;
+    }
+   
+}
+
+.serviceSmallScreen .fp-controlArrow{
+  display: none!important;
+}
+.serviceSmallScreen .fp-tableCell{
+  vertical-align: top;
+}

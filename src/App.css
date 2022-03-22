@@ -1,70 +1,81 @@
-body{
-font-family: "nexa light";
+body {
+  font-family: "nexa light";
 }
-.fixed-top{
-position:fixed;
-top:0;
-right:0;
-left:0;
-z-index:1030;
+.section{
+  text-align:center;
+  color:white;
+  width: 78%!important;
+  margin-left: auto!important;
+  display:flex;
+  height:100vh;
+  flex-wrap: wrap;
+  font-family: "nexa light";
+  font-size: 15px;
+  color: rgba(255,255,255,.5)!important;
 }
-.container{
- margin: left 1000px;
-
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
 }
-#fp-nav ul li a{
-  color: white!important;
+.container {
+  margin: left 1000px;
+}
+#fp-nav ul li a {
+  color: white !important;
   background-color: transparent;
 }
-.navbarZIndex{
+.navbarZIndex {
   z-index: 200;
 }
-.team{
-  position:absolute;
-  top: 15px;;
+.team {
+  position: absolute;
+  top: 15px;
   right: 24px;
-  left:10;
-  }
-.team{
+  left: 10;
+}
+.team {
   background: transparent;
   border-radius: 20px;
-  color:beige;
+  color: beige;
 }
-.team:hover{
+.team:hover {
   border-color: white;
   box-shadow: 0px 10px 500px white;
 }
-.team a{
+.team a {
   text-decoration: none;
-  color:gray;
+  color: gray;
   font-weight: 500;
 }
-.team a:hover{
-  color:white;
+.team a:hover {
+  color: white;
 }
-.fp-right ul li a fp-sr-only{
-  color:white;
+.fp-right ul li a fp-sr-only {
+  color: white;
 }
-.fp-sr-only:hover{
-  color:white;
+.fp-sr-only:hover {
+  color: white;
 }
 
-.bt1{ 
-  position:absolute;
+.bt1 {
+  position: absolute;
   height: 34px;
   width: 18px;
   background: transparent;
   border-radius: 40px;
-  bottom: 90%;
-  left:50%;
- border-color: white;
+  top: 90%;
+  left: 40%;
+  border-color: white;
 }
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-#fp-nav ul li a span{
-  background: white!important;
+#fp-nav ul li a span {
+  background: white !important;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -72,8 +83,8 @@ z-index:1030;
     animation: App-logo-spin infinite 20s linear;
   }
 }
-.icon:hover{
-  color:white;
+.icon:hover {
+  color: white;
 }
 
 .App-header {
@@ -92,5 +103,13 @@ z-index:1030;
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    width: 100%!important;
+    margin-left: 0!important;
+    /* margin-right: 0!important; */
   }
 }
