@@ -1,4 +1,6 @@
 import "./App.css";
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import ReactFullpage from "@fullpage/react-fullpage";
 import ReactAudioPlayer from 'react-audio-player';

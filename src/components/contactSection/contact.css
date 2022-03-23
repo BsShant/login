@@ -9,6 +9,9 @@ h4{
 .servicePrev{
   margin-left: 10px;
 }
+.span{
+  color: transparent;
+}
 
 .sendsms{
   background: transparent;

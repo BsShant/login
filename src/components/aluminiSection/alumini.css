@@ -1,2 +1,24 @@
-
+.photo{
+    height: 300px;
+    width: 300px;
+    border-radius:50%;
+    padding: 0px 71px 0px 71px;
   
+}
+.card{
+    width: 18rem !important;
+    height: 20rem !important;
+    background:#000000b0;
+    box-shadow: 0 5px 10px -8px #000000;
+    padding:24px;
+    margin-right: 211px;
+    border:0;
+    border-radius: 24px;
+    transition: transform 0.5s linear;
+    transform: scale(0.9);
+}
+.head{
+    color:white;
+}
+
+
