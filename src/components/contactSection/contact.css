@@ -6,6 +6,20 @@
 h4{
     color:white;
 }
+.servicePrev{
+  margin-left: 10px;
+}
+
+.sendsms{
+  background: transparent;
+    border-radius: 20px;
+    border-color:white;
+    height:40px;
+    margin-left:-79%;
+    margin-top:10%;
+}
+
+@media(max-width:768px){
 .sendsms{
     margin-left: 100;
     background: transparent;
@@ -14,6 +28,14 @@ h4{
       height:40px;
       margin-left:-64%;
       margin-top:10%;
+  }
+}
+  .customer{
+    margin-bottom: 20px;
+  }
+  .emus{
+    margin-bottom: 20px;
+    font-family: 'Nexa Light'!important;
   }
   .row{
 margin-top: 6%;
@@ -33,5 +55,51 @@ margin-bottom:5%;
  .contactSection .fp-controlArrow{
      display: none;
  }
-  
+
+ @media (max-width: 768px) {
+  .customer {
+    display: none!important;
+  }
+}
+@media(max-width:768px){
+  .servicePrev{
+    position: relative;
+    border-radius: 5px;
+    left:18%;
+    bottom:-1020%;
+  }
+}
+
+ .mb-3{
+   color:white;
+   line-height: 0.5;
+ }
+
+ input{
+   color:rgba(255,255,255,.5)!important;
+ }
+
+ .form-control{
+  background: transparent;
+  border-color: transparent;
+  border-bottom-color:gray;
+  padding-top: 0px;
+  line-height: 0.5;
+  color:rgba(255,255,255,.5)!important;
+ }
+ .form-control:focus{
+   background-color: transparent;
+   color:rgba(255,255,255,.5)!important;
+   border-color: transparent;
+   border-bottom-color:gray;
+   box-shadow:none;
+ }
+ .msg{
+  border-color: gray;
+  height:80px;
+  margin: bottom 0px!important;
+ }
     
+ .capt{
+   margin-top: 0px;
+ }

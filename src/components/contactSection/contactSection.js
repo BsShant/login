@@ -1,9 +1,11 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 import './contact.css';
 import {
   faLocationDot
 } from "@fortawesome/free-solid-svg-icons";
+import { Button, Form } from "react-bootstrap";
  
 const anchors = [
     "firstPage",
@@ -51,60 +53,64 @@ const ContactSection=(props)=>{
                    <p class="color-white"><h5>Send messages</h5></p>
                  </button>   
            </div>
+
+
        <div className="slide">
-       
-       <form class="was-validated">
-  <div class="mb-3">
-    <label for="validationTextarea" class="form-label">Textarea</label>
-    <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" required></textarea>
-    <div class="invalid-feedback">
-      Please enter a message in the textarea.
-    </div>
-  </div>
+       <div class="row">
+       <div className="col-md-4">
 
-  <div class="form-check mb-3">
-    <input type="checkbox" class="form-check-input" id="validationFormCheck1" required />
-    <label class="form-check-label" for="validationFormCheck1">Check this checkbox</label>
-    <div class="invalid-feedback">Example invalid feedback text</div>
-  </div>
-
-  <div class="form-check">
-    <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required />
-    <label class="form-check-label" for="validationFormCheck2">Toggle this radio</label>
-  </div>
-  <div class="form-check mb-3">
-    <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required />
-    <label class="form-check-label" for="validationFormCheck3">Or toggle this other radio</label>
-    <div class="invalid-feedback">More example invalid feedback text</div>
-  </div>
-
-  <div class="mb-3">
-    <select class="form-select" required aria-label="select example">
-      <option value="">Open this select menu</option>
-      <option value="1">One</option>
-      <option value="2">Two</option>
-      <option value="3">Three</option>
-    </select>
-    <div class="invalid-feedback">Example invalid select feedback</div>
-  </div>
-
-  <div class="mb-3">
-    <input type="file" class="form-control" aria-label="file example" required />
-    <div class="invalid-feedback">Example invalid form file feedback</div>
-  </div>
-
-  <div class="mb-3">
-    <button class="btn btn-primary" type="submit" disabled>Submit form</button>
-  </div>
-</form>
-           
-
-           
+          
+          <h4 class="customer cst">Customer service</h4>
+          <h2 class="customer ail">EMAIL US</h2>
+        
 
            <button class="servicePrev" onClick={() => fullpageApi.moveSlideLeft()}>
-             <p>back</p>
+             <p>Back</p>
            </button>
+           </div>
 
+         <div className="col-md-8">
+       <Form>
+
+       <Form.Group className="mb-3">
+    <Form.Label>Name</Form.Label>
+    <Form.Control type="text" required/>
+  </Form.Group>
+
+  <Form.Group className="mb-3" controlId="FormBasicEmail">
+    <Form.Label>Email</Form.Label>
+    <Form.Control type="email" required/>
+    {/* <Form.Text className="text-muted">
+      We'll never share your email with anyone else.
+    </Form.Text> */}
+  </Form.Group>
+
+  <Form.Group className="mb-3">
+    <Form.Label>Phone No:</Form.Label>
+    <Form.Control type="number" required />
+  </Form.Group>
+
+  <Form.Group className="mb-3">
+    <Form.Label>Messages</Form.Label>
+    <Form.Control className="msg" type="text" required/>
+  </Form.Group>
+{/* 
+  <Form.Group className="mb-3" controlId="FormBasicCheckbox">
+    <Form.Check type="checkbox" label="Check me out" />
+  </Form.Group> */}
+
+<ReCAPTCHA className="capt"
+sitekey="6LeH_AIfAAAAAIeF4Rod6Wofc0KfYB4IUJi7L5L5"/>
+
+  <Button variant="primary" type="submit">
+    Send
+  </Button>
+</Form>
+           
+</div>
+           
+
+           </div>
          </div>
        </div>
     
