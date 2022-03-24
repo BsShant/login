@@ -9,8 +9,10 @@ import {
   faInfoCircle,
 } from "@fortawesome/free-solid-svg-icons";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
-const Navigation = () => {
+const Navigation = (props) => {
+  const {navigateTo, navigationToName} = props
   return (
     <Navbar bg="transparent" className="navbarZIndex" expand={false}>
       <Container fluid>
@@ -22,7 +24,7 @@ const Navigation = () => {
           ></img>
 </div>
           <button className="team d-md-block d-none">
-            <a href="https://logindesigns.com/our-team">Our Team</a>
+          <Link to={navigateTo}>{navigationToName}</Link>
           </button>
         </Navbar.Brand>
         <Navbar.Toggle
@@ -37,7 +39,7 @@ const Navigation = () => {
           <Offcanvas.Header closeButton>
             <Offcanvas.Title id="offcanvasNavbarLabel">
               <button className="teambtn">
-                <a href="https://logindesigns.com/our-team">Our Team</a>
+              <Link to={navigateTo}>{navigationToName}</Link>
               </button>
             </Offcanvas.Title>
           </Offcanvas.Header>

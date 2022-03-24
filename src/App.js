@@ -14,6 +14,10 @@ import AluminiSection from './components/aluminiSection/aluminiSection';
 import ContactSection from "./components/contactSection/contactSection";
 import Menu from "./components/Menu/Menu";
 import { useEffect, useState } from "react";
+import { Route, Routes } from "react-router-dom";
+import HomePage from "./pages/homepage";
+import OurTeamPage from "./pages/ourTeam";
+import RouteIndex from "./routes";
 function App() {
   const [audio, setAudio] = useState(new Audio('https://logindesigns.com/front/sounds/background.mp3'));
   useEffect(()=>{
@@ -32,42 +36,11 @@ function App() {
 
   return (
     
-    <div className="Appmenu">
+    <div>
+     <RouteIndex />
         
 
-      <Particle />
-      <Navigation/>
-     <Menu/>
-      <ReactFullpage
-        //fullpage options
-        lockAnchors={false}
-        anchors={anchors}
-        navigation={true}
-        navigationPosition={"right"}
-        navigationTooltips={["firstSlide", "secondSlide"]}
-        showActiveTooltip={false}
-        slidesNavigation={true}
-        slidesNavPosition={"top"}
-        licenseKey={"YOUR_KEY_HERE"}
-        menu={"#myMenu"}
-        scrollingSpeed={1000} /* Options here */
-        render={({ state, fullpageApi }) => {
-          return (
-            <ReactFullpage.Wrapper>
-              <div className="container">
-             <HeroSection fullpageApi={fullpageApi} />
-             <AboutSection fullpageApi={fullpageApi} />
-             <ServicesSection fullpageApi={fullpageApi} />
-             <AluminiSection fullpageApi={fullpageApi} />
-              <ContactSection fullpageApi={fullpageApi}/>
-              </div>
-            </ReactFullpage.Wrapper>
-          );
-        }}
-      />
-      );
-      
-      <Footer/>
+    
       </div>
   );
 }
