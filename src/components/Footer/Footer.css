@@ -21,6 +21,7 @@
     color:gray ;
     opacity: 1;
     font-family:'nexa light'!important;
+    font-size: 16px;
   }
   
   .copyright svg{
@@ -47,11 +48,15 @@
     }
     .items .social svg{
       font-size: 25px;
+      color: rgba(255,255,255,.5)!important;
     }
     
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 768px) {
       .items .social svg{
         font-size: 20px!important;
+      }
+      .copy{
+        font-size: 13px;
       }
     }
     

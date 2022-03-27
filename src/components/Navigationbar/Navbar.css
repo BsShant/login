@@ -8,6 +8,7 @@
 .logo{
   margin-left: 57px;
   margin-top: 10px;
+ 
 }
 #offcanvasNavbar{
     background:black;
@@ -16,12 +17,22 @@
   .team{
     position:fixed;
     background-color: transparent;
-    border-color: white;
     margin-top: 4px;
+    border-radius: 20px;
+    color: beige;
+    border-color:white;
+    border-style:solid;
+    top: 15px;
+    right: 24px;
+    left: 10;
+    padding-left:10px;
+    padding-right:10px;
     
   }
   .team a{
     color:white;
+    text-decoration: none;
+    font-family: 'nexa light'!important;
   }
   .team:hover{
     border-color: gray;
@@ -36,31 +47,24 @@
   }
   .teambtn:hover{
     border-color:white;
+    color:white;
   }
   .teambtn a{
     text-decoration: none;
-    color:white;
+    color:rgba(255,255,255,.5);
     font-weight: 500;
+  }
+  .teambtn a:hover{
+    color: white !important;
+  }
+  .icon:hover{
+    color: rgba(255,255,255,.1)!important;
   }
   .teambtn a:hover{
     color:gray;
   }
-  #linkit{
-    text-decoration: none;
-    color:white;
-    font-weight:bold;
-    font-size: 20px;
-  }
-#linkit svg{
-  margin-right: 5px; 
- 
-}
-#linkit:hover{
-  color:whitesmoke;
-}
-
 .offcanvas-top{
-  height: 55%!important;
+  height: 60%!important;
 }
 .closeButton{
   color: white!important;
@@ -74,6 +78,14 @@
 }
 .navbar-toggler-icon{
   color: white!important;
+}
+.links{
+  line-height: 3;
+  color:transparent;
+  text-align: left;
+}
+.offcanvas-body{
+  margin-left:-29px;
 }
 
 .btn-close {

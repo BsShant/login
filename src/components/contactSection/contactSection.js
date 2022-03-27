@@ -33,12 +33,12 @@ const ContactSection=(props)=>{
           <h4>Customer service</h4>
           <h2>CUSTOMER</h2>
      Feel free to reach out to us with any questions. We are very friendly and always open to discussing new projects, interesting ideas.
-     <div class="row">
-       <div class="col-md-6">
+     <div className="row one" style={{padding:"0",justifyFlex:"flex-start"}}>
+       <div class=" contcol col-lg-6 col-md-6 col-sm-12" style={{marginLeft:"-111px",paddingLeft:"0px"}}>
      <h4>Contact</h4>
      Call:9749761111  
      </div>
-     <div class="col-md-6">
+     <div class=" contcol col-lg-6 col-md-6 col-sm-12"  style={{marginLeft:"-71px",paddingLeft:"0px"}}>
      <h4>Address</h4>
        <FontAwesomeIcon icon={faLocationDot}/> Samakhushi,Kathmandu
        </div>
@@ -50,13 +50,13 @@ const ContactSection=(props)=>{
             
                  <button class="sendsms"  onClick={() => fullpageApi.moveSlideRight()}
                  >
-                   <p class="color-white"><h5>Send messages</h5></p>
+                   <p ><h5 className="send">Send messages</h5></p>
                  </button>   
            </div>
 
 
        <div className="slide">
-       <div class="row">
+       <div className="row one">
        <div className="col-md-4">
 
           
@@ -64,8 +64,8 @@ const ContactSection=(props)=>{
           <h2 class="customer ail">EMAIL US</h2>
         
 
-           <button class="servicePrev" onClick={() => fullpageApi.moveSlideLeft()}>
-             <p>Back</p>
+           <button class="goLeft" onClick={() => fullpageApi.moveSlideLeft()}>
+             <p className="back"> Back</p>
            </button>
            </div>
 

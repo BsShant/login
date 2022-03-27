@@ -23,8 +23,8 @@ const ServicesSection = (props) => {
      
       <div className="serviceFullScreen">
         <Container class="cont">
-          <div className="row">
-            <div className="column col-sm-6 col-xs-12">
+          <div className="row rowl">
+            <div className="column col-sm-6 col-xs-12" style={{textAlign:"left"}}>
               <h5>
                 <FontAwesomeIcon icon={faArrowRight} /> LEGAL SERVICE
               </h5>
@@ -35,7 +35,7 @@ const ServicesSection = (props) => {
                 <li>Trademark Registration</li>
               </ul>
             </div>
-            <div className="column col-sm-6 col-xs-12">
+            <div className="column col-sm-6 col-xs-12"  style={{textAlign:"left"}}>
               <h5>
               
                 <FontAwesomeIcon icon={faArrowRight} /> MULTIMEDIA SERVICE
@@ -49,8 +49,8 @@ const ServicesSection = (props) => {
               </ul>
             </div>
           </div>
-          <div className="row">
-            <div className="column col-sm-6 col-xs-12">
+          <div className="row rowf">
+            <div className="column col-sm-6 col-xs-12"  style={{textAlign:"left"}}>
               <h5>
            
                 <FontAwesomeIcon icon={faArrowRight} /> FINANCE SERVICE
@@ -64,11 +64,11 @@ const ServicesSection = (props) => {
                 <li>Investment</li>
               </ul>
             </div>
-            <div className="column col-sm-6 col-xs-12">
+            <div className="column col-sm-6 col-xs-12"  style={{textAlign:"left"}}>
+
               <h5>
                 <FontAwesomeIcon icon={faArrowRight} /> IT SERVICE
               </h5>
-
               <ul>
                 <li>Website Design and Development</li>
                 <li>Android Application Development</li>
@@ -77,10 +77,11 @@ const ServicesSection = (props) => {
                 <li>Software Development</li>
                 <li>IT Support</li>
               </ul>
+              
             </div>
           </div>
-          <div className="row">
-            <div className="column col-sm-6 col-xs-12">
+          <div className="row rowm">
+            <div className="column col-sm-6 col-xs-12"  style={{textAlign:"left"}}>
               <h5>
                 <FontAwesomeIcon icon={faArrowRight} /> MARKETING SERVICE
               </h5>
@@ -93,7 +94,7 @@ const ServicesSection = (props) => {
                 <li>Product and Service Promotion</li>
               </ul>
             </div>
-            <div className="column col-sm-6 col-xs-12">
+            <div className="column col-sm-6 col-xs-12"  style={{textAlign:"left"}}>
               <h5>
                 <FontAwesomeIcon icon={faArrowRight} /> BUSINESS SERVICE
               </h5>
@@ -209,10 +210,12 @@ const ServicesSection = (props) => {
       </div>
 
       <button
-        class="bt1 d-md-block d-none"
+        class="bt1  endButtonContainer d-md-block d-none"
         onClick={() => fullpageApi.moveSectionDown()}
       >
-        <p>.</p>
+        <div className="endButton">
+    
+        </div>
       </button>
     </div>
   );

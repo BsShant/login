@@ -20,7 +20,7 @@ const Menu=()=>{
        />  <MenuListItem data-menuanchor="thirdPage"   href="#thirdPage" icon={ <FontAwesomeIcon icon={faGears} className="icon" />}
        name="Services"
        />  <MenuListItem data-menuanchor="fourthPage"  href="#fourthPage" icon={<FontAwesomeIcon icon={faUserGroup} className="icon" />}
-       name="Alumini"
+       name="Testimonials"
        />  <MenuListItem data-menuanchor="fifthPage"  href="#fifthPage" icon={  <FontAwesomeIcon icon={faPhoneSquare} className="icon" />}
        name="Contacts"
        />

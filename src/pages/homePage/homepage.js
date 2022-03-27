@@ -2,16 +2,17 @@ import "./style.css";
 
 import ReactFullpage from "@fullpage/react-fullpage";
 import ReactAudioPlayer from 'react-audio-player';
-import Particle from "../components/particle/particle";
-import Navigation from "../components/Navigationbar/Navbar";
-import Footer from "../components/Footer/Footer";
-import HeroSection from "../components/heroSection/heroSection";
-import AboutSection from "../components/aboutSection/aboutSection";
-import ServicesSection from "../components/servicesSection/servicesSection";
-import AluminiSection from '../components/aluminiSection/aluminiSection';
-import ContactSection from "../components/contactSection/contactSection";
-import Menu from "../components/Menu/Menu";
+import Particle from "../../components/particle/particle";
+import Navigation from "../../components/Navigationbar/Navbar";
+import Footer from "../../components/Footer/Footer";
+import HeroSection from "../../components/heroSection/heroSection";
+import AboutSection from "../../components/aboutSection/aboutSection";
+import ServicesSection from "../../components/servicesSection/servicesSection";
+import AluminiSection from '../../components/aluminiSection/aluminiSection';
+import ContactSection from "../../components/contactSection/contactSection";
+import Menu from "../../components/Menu/Menu";
 import { useEffect, useState } from "react";
+
 function HomePage() {
   const [audio, setAudio] = useState(new Audio('https://logindesigns.com/front/sounds/background.mp3'));
   useEffect(()=>{
@@ -30,7 +31,7 @@ function HomePage() {
 
   return (
     
-    <div className="Appmenu">
+    <div className="Appmenu Section_top" /* style={{background:"url('./assets/images/backgroundimage.webp')"}}*/ >
         
 
       <Particle />

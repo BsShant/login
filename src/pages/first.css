@@ -2,7 +2,7 @@ h1{
     font-family: 'Nexa Light'!important;
     color: white !important;
   }
-   p{
+  p.weare{
     font-family: 'nexa light'!important;
      color: rgba(255,255,255,.5)!important;
      font-size: 19px;
@@ -12,4 +12,4 @@ h1{
      margin-right: 10px;
      font-family: 'Nexa Light';
     }
- 
+   

@@ -13,19 +13,19 @@ const HeroSection=(props)=>{
     const {fullpageApi} = props
     return(
         <div className="section">
-        <p>
+         
           <h2>
             "The person who can't abondon anything, they can't change anything."
           </h2>
+          <p className="wel">
           - WELCOME TO LOGIN
         </p>
+       
         <button
-          class="bt1 d-md-block d-none"
+          class="bt1 hers d-md-block d-none endButtonContainer"
           onClick={() => fullpageApi.moveSectionDown()}
         >
-          <p>
-           .
-          </p>
+          <div className="endButton"></div>
         </button>
       </div>
      

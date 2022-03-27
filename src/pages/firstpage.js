@@ -16,7 +16,7 @@ const FirstPage=(props)=>{
           <h1>
             Welcome To Login
           </h1>
-          <p>
+          <p className="weare">
           Scroll down and find out who will bring your imagination to life.
         </p>
       </div>

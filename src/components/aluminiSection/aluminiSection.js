@@ -27,12 +27,31 @@ const AluminiSection = (props) => {
 
       <h1>Testimonials</h1>
       <div>
-        <OwlCarousel className="owl-theme" loop margin={100} nav>
+        <OwlCarousel className="owl-theme" loop={true} center={true} autoplay={true} margin={10} nav
+        responsive={{
+            // breakpoint from 0 up
+            0 : {
+              // stagePadding: 0,
+              loop: true,
+              center: true,
+              autoplay: true,
+              // responsiveClass: true,
+              // dots: false,
+              nav: true,
+              // autoHeight: true,
+              items: 1
+            },
+            // breakpoint from 768 up
+            768 : {
+              items: 3
+            }
+          }}
+        >
           <div class="item">
             <Card class="cards"
              
-            >
-              <img className="photo" src={ImageOne}></img>
+            ><div className="imgholder">
+              <img className="photo" src={ImageOne}></img></div>
               <Card.Body>
                 <Card.Title className="head"><h5>Card Title</h5></Card.Title>
                 <Card.Text>
@@ -47,10 +66,12 @@ const AluminiSection = (props) => {
             <Card class="cards"
               
             >
+              <div className="imgholder">
               <img
                 className="photo"
                 src={ImageTwo}
               ></img>
+              </div>
               <Card.Body>
                 <Card.Title className="head"><h5>Card Title</h5></Card.Title>
                 <Card.Text>
@@ -65,10 +86,12 @@ const AluminiSection = (props) => {
             <Card class="cards"
              
             >
+             <div className="imgholder">
               <img
                 className="photo"
                 src={ImageThree}
               ></img>
+              </div>
               
               <Card.Body>
                 <Card.Title className="head"><h5>Card Title</h5></Card.Title>
@@ -84,10 +107,12 @@ const AluminiSection = (props) => {
             <Card class="cards"
           
             > 
+            <div className="imgholder">
               <img
                 className="photo"
                 src={ImageFour}
               ></img> 
+              </div>
               <Card.Body>
                 <Card.Title className="head"><h5>Card Title</h5></Card.Title>
                 <Card.Text>
@@ -100,10 +125,10 @@ const AluminiSection = (props) => {
         </OwlCarousel>
       </div>
       <button
-        class="bt1 d-md-block d-none"
+        class="bt1 testBtn d-md-block d-none endButtonContainer"
         onClick={() => fullpageApi.moveSectionDown()}
       >
-        <p>.</p>
+       <div className="endButton"></div>
       </button>
     </div>
   );

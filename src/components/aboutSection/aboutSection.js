@@ -10,17 +10,15 @@ const AboutSection=(props)=>{
           <i class="arrow up"></i>
         </p>
       </button> */}
-      <p>
-        <h1>WHO ARE WE?</h1>
-        We are designers, developers, creators and much more. What we develop is extraordinary because we can't stanf ordinary. Don't believe yet? Then try us and amuse yourselves.
+        <h1 className="who">WHO ARE WE?</h1>
+        <p className="we">
+        We are designers, developers, creators and much more. What we develop is extraordinary because we can't stand ordinary. Don't believe yet? Then try us and amuse yourselves.
       </p>
       <button
-        class="bt1 d-md-block d-none"
-        onClick={() => fullpageApi.moveSectionDown()}
-      >
-        <p>
-        .
-        </p>
+        class="bt1 abt d-md-block d-none endButtonContainer"
+        onClick={() => fullpageApi.moveSectionDown()}>
+     
+     <div className="endButton"> </div>
       </button>
     </div>
      

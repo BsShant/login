@@ -1,14 +1,28 @@
-.photo{
+/* .photo{
     height: 300px;
     width: 300px;
     border-radius:50%;
     padding: 0px 71px 0px 71px;
   
+} */
+.item{
+    height:381px;
+    padding-top:10px;
+}
+.owl-theme .owl-nav{
+    color:transparent;
+}
+.owl-theme .owl-dots .owl-dot span{
+    background:gray;
+}
+.owl-theme .owl-dots .owl-dot.active span{
+    background:white;
 }
 .card{
-    width: 18rem !important;
-    height: 20rem !important;
-    background:#000000b0;
+    
+    width: 16rem !important;
+    height: 21rem !important;
+    background: rgba(0,0,0,0.5);
     box-shadow: 0 5px 10px -8px #000000;
     padding:24px;
     margin-right: 211px;
@@ -21,4 +35,44 @@
     color:white;
 }
 
+.owl-item.active.center .card{
+    width: 17rem !important;
+    height: 23rem !important;
+    transition: all 0.5s linear;
+    transform: scale(1);
+    background: rgba(0,0,0,0.9);
+}
+@media(max-width:768px){
+    .item{
+    padding-left: 120px;
+    }
+    .owl-theme .owl-dots {
+        text-align: center;
+        -webkit-tap-highlight-color: transparent;
+    }
+}
 
+.imgholder{
+    height:35%;
+    width:50%;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+}
+.owl-theme .owl-nav{
+    display:none;
+}
+.testBtn{
+    left:47%
+}
+.owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+.owl-theme .owl-dots {
+    text-align: center;
+    margin-left: -30px;
+    -webkit-tap-highlight-color: transparent;
+}

@@ -10,6 +10,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import { MenuListItem } from "../menuListItem/menuListItem";
 
 const Navigation = (props) => {
   const {navigateTo, navigationToName} = props
@@ -38,34 +39,26 @@ const Navigation = (props) => {
         >
           <Offcanvas.Header closeButton>
             <Offcanvas.Title id="offcanvasNavbarLabel">
-              <button className="teambtn">
+              <button className="teambtn" style={{borderStyle:"solid"}}>
               <Link to={navigateTo}>{navigationToName}</Link>
               </button>
             </Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
-            <Nav className=" justify-content-end flex-grow-1 pe-3">
-              <Nav.Link id="linkit" href="#firstPage">
-                <FontAwesomeIcon icon={faHouse} />
-                Home
-              </Nav.Link>
-              <Nav.Link id="linkit" href="#secondPage">
-                <FontAwesomeIcon icon={faInfoCircle} />
-                About
-              </Nav.Link>
-              <Nav.Link id="linkit" href="#thirdPage">
-                <FontAwesomeIcon icon={faGears} />
-                Services
-              </Nav.Link>
-              <Nav.Link id="linkit" href="#fourthPage">
-                <FontAwesomeIcon icon={faUserGroup} />
-                Alumini
-              </Nav.Link>
-              <Nav.Link id="linkit" href="#fifthPage">
-                <FontAwesomeIcon icon={faPhoneSquare} />
-                Contacts
-              </Nav.Link>
-            </Nav>
+          <ul id="linkit" className="links">
+       <MenuListItem data-menuanchor="firstPage" className="active"  href="#firstPage" icon={<FontAwesomeIcon icon={faHouse} className="icon" />}
+       name="Home"
+       />
+         <MenuListItem data-menuanchor="secondPage" href="#secondPage" icon={ <FontAwesomeIcon icon={faInfoCircle} className="icon" />}
+       name="About"
+       />  <MenuListItem data-menuanchor="thirdPage"   href="#thirdPage" icon={ <FontAwesomeIcon icon={faGears} className="icon" />}
+       name="Services"
+       />  <MenuListItem data-menuanchor="fourthPage"  href="#fourthPage" icon={<FontAwesomeIcon icon={faUserGroup} className="icon" />}
+       name="Testimonials"
+       />  <MenuListItem data-menuanchor="fifthPage"  href="#fifthPage" icon={  <FontAwesomeIcon icon={faPhoneSquare} className="icon" />}
+       name="Contacts"
+       />
+      </ul>
           </Offcanvas.Body>
         </Navbar.Offcanvas>
       </Container>

@@ -4,37 +4,34 @@ import ImageFour from "../assets/images/4.webp";
  
 
 
-const ThirdPage=(props)=>{
+const FourthPage=(props)=>{
     const {fullpageApi} = props
     return(
         <div className="aboutSection">
-          <h1>
-            Team
-          </h1>
           <div class="row">
 
           <div className=" col-lg-4 col-md-6 col-sm-12 col-12">
           <div className="img-holder">
           <img class="leaders" src={ImageFour}></img><br/>
           </div>
-          <p>Rojan Mul</p><br/>
-          Managing Director
+          <p>Name</p><br/>
+          Position
           </div>
 
           <div className=" col-lg-4 col-md-6 col-sm-12 col-12">
           <div className="img-holder">
           <img class="leaders" src={ImageFour}></img><br/>
           </div>
-          <p>Prince G. Sunuwar</p><br/>
-          CEO
+          <p>Name</p><br/>
+          Position
           </div>
         
           <div className=" col-lg-4 col-md-6 col-sm-12 col-12">
           <div className="img-holder">
           <img class="leaders" src={ImageFour}></img><br/>
           </div>
-          <p>Krishna Mul</p><br/>
-          Account Manager
+          <p>Name</p><br/>
+         Position
            </div>
           
       </div>
@@ -44,24 +41,24 @@ const ThirdPage=(props)=>{
    <div className="img-holder">
        <img class="leaders" src={ImageFour}></img><br/>
        </div>
-       <p>Shyam Mul</p><br/>
-          IT Manager</div>
+       <p>Name</p><br/>
+         Position</div>
 
     <div className=" col-lg-4 col-md-6 col-sm-12 col-12">
         <div className="img-holder">
 
     <img class="leaders" src={ImageFour}></img><br/>
         </div>
-    <p>Aryan G. Himali</p><br/>
-     Marketing Manager
+    <p>Name</p><br/>
+    Position
     </div>
 
       <div className=" col-lg-4 col-md-6 col-sm-12 col-12">
       <div className="img-holder">
       <img class="leaders" src={ImageFour}></img><br/>
       </div>
-      <p>Alaka Acharya</p><br/>
-          Multimedia Manager
+      <p>Name</p><br/>
+         Position
         </div>
 
       </div>
@@ -69,4 +66,4 @@ const ThirdPage=(props)=>{
     )
 }
 
-export default ThirdPage;
+export default FourthPage;

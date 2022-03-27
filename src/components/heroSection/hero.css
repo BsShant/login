@@ -1,8 +1,13 @@
 
+
   h2{
     font-family: 'Nexa Bold'!important;
     color: white !important;
   }
-  .wel{
-    font-family: 'nexa light'!important;
+  .wel
+  {color: rgba(255,255,255,.5)!important;
   }
+  .hers{
+    left:50%;
+  }
+ 

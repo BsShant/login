@@ -3,7 +3,8 @@ import ReactFullpage from "@fullpage/react-fullpage";
 import Particle from "../components/particle/particle";
 import FirstPage from "./firstpage";
 import SecondPage from "./Leaderships";
-import ThirdPage from "./thirdPage";
+import ThirdPage from "./Team";
+import FourthPage from "./additionalMember";
 import Navigation from "../components/Navigationbar/Navbar";
 import Footer from "../components/Footer/Footer";
 
@@ -18,7 +19,7 @@ const OurTeamPage = ()=>{
       ];
 
     return(
-        <div> 
+        <div className="teamPage teamPageContainer" > 
             <Particle />
             <Navigation navigateTo='/' navigationToName="Home"/>
             <ReactFullpage
@@ -41,7 +42,7 @@ const OurTeamPage = ()=>{
               <FirstPage fullpageApi={fullpageApi} />
               <SecondPage fullpageApi={fullpageApi} />
               <ThirdPage fullpageApi={fullpageApi} />
-              <div className="aboutSection"></div>
+              <FourthPage fullpageApi={fullpageApi} />
               <div className="aboutSection"></div>
               </div>
              

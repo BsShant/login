@@ -13,13 +13,30 @@ h4{
   color: transparent;
 }
 
+element.style {
+  margin-left: -50px;
+  padding-left: 0px;
+}
+.contcol.col-lg-6 {
+
+ margin-left: -10px;
+}
+
 .sendsms{
+  border-style:solid;
   background: transparent;
     border-radius: 20px;
     border-color:white;
     height:40px;
-    margin-left:-79%;
+    margin-left:-77%;
     margin-top:10%;
+}
+.sendsms p{
+  margin-top: -5px;
+}
+.goLeft{
+  padding-left: 10px;
+  padding-right:10px;
 }
 
 @media(max-width:768px){
@@ -29,8 +46,7 @@ h4{
       border-radius: 20px;
       border-color:white;
       height:40px;
-      margin-left:-64%;
-      margin-top:10%;
+      margin-left: -61% !important;
   }
 }
   .customer{
@@ -40,42 +56,75 @@ h4{
     margin-bottom: 20px;
     font-family: 'Nexa Light'!important;
   }
-  .row{
+  .row.one{
 margin-top: 6%;
 margin-bottom:5%;
-  }
+text-align: left;
+padding-right: 0px;
+margin-right:0px;
+margin: left 0px;
+ }
   .sendsms:hover{
     border-color: gray;
   }
   .sendsms p{
-    color:white;
-   
-
   display: inline-flex;
   justify-content: center;
   align-items: center;
   padding-left: 10px;
   padding-right: 10px;
+  margin-top:-5px;
   }
-  .sendsms p:hover{
-    color:rgba(255,255,255,.5)!important;
+  .contcol.col-lg-6{
+    padding-left: 0px;
+    margin-left: -31px;
+    text-align: left;
+
   }
 
  .contactSection .fp-controlArrow{
      display: none;
  }
+ .send:hover{
+   color:rgba(255,255,255,.5)!important;
+ }
+
+.goLeft{
+  background: transparent;
+  border-radius: 20px;
+  border-style:solid;
+  border-color:white;
+  height:40px;
+  border-radius:20px;
+}
+.goLeft:hover{
+  border-color:rgba(255,255,255,.5)!important;
+}
+.back{
+  color:white;
+  margin-top:-10px;
+}
+.send:hover{
+  color:white;
+}
+.back:hover{
+  color:rgba(255,255,255,.5)!important;
+}
 
  @media (max-width: 768px) {
   .customer {
     display: none!important;
+
   }
 }
 @media(max-width:768px){
-  .servicePrev{
+  .goLeft{
     position: relative;
     border-radius: 5px;
     left:18%;
-    bottom:-1020%;
+    top:408px;
+    border-color:white;
+    color:white;
   }
 }
 
@@ -111,4 +160,9 @@ margin-bottom:5%;
     
  .capt{
    margin-top: 0px;
+ }
+ @media(max-width:768px){
+   .contcol.col-lg-6.col-md-6.col-sm-12{
+     margin-left:-21px!important;
+   }
  }

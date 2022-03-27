@@ -1,8 +1,11 @@
 
 h1{
-    color:white;
+    color: black !important;
     font-weight: bold;
 }
-
- 
-  
+.we{
+    color: rgba(255,255,255,.5)!important;
+}
+.abt{
+    left:50%;
+}
