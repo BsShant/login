@@ -1,15 +1,8 @@
-h1{
-    font-family: 'Nexa Light'!important;
-    color: white !important;
-  }
-  p.weare{
-    font-family: 'nexa light'!important;
-     color: rgba(255,255,255,.5)!important;
-     font-size: 19px;
-  }
- .aboutSection{
-     color:rgba(255,255,255,.5)!important;
-     margin-right: 10px;
-     font-family: 'Nexa Light';
-    }
-   
+h2{
+    color:white;
+    font-family: 'nexa bold';
+}
+.wel{
+    color:rgba(255,255,255,.5)!important;
+    font-family: 'nexa light';
+}

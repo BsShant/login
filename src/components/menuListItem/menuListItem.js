@@ -1,15 +1,23 @@
-import React from 'react'
-
-export const MenuListItem = (props) => {
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHouse,
+  faPhoneSquare,
+  faGears,
+  faUserGroup,
+  faInfoCircle,
+} from "@fortawesome/free-solid-svg-icons";
+import './style.css';
+const MenuListItem = (props) => {
   return (
-    <li  {...props}>
-    <a id="link" href={props.href}><div className="icon-container">
-{
-    props.icon
-}
-</div>
-{   props.name}
-    </a>
-  </li>
-  )
-}
+    <li  className={`${props.className} menuItem`} {...props}>
+      <div className="icon-container">
+
+      {props.icon}
+      </div>
+      <a href={props.href}>{props.name}</a>
+    </li>
+  );
+};
+
+export default MenuListItem;

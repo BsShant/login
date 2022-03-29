@@ -1,11 +1,8 @@
-
 h1{
-    color: black !important;
-    font-weight: bold;
+    color:white;
+    font-family: 'nexa bold';
 }
 .we{
-    color: rgba(255,255,255,.5)!important;
-}
-.abt{
-    left:50%;
+    color:rgba(255,255,255,.5)!important;
+    font-family: 'nexa light';
 }

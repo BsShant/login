@@ -1,5 +1,5 @@
 import React from "react";
-import './first.css'
+import './first.css';
  
 const anchors = [
     "firstPage",
@@ -13,14 +13,16 @@ const FirstPage=(props)=>{
     const {fullpageApi} = props
     return(
         <div className="aboutSection">
-          <h1>
+         
+
+         <h2>
             Welcome To Login
-          </h1>
-          <p className="weare">
-          Scroll down and find out who will bring your imagination to life.
+          </h2>
+          <p className="wel">
+          Scroll down and find out the ones who will bring your imgination to life.
         </p>
-      </div>
-     
+
+     </div>
     )
 }
 

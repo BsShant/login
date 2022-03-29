@@ -18,7 +18,7 @@ const ThirdPage=(props)=>{
           <img class="leaders" src={ImageFour}></img><br/>
           </div>
           <p>Name</p><br/>
-          Position
+          <p className="groups"> Position</p>
           </div>
 
           <div className=" col-lg-4 col-md-6 col-sm-12 col-12">
@@ -26,7 +26,7 @@ const ThirdPage=(props)=>{
           <img class="leaders" src={ImageFour}></img><br/>
           </div>
           <p>Name</p><br/>
-          Position
+          <p className="groups">Position</p>
           </div>
         
           <div className=" col-lg-4 col-md-6 col-sm-12 col-12">
@@ -34,7 +34,7 @@ const ThirdPage=(props)=>{
           <img class="leaders" src={ImageFour}></img><br/>
           </div>
           <p>Name</p><br/>
-         Position
+          <p className="groups">Position</p>
            </div>
           
       </div>
@@ -45,7 +45,7 @@ const ThirdPage=(props)=>{
        <img class="leaders" src={ImageFour}></img><br/>
        </div>
        <p>Name</p><br/>
-         Position</div>
+       <p className="groups"> Position</p></div>
 
     <div className=" col-lg-4 col-md-6 col-sm-12 col-12">
         <div className="img-holder">
@@ -53,7 +53,7 @@ const ThirdPage=(props)=>{
     <img class="leaders" src={ImageFour}></img><br/>
         </div>
     <p>Name</p><br/>
-    Position
+    <p className="groups">Position</p>
     </div>
 
       <div className=" col-lg-4 col-md-6 col-sm-12 col-12">
@@ -61,7 +61,7 @@ const ThirdPage=(props)=>{
       <img class="leaders" src={ImageFour}></img><br/>
       </div>
       <p>Name</p><br/>
-         Position
+      <p className="groups"> Position</p>
         </div>
 
       </div>

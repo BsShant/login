@@ -10,7 +10,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
-import { MenuListItem } from "../menuListItem/menuListItem";
+import MenuListItem from "../menuListItem/menuListItem";
 
 const Navigation = (props) => {
   const {navigateTo, navigationToName} = props
@@ -45,8 +45,8 @@ const Navigation = (props) => {
             </Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
-          <ul id="linkit" className="links">
-       <MenuListItem data-menuanchor="firstPage" className="active"  href="#firstPage" icon={<FontAwesomeIcon icon={faHouse} className="icon" />}
+          <ul id="linkit" className="links sideMenu">
+       <MenuListItem data-menuanchor="firstPage" className="active"  href="#firstPage" icon={<FontAwesomeIcon icon={faHouse} className="active" />}
        name="Home"
        />
          <MenuListItem data-menuanchor="secondPage" href="#secondPage" icon={ <FontAwesomeIcon icon={faInfoCircle} className="icon" />}
@@ -61,8 +61,8 @@ const Navigation = (props) => {
        name="Testimonials"
        />  <MenuListItem data-menuanchor="sixthPage"  href="#sixthPage" icon={  <FontAwesomeIcon icon={faPhoneSquare} className="icon" />}
        name="Contacts"
-       />
-      </ul>
+       /> 
+      </ul> 
           </Offcanvas.Body>
         </Navbar.Offcanvas>
       </Container>

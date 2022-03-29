@@ -4,6 +4,7 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import FirstPage from "./Intro/firstPage";
 import { useEffect, useState } from "react";
+import AnimatingPages from "./animatingPages";
 import Speaker from "./assets/audio/intro-speech.mp3";
 import TypingSound from "./assets/audio/typing.mp3";
 import RouteIndex from "./routes";
@@ -11,7 +12,9 @@ function App() {
   const [displayMainPage, setDisplayMainPage] = useState(false);
   const [displaySecondLoadingPage, setDisplaySecondLoadingPage] =
     useState(false);
-  const [displayFirstLoadingPage, setDisplayFirstLoadingPage] = useState(true);
+  const [displayFirstLoadingPage, setDisplayFirstLoadingPage] = useState(
+    sessionStorage.getItem("opened") ? false : true
+  );
   const [playSpaceAudio, setPlaySpaceAudio] = useState(true);
   const [spaceAudio, setSpaceAudio] = useState(
     new Audio("https://login.com/front/sounds/background.mp3")
@@ -32,16 +35,16 @@ function App() {
 
   useEffect(() => {
     if (displayMainPage) {
-     setTypingAudio(null)
-     setSpeakerAudio(null)
+      setTypingAudio(null);
+      setSpeakerAudio(null);
     }
   }, [displayMainPage]);
-const speakerAudioPlaying  =()=>{
-  console.log('hi')
-  if(displayMainPage){
-    speakerAudio.pause()
-  }
-}
+  const speakerAudioPlaying = () => {
+    console.log("hi");
+    if (displayMainPage) {
+      speakerAudio.pause();
+    }
+  };
   useEffect(() => {
     speakerAudio.addEventListener("ended", moveToMainScreen);
     speakerAudio.addEventListener("playing", speakerAudioPlaying);
@@ -49,15 +52,14 @@ const speakerAudioPlaying  =()=>{
     return () => {
       speakerAudio.removeEventListener("ended", moveToMainScreen);
       speakerAudio.removeEventListener("playing", speakerAudioPlaying);
-
     };
   }, []);
 
   return (
     <div>
       {displayMainPage ? (
-        <RouteIndex speakerAudio={speakerAudio} typingAudio={typingAudio}/>
-      ) : (
+        <RouteIndex speakerAudio={speakerAudio} typingAudio={typingAudio} />
+      ) : displayFirstLoadingPage ? (
         <FirstPage
           playSpaceAudio={playSpaceAudio}
           setPlaySpaceAudio={setPlaySpaceAudio}
@@ -68,6 +70,10 @@ const speakerAudioPlaying  =()=>{
           setDisplayMainPage={setDisplayMainPage}
           displayMainPage={displayMainPage}
         />
+      ) : (
+        <div>
+          <AnimatingPages setDisplayMainPage={setDisplayMainPage}/>
+        </div>
       )}
     </div>
   );

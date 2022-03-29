@@ -24,7 +24,7 @@ const SecondPage=(props)=>{
           <img class="leaders" src={ImageFour}></img><br/>
           </div>
           <p>Rojan Mul</p><br/>
-          Managing Director
+         <p className="groups"> Managing Director</p>
           </div>
 
           <div className=" col-lg-4 col-md-6 col-sm-12 col-12">
@@ -32,7 +32,7 @@ const SecondPage=(props)=>{
           <img class="leaders" src={ImageFour}></img><br/>
           </div>
           <p>Prince G. Sunuwar</p><br/>
-          CEO
+          <p className="groups">CEO</p>
           </div>
         
           <div className=" col-lg-4 col-md-6 col-sm-12 col-12">
@@ -40,7 +40,7 @@ const SecondPage=(props)=>{
           <img class="leaders" src={ImageFour}></img><br/>
           </div>
           <p>Krishna Mul</p><br/>
-          Account Manager
+          <p className="groups">Account Manager</p>
            </div>
           
       </div>
@@ -51,7 +51,8 @@ const SecondPage=(props)=>{
        <img class="leaders" src={ImageFour}></img><br/>
        </div>
        <p>Shyam Mul</p><br/>
-          IT Manager</div>
+       <p className="groups">IT Manager</p>
+       </div>
 
     <div className=" col-lg-4 col-md-6 col-sm-12 col-12">
         <div className="img-holder">
@@ -59,7 +60,7 @@ const SecondPage=(props)=>{
     <img class="leaders" src={ImageFour}></img><br/>
         </div>
     <p>Aryan G. Himali</p><br/>
-     Marketing Manager
+    <p className="groups">Marketing Manager</p>
     </div>
 
       <div className=" col-lg-4 col-md-6 col-sm-12 col-12">
@@ -67,7 +68,7 @@ const SecondPage=(props)=>{
       <img class="leaders" src={ImageFour}></img><br/>
       </div>
       <p>Alaka Acharya</p><br/>
-          Multimedia Manager
+      <p className="groups"> Multimedia Manager</p>
         </div>
 
       </div>

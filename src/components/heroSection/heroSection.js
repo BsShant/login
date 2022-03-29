@@ -1,6 +1,5 @@
 import React from "react";
-import './hero.css'
- 
+ import './hero.css'
 const anchors = [
     "firstPage",
     "secondPage",

@@ -9,10 +9,13 @@ const FirstPage = (props) => {
     setPlaySpaceAudio,
     typingAudio,
     speakerAudio,
+    setSpeakerAudio,
     displayMainPage,
   } = props;
 
   const [showDetails, setShowDetails] = useState(false);
+  const [secondParagraph, setSecondParagraph] = useState(false);
+
   return (
     <div className="titleFrontPage">
       {!showDetails ? (
@@ -49,31 +52,39 @@ const FirstPage = (props) => {
             <Typing
               speed={120}
               hideCursor={true}
-              onAfterType={() => typingAudio.play()}
-              onFinishedTyping={() => typingAudio.pause()}
+              onStartedTyping={() => {
+                typingAudio.play();
+              }}
+              onFinishedTyping={() => {
+                setSecondParagraph(true);
+                typingAudio.pause();
+              }}
             >
-              Everyone has Story to Tell
+              <h2>Everyone has Story to Tell</h2>
             </Typing>
           ) : null}
-          {!displayMainPage ? (
+
+          {secondParagraph ? (
             <Typing
-              speed={60}
+              speed={50}
               hideCursor={true}
-              startDelay={5000}
-              onAfterType={() => {
+              onStartedTyping={() => {
                 speakerAudio.play();
               }}
               onFinishedTyping={() => {
                 // setDisplayMainPage(true);
               }}
             >
-              In the end of the 5th century before our time the first jewels
-              were brought to Europe. Since then many have tried to recreate
-              something similar in value and in beauty. Some have achieved,
-              however many have failed because of their lack of knowledge time
-              or other resources. To this day jewels are thought to be one of
-              the most precious gems on earth. Although we don't create jewels,
-              we do imagine ourselves as jewelers. Just from a different angle
+              <p>
+                In the end of the 5th century before our time the first jewels
+                were brought to Europe. Since then many have tried to recreate
+                something similar in value and in beauty. Some have achieved,
+                however many have failed because of their lack of knowledge time
+                or other resources. To this day jewels are thought to be one of
+                the most precious gems on earth. Although we don't create
+                jewels, we do imagine ourselves as jewelers. Just from a
+                different angle.
+              </p>
             </Typing>
           ) : null}
           <button
