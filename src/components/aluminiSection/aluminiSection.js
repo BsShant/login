@@ -19,15 +19,11 @@ const AluminiSection = (props) => {
   const { fullpageApi } = props;
   return (
     <div className="section">
-      {/* <button class="bt1" onClick={() => fullpageApi.moveSectionUp()}>
-        <p>
-          <i class="arrow up"></i>
-        </p>
-      </button> */}
+     
 
       <h1>Testimonials</h1>
       <div>
-        <OwlCarousel className="owl-theme" loop={true} center={true} autoplay={true} margin={10} nav
+        <OwlCarousel className="owl-theme testimonial" loop={true} center={true} autoplay={true} margin={10} nav={false}
         responsive={{
             // breakpoint from 0 up
             0 : {

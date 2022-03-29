@@ -7,6 +7,7 @@ import Navigation from "../../components/Navigationbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import HeroSection from "../../components/heroSection/heroSection";
 import AboutSection from "../../components/aboutSection/aboutSection";
+import PortofolioSection from "../../components/portofolio/portofolioSection"
 import ServicesSection from "../../components/servicesSection/servicesSection";
 import AluminiSection from '../../components/aluminiSection/aluminiSection';
 import ContactSection from "../../components/contactSection/contactSection";
@@ -15,10 +16,7 @@ import { useEffect, useState } from "react";
 
 function HomePage() {
   const [audio, setAudio] = useState(new Audio('https://logindesigns.com/front/sounds/background.mp3'));
-  useEffect(()=>{
-    audio.play()
-    audio.loop = true
-    },[])
+ 
   
 
   const anchors = [
@@ -27,6 +25,7 @@ function HomePage() {
     "thirdPage",
     "fourthPage",
     "fifthPage",
+    "sixthPage",
   ];
 
   return (
@@ -56,6 +55,7 @@ function HomePage() {
               <div className="container">
              <HeroSection fullpageApi={fullpageApi} />
              <AboutSection fullpageApi={fullpageApi} />
+             <PortofolioSection fullpageApi={fullpageApi} />
              <ServicesSection fullpageApi={fullpageApi} />
              <AluminiSection fullpageApi={fullpageApi} />
               <ContactSection fullpageApi={fullpageApi}/>
