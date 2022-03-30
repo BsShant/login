@@ -6,3 +6,12 @@ h2{
     color:rgba(255,255,255,.5)!important;
     font-family: 'nexa light';
 }
+.hers{
+    left:50%;
+}
+@media(max-width:768px){
+    .hero{
+        width:100vw;
+        margin-left:25px;
+    }
+}

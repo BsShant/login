@@ -210,7 +210,7 @@ const ServicesSection = (props) => {
       </div>
 
       <button
-        class="bt1  endButtonContainer d-md-block d-none"
+        class="bt1 serv endButtonContainer d-md-block d-none"
         onClick={() => fullpageApi.moveSectionDown()}
       >
         <div className="endButton">

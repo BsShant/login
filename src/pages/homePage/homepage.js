@@ -25,7 +25,7 @@ function HomePage() {
     "thirdPage",
     "fourthPage",
     "fifthPage",
-    "sixthPage",
+    
   ];
 
   return (
@@ -55,7 +55,6 @@ function HomePage() {
               <div className="container">
              <HeroSection fullpageApi={fullpageApi} />
              <AboutSection fullpageApi={fullpageApi} />
-             <PortofolioSection fullpageApi={fullpageApi} />
              <ServicesSection fullpageApi={fullpageApi} />
              <AluminiSection fullpageApi={fullpageApi} />
               <ContactSection fullpageApi={fullpageApi}/>

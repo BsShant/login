@@ -83,13 +83,18 @@ display: none;
   .serviceFullScreen {
     display: none!important;
   }
+  .endButtonContainer{
+    display: none !important;
+  }
   
   .feel{
     margin:0px 0px 0px 0px;
     padding:0px 0px 0px 0px;
+    width:100vw;
   }
   .serviceSection{
     padding-top: 80px;
+    padding-left:43px;
   }
   .servicePrev{
     margin-right:79%;
@@ -134,5 +139,15 @@ transform: translateY(15px);
 @media (min-width:1200px){
   .container{
     width:140%;
+  }
+}
+@media (max-width:992px){
+  .container{
+    width:172%;
+    padding-left:0px;
+    margin-left:-36px;
+  }
+  .serv{
+    margin-left:88px;
   }
 }

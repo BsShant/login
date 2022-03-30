@@ -28,7 +28,7 @@ element.style {
     border-radius: 20px;
     border-color:white;
     height:40px;
-    margin-left:-77%;
+    margin-left:-73%;
     margin-top:10%;
 }
 .sendsms p{
@@ -39,14 +39,14 @@ element.style {
   padding-right:10px;
 }
 
-@media(max-width:768px){
+@media(max-width:992px){
 .sendsms{
     margin-left: 100;
     background: transparent;
       border-radius: 20px;
       border-color:white;
       height:40px;
-      margin-left: -61% !important;
+      margin-left: -61%;
   }
 }
   .customer{
@@ -114,10 +114,17 @@ margin: left 0px;
  @media (max-width: 768px) {
   .customer {
     display: none!important;
-
   }
+  .sendsms{
+    margin-left: -48%!important;
+  }
+  .continfo{
+    text-align: left!important;
+    line-height: 2;
+    margin-top: 5%;
+    margin-left:46px;
 }
-@media(max-width:768px){
+
   .goLeft{
     position: relative;
     border-radius: 5px;

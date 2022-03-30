@@ -56,6 +56,9 @@ body {
   .copyright{
     margin-bottom: -19px;
   }
+  .bt1{
+    display:none;
+  }
 }
 
 .fp-slidesNav{

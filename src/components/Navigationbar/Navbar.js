@@ -52,14 +52,11 @@ const Navigation = (props) => {
          <MenuListItem data-menuanchor="secondPage" href="#secondPage" icon={ <FontAwesomeIcon icon={faInfoCircle} className="icon" />}
        name="About"
        /> 
-       <MenuListItem data-menuanchor="thirdPage"   href="#thirdPage" icon={ <FontAwesomeIcon icon={faGears} className="icon" />}
-       name="Portofolio"
-       />
-        <MenuListItem data-menuanchor="fourthPage"   href="#fourthPage" icon={ <FontAwesomeIcon icon={faGears} className="icon" />}
+        <MenuListItem data-menuanchor="thirdPage"   href="#thirdPage" icon={ <FontAwesomeIcon icon={faGears} className="icon" />}
        name="Services"
-       />  <MenuListItem data-menuanchor="fifthPage"  href="#fifthPage" icon={<FontAwesomeIcon icon={faUserGroup} className="icon" />}
+       />  <MenuListItem data-menuanchor="fourthPage"  href="#fourthPage" icon={<FontAwesomeIcon icon={faUserGroup} className="icon" />}
        name="Testimonials"
-       />  <MenuListItem data-menuanchor="sixthPage"  href="#sixthPage" icon={  <FontAwesomeIcon icon={faPhoneSquare} className="icon" />}
+       />  <MenuListItem data-menuanchor="fifthPage"  href="#fifthPage" icon={  <FontAwesomeIcon icon={faPhoneSquare} className="icon" />}
        name="Contacts"
        /> 
       </ul> 

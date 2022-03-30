@@ -14,7 +14,7 @@
 }
 .card{
     
-    width: 16rem !important;
+    width: 17rem !important;
     height: 21rem !important;
     background: rgba(0,0,0,0.5);
     box-shadow: 0 5px 10px -8px #000000;
@@ -30,11 +30,13 @@
 }
 
 .testimonial .owl-item.active.center .card{
-    width: 17rem !important;
+    width: 16rem !important;
     height: 23rem !important;
     transition: all 0.5s linear;
     transform: scale(1);
     background: rgba(0,0,0,0.9);
+    margin-right:-21px!important;
+    margin-left:-21px!important;
 }
 @media(max-width:768px){
     .owl-theme .owl-nav {
@@ -51,6 +53,15 @@
         -webkit-tap-highlight-color: transparent;
     }
 }
+@media(min-width:992px)and(max-width: 1024){
+    .section{
+        width:90%;
+    }
+    .owl-stage-outer{
+        width:125%;
+        overflow: hidden!important;
+    }
+}
 
 .imgholder{
     height:35%;
@@ -59,9 +70,13 @@
     overflow: hidden;
     margin: auto;
 }
+.owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: 10px;
+    margin-left: -80px;
+}
 
 .testBtn{
-    left:47%
+    left:45%
 }
 .owl-carousel .testimonial .owl-item img {
     display: block;
@@ -71,7 +86,7 @@
 }
 .owl-theme .testimonial .owl-dots {
     text-align: center;
-    margin-left: -30px;
+    margin-left: -40px;
     -webkit-tap-highlight-color: transparent;
 }
 .owl-carousel .owl-item img{

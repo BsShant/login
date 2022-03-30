@@ -24,6 +24,8 @@ const AluminiSection = (props) => {
       <h1>Testimonials</h1>
       <div>
         <OwlCarousel className="owl-theme testimonial" loop={true} center={true} autoplay={true} margin={10} nav={false}
+            responsiveClass={true}
+
         responsive={{
             // breakpoint from 0 up
             0 : {
@@ -37,10 +39,17 @@ const AluminiSection = (props) => {
               // autoHeight: true,
               items: 1
             },
-            // breakpoint from 768 up
             768 : {
-              items: 3
-            }
+              items: 2,
+              center: false,
+
+            },
+            // breakpoint from 768 up
+            992 : {
+              items: 3,
+            },
+             // breakpoint from 992 up
+           
           }}
         >
           <div class="item">
