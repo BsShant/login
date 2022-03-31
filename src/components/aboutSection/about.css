@@ -9,3 +9,8 @@ h1{
 .abt{
     left:50%;
 }
+@media (max-width: 768px){
+    button.bt1.abt.d-md-block.d-none.endButtonContainer {
+        display: none!important;
+    }
+    }

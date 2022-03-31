@@ -8,9 +8,11 @@ import {
   faInfoCircle,
 } from "@fortawesome/free-solid-svg-icons";
 import './style.css';
+import { useLocation } from "react-router-dom";
 const MenuListItem = (props) => {
+  const location = useLocation()
   return (
-    <li  className={`${props.className} menuItem`} {...props}>
+    <li  eventKey={`${props.href}`} onClick={()=>props.handleClose()}   className={` ${props.sideMenu && location.hash === props.href? 'sideMenuActive' : ''} ${props.className} menuItem`} {...props}>
       <div className="icon-container">
 
       {props.icon}

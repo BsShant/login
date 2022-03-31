@@ -24,6 +24,9 @@
 .icon-container:hover{
   background: white;
 }
+.icon-container:active{
+  background: white;
+}
  .icon-container svg{
    font-size: 13px;
     margin-right: 0!important;
@@ -59,5 +62,8 @@
   }
   #myMenu li svg{
     margin-right: 5px;
-    color:rgba(255,255,255,.5)!important;
+    color: rgba(0,0,0,0.5)!important;
+  }
+  #myMenu li:active svg{
+    color: rgba(0,0,0,0.5)!important;
   }

@@ -14,7 +14,7 @@ const Menu = () => {
     <ul id="myMenu" className="menu leftMenu d-md-block d-none">
       <MenuListItem
         data-menuanchor="firstPage"
-        className="active"
+        // className="active"
         href="#firstPage"
         icon={<FontAwesomeIcon icon={faHouse} className="icon" />}
         name="Home"

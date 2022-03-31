@@ -35,7 +35,7 @@ const FirstPage = (props) => {
             <button
               class="btn1 "
               onClick={() => {
-                setPlaySpaceAudio(false);
+                setPlaySpaceAudio(true);
                 setDisplayMainPage(true);
               }}
             >
@@ -65,32 +65,38 @@ const FirstPage = (props) => {
           ) : null}
 
           {secondParagraph ? (
+            <>
+            
             <Typing
-              speed={50}
+              speed={58}
               hideCursor={true}
               onStartedTyping={() => {
                 speakerAudio.play();
               }}
               onFinishedTyping={() => {
+                setPlaySpaceAudio(true);
                 // setDisplayMainPage(true);
               }}
             >
-              <p>
+              <p style={{marginLeft:"10px"}}>
                 In the end of the 5th century before our time the first jewels
                 were brought to Europe. Since then many have tried to recreate
-                something similar in value and in beauty. Some have achieved,
-                however many have failed because of their lack of knowledge time
+                something similar in value and in beauty.
+                Some have achieved,
+                however many have failed because of their lack of knowledge,  time
                 or other resources. To this day jewels are thought to be one of
                 the most precious gems on earth. Although we don't create
                 jewels, we do imagine ourselves as jewelers. Just from a
-                different angle.
-              </p>
-            </Typing>
+                different angle.</p>
+                </Typing>
+            </>
+              
           ) : null}
           <button
             class="btn1 "
             onClick={() => {
               setDisplayMainPage(true);
+              setPlaySpaceAudio(true);
               typingAudio.pause();
               speakerAudio.pause();
             }}

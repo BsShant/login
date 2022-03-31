@@ -21,7 +21,7 @@ const HeroSection=(props)=>{
         </p>
         </div>
         <button
-          class="bt1 hers d-md-block d-none endButtonContainer"
+          class="bt1 hers endButtonContainer d-md-block d-none "
           onClick={() => fullpageApi.moveSectionDown()}
         >
           <div className="endButton"></div>

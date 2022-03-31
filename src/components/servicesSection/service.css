@@ -151,3 +151,8 @@ transform: translateY(15px);
     margin-left:88px;
   }
 }
+@media (max-width: 768px){
+  button.bt1.serv.d-md-block.d-none.endButtonContainer {
+      display: none!important;
+  }
+  }

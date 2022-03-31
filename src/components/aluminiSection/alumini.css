@@ -12,8 +12,7 @@
 .owl-theme .testimonial .owl-dots .owl-dot.active span{
     background:white;
 }
-.card{
-    
+.card{  
     width: 17rem !important;
     height: 21rem !important;
     background: rgba(0,0,0,0.5);
@@ -35,8 +34,7 @@
     transition: all 0.5s linear;
     transform: scale(1);
     background: rgba(0,0,0,0.9);
-    margin-right:-21px!important;
-    margin-left:-21px!important;
+    left:9px;
 }
 @media(max-width:768px){
     .owl-theme .owl-nav {
@@ -46,22 +44,64 @@
         -webkit-tap-highlight-color: transparent;
     }
     .item{
-    padding-left: 120px;
+    padding-left: 256px;
     }
-    .owl-theme .testimonial .owl-dots {
-        text-align: center;
-        -webkit-tap-highlight-color: transparent;
+    .owl-theme .owl-dots {
+        margin-left: 49%;
+}
+    .test{
+        margin-left:49%;
+    }
+   
+}
+
+@media(max-width:575px){
+    .item{
+        padding-left: 109px;
+        } 
+        .test{
+            margin-left: -458px;
+        }
+        .owl-theme .owl-dots {
+           display: none;
     }
 }
-@media(min-width:992px)and(max-width: 1024){
+
+@media(min-width:768px)and(max-width: 992px){
+    .owl-theme .owl-dots {
+        margin-left: 0px!important;
+}
+}
+
+
+@media(min-width:992px)and(max-width: 1200px){
     .section{
-        width:90%;
+        width:83%;
     }
-    .owl-stage-outer{
-        width:125%;
+    .owl-carousel .owl-stage-outer{
+        width:105%;
         overflow: hidden!important;
     }
+    .testimonial .owl-item.active.center .card{
+        width: 12rem !important;
+        height: 22rem !important;
+    
+    }
+    .testimonial .owl-item{
+        width: 12rem !important;
+
+    }
+
+    .card{
+        width: 10rem !important;
+    }
+
+    .owl-theme .owl-dots {
+        margin-left: 49%;
 }
+}
+
+
 
 .imgholder{
     height:35%;
@@ -70,13 +110,10 @@
     overflow: hidden;
     margin: auto;
 }
-.owl-theme .owl-nav.disabled + .owl-dots {
-    margin-top: 10px;
-    margin-left: -80px;
-}
+
 
 .testBtn{
-    left:45%
+    left:49%
 }
 .owl-carousel .testimonial .owl-item img {
     display: block;
@@ -94,3 +131,12 @@
     width:100%;
     height:100%;
 }
+@media (max-width: 768px){
+button.bt1.testBtn.d-md-block.d-none.endButtonContainer {
+    display: none!important;
+}
+}
+.owl-item{
+width: 250px;
+}
+
