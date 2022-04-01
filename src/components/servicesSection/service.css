@@ -16,19 +16,18 @@
   padding-left: 0px;
   padding-right: 0px;
 }
-  h5{
+h5{
     margin-left: 8px;
     color: white !important;
-    }
-    .column{
+ }
+.column{
       padding-right:15px;
       padding-left:15px;
-    }
-    
-    .cont{
+}  
+.cont{
       align-items: center;
       width: 140% !important;
-    }
+}
 .row-md-6{
   text-align: left;
 }
@@ -83,6 +82,9 @@ display: none;
   .serviceFullScreen {
     display: none!important;
   }
+  button.bt1.serv.d-md-block.d-none.endButtonContainer {
+    display: none!important;
+}
   .endButtonContainer{
     display: none !important;
   }
@@ -107,14 +109,12 @@ display: none;
     display: block!important;
     }
 }
-
 .serviceSmallScreen .fp-controlArrow{
   display: none!important;
 }
 .serviceSmallScreen .fp-tableCell{
   vertical-align: top;
 }
-
 .endButton{
   height: 6px;
   width: 6px;
@@ -135,7 +135,6 @@ display: none;
 .endButtonContainer:hover .endButton{
 transform: translateY(15px);
 }
-
 @media (min-width:1200px){
   .container{
     width:140%;
@@ -151,8 +150,3 @@ transform: translateY(15px);
     margin-left:88px;
   }
 }
-@media (max-width: 768px){
-  button.bt1.serv.d-md-block.d-none.endButtonContainer {
-      display: none!important;
-  }
-  }

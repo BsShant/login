@@ -36,6 +36,8 @@
     }
     .items .social svg{
       margin-right: 10px;
+      font-size: 25px;
+      color: rgba(255,255,255,.5)!important;
      }
     .items .social{
       background: transparent;
@@ -45,10 +47,6 @@
     }
     .items .social:hover{
       color:white;
-    }
-    .items .social svg{
-      font-size: 25px;
-      color: rgba(255,255,255,.5)!important;
     }
     
     @media only screen and (max-width: 768px) {

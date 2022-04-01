@@ -9,7 +9,7 @@
   height:100vh;
   overflow: hidden;
   position:relative;
-  background-position: center;
+  background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
   text-align:center;
@@ -35,25 +35,27 @@ code {
 }
 @keyframes change {
   0%{
-   background-image: url('../../assets/images/1.webp');
+   background-image: url('../../assets/images/b1.jpg');
   }
-  17%{
-    background-image: url('../../assets/images/2.jpg');
+  15%{
+    background-image: url('../../assets/images/b2.jpg');
   }
-  34%{
-    background-image: url('../../assets/images/3.webp');
+  30%{
+    background-image: url('../../assets/images/b3.jpg');
   }
-  51%{
-    background-image: url('../../assets/images/4.webp');
+  45%{
+    background-image: url('../../assets/images/b4.jpg');
   }
-  68%{
-    background-image: url('../../assets/images/5.png');
+  60%{
+    background-image: url('../../assets/images/b5.jpg');
   }
-  85%{
-    background-image: url('../../assets/images/6.webp');
+  75%{
+    background-image: url('../../assets/images/b6.jpg');
+  }
+  90%{
+    background-image: url('../../assets/images/b7.jpg');
   }
   100%{
-    background-image: url('../../assets/images/7.webp');
-  }
- 
+    background-image: url('../../assets/images/b1.jpg');
+   }
 }

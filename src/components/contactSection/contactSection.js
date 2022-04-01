@@ -31,7 +31,7 @@ const ContactSection=(props)=>{
             
        <div class="continfo">
           <h4>Customer service</h4>
-          <h2>CUSTOMER</h2>
+          <h2 style={{marginLeft:"0px"}}>CUSTOMER</h2>
      Feel free to reach out to us with any questions. We are very friendly and always open to discussing new projects, interesting ideas.
      <div className="row one" style={{padding:"0",justifyFlex:"flex-start"}}>
        <div class=" contcol col-lg-6 col-md-6 col-sm-12" style={{marginLeft:"-111px",paddingLeft:"0px"}}>

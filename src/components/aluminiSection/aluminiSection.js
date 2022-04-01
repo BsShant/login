@@ -2,10 +2,10 @@ import React from "react";
 import "./alumini.css";
 import OwlCarousel from "react-owl-carousel";
 import { Card } from "react-bootstrap";
-import ImageOne from "../../assets/images/1.webp";
-import ImageTwo from "../../assets/images/2.jpg";
-import ImageThree from "../../assets/images/3.webp";
-import ImageFour from "../../assets/images/4.webp";
+import ImageOne from "../../assets/images/b1.jpg";
+import ImageTwo from "../../assets/images/b2.jpg";
+import ImageThree from "../../assets/images/b3.jpg";
+import ImageFour from "../../assets/images/b4.jpg";
 const anchors = [
   "firstPage",
   "secondPage",
@@ -47,6 +47,7 @@ const AluminiSection = (props) => {
             992 : {
               items: 3,
               margin: 30,
+
             },
            
           }}

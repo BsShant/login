@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
 import Particle from "../components/particle/particle";
 import FirstPage from "./firstpage";
@@ -7,8 +7,12 @@ import ThirdPage from "./Team";
 import FourthPage from "./additionalMember";
 import Navigation from "../components/Navigationbar/Navbar";
 import Footer from "../components/Footer/Footer";
+import ScrollSound from '../assets/audio/slideGem.mp3';
+
 
 const OurTeamPage = ()=>{
+  const [audio, setAudio] = useState(new Audio(ScrollSound));
+  const [normalRotate, setNormalRotate] = useState(false)
 
     const anchors = [
         "firstPage",
@@ -34,15 +38,27 @@ const OurTeamPage = ()=>{
         slidesNavigation={true}
         slidesNavPosition={"top"}
         licenseKey={"YOUR_KEY_HERE"}
+        onLeave={()=>{
+          audio.play()
+          setTimeout(()=>{
+            setNormalRotate(false)
+          },10)
+          setTimeout(()=>{
+          },500)
+        }}
+        afterLoad={()=>{
+          setNormalRotate(true)
+
+        }}
         scrollingSpeed={1000} /* Options here */
         render={({ state, fullpageApi }) => {
           return (
             <ReactFullpage.Wrapper>
               <div className="team-container">
               <FirstPage fullpageApi={fullpageApi} />
-              <SecondPage fullpageApi={fullpageApi} />
-              <ThirdPage fullpageApi={fullpageApi} />
-              <FourthPage fullpageApi={fullpageApi} />
+              <SecondPage fullpageApi={fullpageApi} normalRotate={normalRotate} setNormalRotate={setNormalRotate}/>
+              <ThirdPage fullpageApi={fullpageApi}  normalRotate={normalRotate}  setNormalRotate={setNormalRotate} />
+              <FourthPage fullpageApi={fullpageApi}  normalRotate={normalRotate}  setNormalRotate={setNormalRotate} />
               <div className="aboutSection"></div>
               </div>
              

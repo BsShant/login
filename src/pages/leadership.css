@@ -13,19 +13,17 @@
 .col{
     margin-bottom: 20px !important;
 }
-
 p{
     padding-top: 10px;
     color: white !important;
     margin:auto;
     justify-content: center;
 }
+
 .leaders{
-   
     width:100%;
     height:100%;
     border-radius: 50%;
-   
 }
 .img-holder{
     height:200px;
@@ -35,9 +33,15 @@ p{
     border: 2px white solid;
     overflow: hidden;
     margin: auto;
+    transform: rotate(180deg);
+    transition: all 1s linear;
 
    
 }
+.normal-rotate{
+    transform: rotate(0deg)!important;
+}
+
 .img-holder:hover{
     border-width: 8px!important;
     background: white!important;
@@ -48,8 +52,6 @@ p{
     transform: translate(2px,2px,-1px);
   
 }
-
-
 @media(max-width:768px){
     .row{
         align-items: center;

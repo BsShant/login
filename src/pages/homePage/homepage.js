@@ -11,11 +11,12 @@ import PortofolioSection from "../../components/portofolio/portofolioSection"
 import ServicesSection from "../../components/servicesSection/servicesSection";
 import AluminiSection from '../../components/aluminiSection/aluminiSection';
 import ContactSection from "../../components/contactSection/contactSection";
+import ScrollSound from '../../assets/audio/slideGem.mp3';
 import Menu from "../../components/Menu/Menu";
 import { useEffect, useState } from "react";
 
 function HomePage() {
-  const [audio, setAudio] = useState(new Audio('https://logindesigns.com/front/sounds/background.mp3'));
+  const [audio, setAudio] = useState(new Audio(ScrollSound));
  
   
 
@@ -49,6 +50,9 @@ function HomePage() {
         licenseKey={"YOUR_KEY_HERE"}
         menu={"#myMenu"}
         scrollingSpeed={1000} /* Options here */
+        onLeave={()=>{
+          audio.play()
+        }}
         render={({ state, fullpageApi }) => {
           return (
             <ReactFullpage.Wrapper>

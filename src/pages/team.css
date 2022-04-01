@@ -13,7 +13,6 @@
  .col{
      margin-bottom: 20px !important;
  }
- 
  p{
      padding-top: 10px;
      color: white !important;
@@ -41,9 +40,14 @@
      border: 2px white solid;
      overflow: hidden;
      margin: auto;
- 
-    
+     transform: rotate(180deg);
+     transition: all 0ms linear; 
  }
+ .normal-rotate{
+    transform: rotate(0deg)!important;
+    transition: all 800ms linear; 
+
+}
  .img-holder:hover{
      border-width: 8px!important;
      background: white!important;
@@ -54,8 +58,6 @@
      transform: translate(2px,2px,-1px);
    
  }
- 
- 
  @media(max-width:768px){
      .row{
          align-items: center;
@@ -86,9 +88,6 @@
      overflow: hidden;
      margin: auto;}
  }
-
-
-
  .teamPageContainer{
     width:100%;
     height:100vh;

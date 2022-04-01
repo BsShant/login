@@ -87,7 +87,6 @@
 .offcanvas-body{
   margin-left:-29px;
 }
-
 .btn-close {
   box-sizing: content-box;
   width: 1em;
@@ -108,11 +107,6 @@
   background-image: url('../../assets/images/img10.jpg');
   color:white;
 }
-
-
-
-
-
 #linkit{
   list-style: none;
   position: absolute;
@@ -120,8 +114,6 @@
   top: 80px;
   z-index: 100;
 }
-
-
 .icon-container{
 display: inline-flex;
 height: 32px;
@@ -151,8 +143,6 @@ align-items: center;
 .sideMenu .active .icon-container {
   background: white !important;
 }
-
-
 .sideMenu a{
   text-decoration: none;
   font-weight:400;
