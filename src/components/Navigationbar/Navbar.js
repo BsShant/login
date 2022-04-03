@@ -11,6 +11,7 @@ import {
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import MenuListItem from "../menuListItem/menuListItem";
+import Logo from "../../assets/images/logo.png";
 
 const Navigation = (props) => {
   const offCanvas = useRef()
@@ -25,8 +26,8 @@ const Navigation = (props) => {
         <Navbar.Brand href="">
           <div className="logo">
           <img
-            src="https://logindesigns.com/front/Login logo/logo-white.png"
-            width="100"
+            src={Logo}
+            width="100px"
           ></img>
 </div>
           <button className="team d-md-block d-none">
@@ -54,17 +55,17 @@ const Navigation = (props) => {
           </Offcanvas.Header>
           <Offcanvas.Body>
           <ul id="linkit" className="links sideMenu" defaultActiveKey="#firstPage" variant="tabs">
-       <MenuListItem data-menuanchor="firstPage" handleClose={handleClose} sideMenu closeButton href="#firstPage" icon={<FontAwesomeIcon icon={faHouse} className="icon" />}
+       <MenuListItem data-menuanchor="firstPage" handleClose={handleClose} sideMenu closeButton href="#homePage" icon={<FontAwesomeIcon icon={faHouse} className="icon" />}
        name="Home"
        />
-         <MenuListItem data-menuanchor="secondPage"  handleClose={handleClose} sideMenu href="#secondPage" icon={ <FontAwesomeIcon icon={faInfoCircle} className="icon"  />}
+         <MenuListItem data-menuanchor="secondPage"  handleClose={handleClose} sideMenu href="#aboutPage" icon={ <FontAwesomeIcon icon={faInfoCircle} className="icon"  />}
        name="About"
        /> 
-        <MenuListItem data-menuanchor="thirdPage"  handleClose={handleClose} sideMenu href="#thirdPage" icon={ <FontAwesomeIcon icon={faGears} className="icon" />}
+        <MenuListItem data-menuanchor="thirdPage"  handleClose={handleClose} sideMenu href="#Services" icon={ <FontAwesomeIcon icon={faGears} className="icon" />}
        name="Services"
-       />  <MenuListItem data-menuanchor="fourthPage"  handleClose={handleClose} sideMenu href="#fourthPage" icon={<FontAwesomeIcon icon={faUserGroup} className="icon" />}
+       />  <MenuListItem data-menuanchor="fourthPage"  handleClose={handleClose} sideMenu href="#Testimonials" icon={<FontAwesomeIcon icon={faUserGroup} className="icon" />}
        name="Testimonials"
-       />  <MenuListItem data-menuanchor="fifthPage"  handleClose={handleClose} sideMenu href="#fifthPage" icon={  <FontAwesomeIcon icon={faPhoneSquare} className="icon" />}
+       />  <MenuListItem data-menuanchor="fifthPage"  handleClose={handleClose} sideMenu href="#contactUs" icon={  <FontAwesomeIcon icon={faPhoneSquare} className="icon" />}
        name="Contacts"
        /> 
       </ul> 

@@ -7,8 +7,11 @@ import { useEffect, useState } from "react";
 import AnimatingPages from "./animatingPages";
 import Speaker from "./assets/audio/intro-speech.mp3";
 import TypingSound from "./assets/audio/typing.mp3";
+import BackgroundAudio from './assets/audio/background.mp3';
 import RouteIndex from "./routes";
+
 function App() {
+
   const [displayMainPage, setDisplayMainPage] = useState(false);
   const [displaySecondLoadingPage, setDisplaySecondLoadingPage] =
     useState(false);
@@ -16,19 +19,10 @@ function App() {
     sessionStorage.getItem("opened") ? false : true
   );
   const [playSpaceAudio, setPlaySpaceAudio] = useState(true);
-  const [spaceAudio, setSpaceAudio] = useState(
-    new Audio("https://login.com/front/sounds/background.mp3")
-  );
+ 
   const [speakerAudio, setSpeakerAudio] = useState(new Audio(Speaker));
   const [typingAudio, setTypingAudio] = useState(new Audio(TypingSound));
-  useEffect(() => {
-    if (playSpaceAudio) {
-      spaceAudio.play();
-      spaceAudio.loop = true;
-    } else {
-      spaceAudio.pause();
-    }
-  }, [playSpaceAudio]);
+   
   const moveToMainScreen = () => {
     setDisplayMainPage(true);
   };
@@ -57,6 +51,7 @@ function App() {
 
   return (
     <div>
+
       {displayMainPage ? (
         <RouteIndex speakerAudio={speakerAudio} typingAudio={typingAudio} />
       ) : displayFirstLoadingPage ? (
@@ -75,6 +70,7 @@ function App() {
           <AnimatingPages setDisplayMainPage={setDisplayMainPage}/>
         </div>
       )}
+
     </div>
   );
 }

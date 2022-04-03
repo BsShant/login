@@ -16,13 +16,13 @@ const ServicesSection = (props) => {
   const { fullpageApi } = props;
   return (
     <div className="section serviceSection">
-     <p className="feel">
-     
-        We feel privileged to offer creative and innovative services to you.
-      </p>
+    
      
       <div className="serviceFullScreen">
-        <Container class="cont">
+        <Container class="cont" style={{marginTop:"59px"}}>
+        <p className="feel">
+     We feel privileged to offer creative and innovative services to you.
+   </p>
           <div className="row rowl">
             <div className="column col-sm-6 col-xs-12" style={{textAlign:"left"}}>
               <h5>
@@ -113,6 +113,9 @@ const ServicesSection = (props) => {
       </div>
       <div className="serviceSmallScreen">
         <div className="slide">
+        <p className="feel">
+     We feel privileged to offer creative and innovative services to you.
+   </p>
           <div className="col">
             <div className="row-md-6">
               <h5>

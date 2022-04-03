@@ -18,7 +18,7 @@ const AluminiSection = (props) => {
  
   const { fullpageApi } = props;
   return (
-    <div className="section">
+    <div className="section almuniSection">
      
 
       <h1 className="test">Testimonials</h1>
@@ -46,7 +46,7 @@ const AluminiSection = (props) => {
             },
             992 : {
               items: 3,
-              margin: 30,
+              margin: 10,
 
             },
            

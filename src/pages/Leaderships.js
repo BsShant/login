@@ -2,13 +2,7 @@ import React, { useEffect, useLayoutEffect, useState } from "react";
 import "./team.css";
 import ImageFour from "../assets/images/b2.jpg";
 
-const anchors = [
-  "firstPage",
-  "secondPage",
-  "thirdPage",
-  "fourthPage",
-  "fifthPage",
-];
+
 
 const SecondPage = (props) => {
   const { fullpageApi, normalRotate, setNormalRotate } = props;

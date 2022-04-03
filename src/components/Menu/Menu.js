@@ -13,34 +13,34 @@ const Menu = () => {
   return (
     <ul id="myMenu" className="menu leftMenu d-md-block d-none">
       <MenuListItem
-        data-menuanchor="firstPage"
+        data-menuanchor="homePage"
         // className="active"
-        href="#firstPage"
+        href="#homePage"
         icon={<FontAwesomeIcon icon={faHouse} className="icon" />}
         name="Home"
       />
       <MenuListItem
-        data-menuanchor="secondPage"
-        href="#secondPage"
+        data-menuanchor="aboutPage"
+        href="#aboutPage"
         icon={<FontAwesomeIcon icon={faInfo} className="icon" />}
         name="About"
       />
       
       <MenuListItem
-        data-menuanchor="thirdPage"
-        href="#thirdPage"
+        data-menuanchor="Services"
+        href="#Services"
         icon={<FontAwesomeIcon icon={faGears} className="icon" />}
         name="Services"
       />{" "}
       <MenuListItem
-        data-menuanchor="fourthPage"
-        href="#fourthPage"
+        data-menuanchor="Testimonials"
+        href="#Testimonials"
         icon={<FontAwesomeIcon icon={faUserGroup} className="icon" />}
         name="Testimonials"
       />{" "}
       <MenuListItem
-        data-menuanchor="fifthPage"
-        href="#fifthPage"
+        data-menuanchor="contactUs"
+        href="#contactUs"
         icon={<FontAwesomeIcon icon={faPhoneSquare} className="icon" />}
         name="Contacts"
       />

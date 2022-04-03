@@ -21,11 +21,11 @@ function HomePage() {
   
 
   const anchors = [
-    "firstPage",
-    "secondPage",
-    "thirdPage",
-    "fourthPage",
-    "fifthPage",
+    "homePage",
+    "aboutPage",
+    "Services",
+    "Testimonials",
+    "contactUs",
     
   ];
 

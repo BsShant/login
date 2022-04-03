@@ -6,9 +6,13 @@
   margin-top: 50px;
 }
 .logo{
-  margin-left: 57px;
+  margin-left: 41px;
   margin-top: 10px;
- 
+}
+@media(max-width:768px){
+  .logo{
+    margin-left:0px;
+  }
 }
 #offcanvasNavbar{
     background:black;

@@ -10,11 +10,11 @@ h2{
     left:50%;
 }
 @media(max-width:768px){
-    .hero{
-        width:100vw;
-        margin-left:25px;
-    }
     button.bt1.hers.d-md-block.d-none.endButtonContainer {
         display: none!important;
     }
+    }
+    @media(max-width:768px){}
+    .section{
+        width: 90% !important;
     }

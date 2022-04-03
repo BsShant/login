@@ -11,7 +11,7 @@ const anchors = [
 const HeroSection=(props)=>{
     const {fullpageApi} = props
     return(
-        <div className="section">
+        <div className="section heroSection">
          <div className="hero">
           <h2>
             "The person who can't abondon anything, they can't change anything."

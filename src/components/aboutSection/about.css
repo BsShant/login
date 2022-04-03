@@ -5,6 +5,7 @@ h1{
 .we{
     color:rgba(255,255,255,.5)!important;
     font-family: 'nexa light';
+    margin-left:7px;
 }
 .abt{
     left:50%;
@@ -13,4 +14,9 @@ h1{
     button.bt1.abt.d-md-block.d-none.endButtonContainer {
         display: none!important;
     }
+}
+ @media (max-width: 992px){
+    .abtSection{
+        width:90%;
     }
+}

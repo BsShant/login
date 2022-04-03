@@ -4,7 +4,7 @@ import './about.css'
 const AboutSection=(props)=>{
     const {fullpageApi} = props
     return(
-      <div className="section">
+      <div className="section abtSection">
       <div className="hero">
         <h1 className="who">WHO ARE WE?</h1>
         <p className="we">

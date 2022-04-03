@@ -8,23 +8,23 @@ import FourthPage from "./additionalMember";
 import Navigation from "../components/Navigationbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import ScrollSound from '../assets/audio/slideGem.mp3';
-
+import './ourTeam.css';
 
 const OurTeamPage = ()=>{
   const [audio, setAudio] = useState(new Audio(ScrollSound));
   const [normalRotate, setNormalRotate] = useState(false)
 
     const anchors = [
-        "firstPage",
-        "secondPage",
-        "thirdPage",
-        "fourthPage",
+        "ourTeam",
+        "Leaderships",
+        "teamMembers",
+        "additionalMembers",
         "fifthPage",
       ];
 
     return(
         <div className="teamPage teamPageContainer" > 
-            <Particle />
+         <Particle/>
             <Navigation navigateTo='/' navigationToName="Home"/>
             <ReactFullpage
         //fullpage options
@@ -54,12 +54,12 @@ const OurTeamPage = ()=>{
         render={({ state, fullpageApi }) => {
           return (
             <ReactFullpage.Wrapper>
-              <div className="team-container">
+              <div className="container">
               <FirstPage fullpageApi={fullpageApi} />
               <SecondPage fullpageApi={fullpageApi} normalRotate={normalRotate} setNormalRotate={setNormalRotate}/>
               <ThirdPage fullpageApi={fullpageApi}  normalRotate={normalRotate}  setNormalRotate={setNormalRotate} />
               <FourthPage fullpageApi={fullpageApi}  normalRotate={normalRotate}  setNormalRotate={setNormalRotate} />
-              <div className="aboutSection"></div>
+              {/* <div className="aboutSection"></div> */}
               </div>
              
             </ReactFullpage.Wrapper>
