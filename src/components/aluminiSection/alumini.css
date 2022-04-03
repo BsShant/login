@@ -25,7 +25,10 @@ width: 250px;
     border-radius: 50%;
     overflow: hidden;
     margin: auto;
-    object-fit: cover;
+}
+.imgholder img{
+    object-fit: cover!important;
+
 }
 .card{  
     width: 17rem !important;
@@ -126,6 +129,9 @@ width: 250px;
     margin: left 0px !important;
 }
 }
-
-
-
+/* 
+@media(max-width:1200px){
+.owl-carousel .owl-stage-outer{
+    margin-left: 25px !important;
+}
+} */

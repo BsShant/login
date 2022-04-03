@@ -32,7 +32,7 @@ function HomePage() {
   return (
     
     <div className="Appmenu Section_top" /* style={{background:"url('./assets/images/backgroundimage.webp')"}}*/ >
-        
+        <div className="innerSection"></div>
 
       <Particle />
       <Navigation navigateTo='/our-team' navigationToName="Our Team"/>

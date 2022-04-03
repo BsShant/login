@@ -36,7 +36,7 @@ const ContactSection=(props)=>{
      <div className="row one" style={{padding:"0",justifyFlex:"flex-start"}}>
        <div class=" contcol col-lg-6 col-md-6 col-sm-12" style={{marginLeft:"-111px",paddingLeft:"0px"}}>
      <h4>Contact</h4>
-     Call:9749761111  
+     Call: 9749761111  
      </div>
      <div class=" contcol col-lg-6 col-md-6 col-sm-12"  style={{marginLeft:"-71px",paddingLeft:"0px"}}>
      <h4>Address</h4>
@@ -61,7 +61,7 @@ const ContactSection=(props)=>{
 
           
           <h4 class="customer cst">Customer service</h4>
-          <h2 class="customer ail">EMAIL US</h2>
+          <h2 class="customer ail" style={{marginLeft:"0px"}}>EMAIL US</h2>
         
 
            <button class="goLeft" onClick={() => fullpageApi.moveSlideLeft()}>

@@ -133,7 +133,9 @@ const AluminiSection = (props) => {
         class="bt1 testBtn d-md-block d-none endButtonContainer"
         onClick={() => fullpageApi.moveSectionDown()}
       >
-       <div className="endButton"></div>
+       <div className="endButton">
+         
+       </div>
       </button>
     </div>
   );

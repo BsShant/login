@@ -21,7 +21,6 @@ const OurTeamPage = ()=>{
         "additionalMembers",
         "fifthPage",
       ];
-
     return(
         <div className="teamPage teamPageContainer" > 
          <Particle/>
@@ -43,12 +42,9 @@ const OurTeamPage = ()=>{
           setTimeout(()=>{
             setNormalRotate(false)
           },10)
-          setTimeout(()=>{
-          },500)
         }}
         afterLoad={()=>{
           setNormalRotate(true)
-
         }}
         scrollingSpeed={1000} /* Options here */
         render={({ state, fullpageApi }) => {
@@ -59,9 +55,9 @@ const OurTeamPage = ()=>{
               <SecondPage fullpageApi={fullpageApi} normalRotate={normalRotate} setNormalRotate={setNormalRotate}/>
               <ThirdPage fullpageApi={fullpageApi}  normalRotate={normalRotate}  setNormalRotate={setNormalRotate} />
               <FourthPage fullpageApi={fullpageApi}  normalRotate={normalRotate}  setNormalRotate={setNormalRotate} />
-              {/* <div className="aboutSection"></div> */}
+              <div className="aboutSection"></div>
+              <div className="aboutSection"></div>
               </div>
-             
             </ReactFullpage.Wrapper>
           );
         }}

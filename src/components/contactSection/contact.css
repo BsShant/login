@@ -28,7 +28,7 @@ element.style {
     border-radius: 20px;
     border-color:white;
     height:40px;
-    margin-left:-73%;
+    margin-left:-80%;
     margin-top:10%;
 }
 .sendsms p{
@@ -110,13 +110,12 @@ margin: left 0px;
 .back:hover{
   color:rgba(255,255,255,.5)!important;
 }
-
  @media (max-width: 768px) {
   .customer {
     display: none!important;
   }
   .sendsms{
-    margin-left: -48%!important;
+    margin-left: -38%!important;
   }
   .continfo{
     text-align: left!important;
@@ -132,6 +131,9 @@ margin: left 0px;
     top:408px;
     border-color:white;
     color:white;
+  }
+  .contcol.col-lg-6.col-md-6.col-sm-12{
+    margin-left:-21px!important;
   }
 }
 
@@ -168,10 +170,8 @@ margin: left 0px;
  .capt{
    margin-top: 0px;
  }
- @media(max-width:768px){
-   .contcol.col-lg-6.col-md-6.col-sm-12{
-     margin-left:-21px!important;
-   }
- }
-
- 
+ @media only screen and (max-width: 1200px) and (min-width:992px){
+.sendsms{
+  margin-left:-74%;
+} 
+}

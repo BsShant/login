@@ -9,33 +9,30 @@ import {
   faInfoCircle,
 } from "@fortawesome/free-solid-svg-icons";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import MenuListItem from "../menuListItem/menuListItem";
 import Logo from "../../assets/images/logo.png";
 
 const Navigation = (props) => {
-  const offCanvas = useRef()
-  const [showCanvas, setShowCanvas] = useState(false)
-  
+  const offCanvas = useRef();
+  const [showCanvas, setShowCanvas] = useState(false);
+
   const handleClose = () => setShowCanvas(false);
   const handleShow = () => setShowCanvas(true);
-  const {navigateTo, navigationToName} = props
+  const { navigateTo, navigationToName } = props;
   return (
     <Navbar bg="transparent" className="navbarZIndex" expand={false}>
       <Container fluid>
-        <Navbar.Brand href="">
+        <Link to="/">
           <div className="logo">
-          <img
-            src={Logo}
-            width="100px"
-          ></img>
-</div>
+            <img src={Logo} width="100px"></img>
+          </div>
           <button className="team d-md-block d-none">
-          <Link to={navigateTo}>{navigationToName}</Link>
+            <Link to={navigateTo}>{navigationToName}</Link>
           </button>
-        </Navbar.Brand>
+        </Link>
         <Navbar.Toggle
-         onClick={handleShow}
+          onClick={handleShow}
           aria-controls="offcanvasNavbar"
           className="d-md-none d-block closeButton"
         />
@@ -45,30 +42,63 @@ const Navigation = (props) => {
           placement="top"
           onHide={handleClose}
           show={showCanvas}
-          >
+        >
           <Offcanvas.Header closeButton>
             <Offcanvas.Title id="offcanvasNavbarLabel">
-              <button className="teambtn" style={{borderStyle:"solid"}}>
-              <Link to={navigateTo}>{navigationToName}</Link>
+              <button className="teambtn" style={{ borderStyle: "solid" }}>
+                <Link to={navigateTo}>{navigationToName}</Link>
               </button>
             </Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
-          <ul id="linkit" className="links sideMenu" defaultActiveKey="#firstPage" variant="tabs">
-       <MenuListItem data-menuanchor="firstPage" handleClose={handleClose} sideMenu closeButton href="#homePage" icon={<FontAwesomeIcon icon={faHouse} className="icon" />}
-       name="Home"
-       />
-         <MenuListItem data-menuanchor="secondPage"  handleClose={handleClose} sideMenu href="#aboutPage" icon={ <FontAwesomeIcon icon={faInfoCircle} className="icon"  />}
-       name="About"
-       /> 
-        <MenuListItem data-menuanchor="thirdPage"  handleClose={handleClose} sideMenu href="#Services" icon={ <FontAwesomeIcon icon={faGears} className="icon" />}
-       name="Services"
-       />  <MenuListItem data-menuanchor="fourthPage"  handleClose={handleClose} sideMenu href="#Testimonials" icon={<FontAwesomeIcon icon={faUserGroup} className="icon" />}
-       name="Testimonials"
-       />  <MenuListItem data-menuanchor="fifthPage"  handleClose={handleClose} sideMenu href="#contactUs" icon={  <FontAwesomeIcon icon={faPhoneSquare} className="icon" />}
-       name="Contacts"
-       /> 
-      </ul> 
+            <ul
+              id="linkit"
+              className="links sideMenu"
+              defaultActiveKey="#firstPage"
+              variant="tabs"
+            >
+              <MenuListItem
+                data-menuanchor="firstPage"
+                handleClose={handleClose}
+                sideMenu
+                closeButton
+                href="#homePage"
+                icon={<FontAwesomeIcon icon={faHouse} className="icon" />}
+                name="Home"
+              />
+              <MenuListItem
+                data-menuanchor="secondPage"
+                handleClose={handleClose}
+                sideMenu
+                href="#aboutPage"
+                icon={<FontAwesomeIcon icon={faInfoCircle} className="icon" />}
+                name="About"
+              />
+              <MenuListItem
+                data-menuanchor="thirdPage"
+                handleClose={handleClose}
+                sideMenu
+                href="#Services"
+                icon={<FontAwesomeIcon icon={faGears} className="icon" />}
+                name="Services"
+              />{" "}
+              <MenuListItem
+                data-menuanchor="fourthPage"
+                handleClose={handleClose}
+                sideMenu
+                href="#Testimonials"
+                icon={<FontAwesomeIcon icon={faUserGroup} className="icon" />}
+                name="Testimonials"
+              />{" "}
+              <MenuListItem
+                data-menuanchor="fifthPage"
+                handleClose={handleClose}
+                sideMenu
+                href="#contactUs"
+                icon={<FontAwesomeIcon icon={faPhoneSquare} className="icon" />}
+                name="Contacts"
+              />
+            </ul>
           </Offcanvas.Body>
         </Navbar.Offcanvas>
       </Container>
