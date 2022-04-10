@@ -1,4 +1,4 @@
-.row{
+.leaderShipRow{
    justify-content: center;
     display: flex;
     margin-bottom: 20px !important;
@@ -10,9 +10,7 @@
     padding-right: 30px;
     text-align: center;
 }
-.col{
-    margin-bottom: 20px !important;
-}
+
 p{
     padding-top: 10px;
     color: white !important;
@@ -33,7 +31,7 @@ p{
     border: 2px white solid;
     overflow: hidden;
     margin: auto;
-    transform: rotate(180deg);
+    /* transform: rotate(180deg); */
     transition: all 1s linear;
 
    
@@ -53,14 +51,14 @@ p{
   
 }
 @media(max-width:768px){
-    .row{
+    .leaderShipRow{
         align-items: center;
         display: flex;
         margin-bottom:25px !important;
         margin-right: 10px !important;
         margin-left: 10px !important;
     }
-.col-sm-12 {
+.leaderShipCol {
     flex: 0 0 auto;
     width: 100%;
     margin-bottom: 9px;
@@ -81,3 +79,21 @@ p{
     overflow: hidden;
     margin: auto;}
 }
+
+
+[data-aos="rotate-c"]{
+    transform: rotate(180deg);
+    transition-property: transform;
+}
+[data-aos="rotate-c"].aos-animate{
+    transform: rotate(0deg);
+}
+/* 
+[aos="ns"] {
+    transform: rotate(-180deg);
+    transition-property: transform;
+  }
+  
+  [aos="ns"].aos-animate {
+    transform: rotate(0deg);
+  } */

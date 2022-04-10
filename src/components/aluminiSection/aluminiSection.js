@@ -33,10 +33,7 @@ const AluminiSection = (props) => {
               loop: true,
               center: true,
               autoplay: true,
-              // responsiveClass: true,
-              // dots: false,
               nav: true,
-              // autoHeight: true,
               items: 1
             },
             768 : {
@@ -46,8 +43,7 @@ const AluminiSection = (props) => {
             },
             992 : {
               items: 3,
-              margin: 10,
-
+              margin: 5,
             },
            
           }}

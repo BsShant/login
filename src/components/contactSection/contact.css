@@ -1,15 +1,15 @@
-.continfo{
-    text-align: left!important;
-    line-height: 2;
-    margin-top: 5%;
+.continfo {
+  text-align: left !important;
+  line-height: 2;
+  margin-top: 5%;
 }
-h4{
-    color:white;
+h4 {
+  color: white;
 }
-.servicePrev{
+.servicePrev {
   margin-left: 10px;
 }
-.span{
+.span {
   color: transparent;
 }
 
@@ -18,160 +18,158 @@ element.style {
   padding-left: 0px;
 }
 .contcol.col-lg-6 {
-
- margin-left: -10px;
+  margin-left: -10px;
 }
 
-.sendsms{
-  border-style:solid;
+.sendsms {
+  border-style: solid;
   background: transparent;
-    border-radius: 20px;
-    border-color:white;
-    height:40px;
-    margin-left:-80%;
-    margin-top:10%;
+  border-radius: 20px;
+  border-color: white;
+  height: 40px;
+  margin-left: -80%;
+  margin-top: 10%;
 }
-.sendsms p{
+.sendsms p {
   margin-top: -5px;
 }
-.goLeft{
+.goLeft {
   padding-left: 10px;
-  padding-right:10px;
+  padding-right: 10px;
 }
 
-@media(max-width:992px){
-.sendsms{
+@media (max-width: 992px) {
+  .sendsms {
     margin-left: 100;
     background: transparent;
-      border-radius: 20px;
-      border-color:white;
-      height:40px;
-      margin-left: -61%;
+    border-radius: 20px;
+    border-color: white;
+    height: 40px;
+    margin-left: -61%;
   }
 }
-  .customer{
-    margin-bottom: 20px;
-  }
-  .emus{
-    margin-bottom: 20px;
-    font-family: 'Nexa Light'!important;
-  }
-  .row.one{
-margin-top: 6%;
-margin-bottom:5%;
-text-align: left;
-padding-right: 0px;
-margin-right:0px;
-margin: left 0px;
- }
-  .sendsms:hover{
-    border-color: gray;
-  }
-  .sendsms p{
+.customer {
+  margin-bottom: 20px;
+}
+.emus {
+  margin-bottom: 20px;
+  font-family: "Nexa Light" !important;
+}
+.row.one {
+  margin-top: 6%;
+  margin-bottom: 5%;
+  text-align: left;
+  padding-right: 0px;
+  margin-right: 0px;
+  margin: left 0px;
+}
+.sendsms:hover {
+  border-color: gray;
+}
+.sendsms p {
   display: inline-flex;
   justify-content: center;
   align-items: center;
   padding-left: 10px;
   padding-right: 10px;
-  margin-top:-5px;
-  }
-  .contcol.col-lg-6{
-    padding-left: 0px;
-    margin-left: -31px;
-    text-align: left;
+  margin-top: -5px;
+}
+.contcol.col-lg-6 {
+  padding-left: 0px;
+  margin-left: -31px;
+  text-align: left;
+}
 
-  }
+.contactSection .fp-controlArrow {
+  display: none;
+}
+.send:hover {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
 
- .contactSection .fp-controlArrow{
-     display: none;
- }
- .send:hover{
-   color:rgba(255,255,255,.5)!important;
- }
-
-.goLeft{
+.goLeft {
   background: transparent;
   border-radius: 20px;
-  border-style:solid;
-  border-color:white;
-  height:40px;
-  border-radius:20px;
+  border-style: solid;
+  border-color: white;
+  height: 40px;
+  border-radius: 20px;
 }
-.goLeft:hover{
-  border-color:rgba(255,255,255,.5)!important;
+.goLeft:hover {
+  border-color: rgba(255, 255, 255, 0.5) !important;
 }
-.back{
-  color:white;
-  margin-top:-10px;
+.back {
+  color: white;
+  margin-top: -10px;
 }
-.send:hover{
-  color:white;
+.send:hover {
+  color: white;
 }
-.back:hover{
-  color:rgba(255,255,255,.5)!important;
+.back:hover {
+  color: rgba(255, 255, 255, 0.5) !important;
 }
- @media (max-width: 768px) {
+@media (max-width: 768px) {
   .customer {
-    display: none!important;
+    display: none !important;
   }
-  .sendsms{
-    margin-left: -38%!important;
+  .sendsms {
+    margin-left: -38% !important;
   }
-  .continfo{
-    text-align: left!important;
+  .continfo {
+    text-align: left !important;
     line-height: 2;
     margin-top: 5%;
-    margin-left:46px;
-}
+    margin-left: 46px;
+  }
 
-  .goLeft{
+  .goLeft {
     position: relative;
     border-radius: 5px;
-    left:18%;
-    top:408px;
-    border-color:white;
-    color:white;
+    left: 18%;
+    top: 408px;
+    border-color: white;
+    color: white;
   }
-  .contcol.col-lg-6.col-md-6.col-sm-12{
-    margin-left:-21px!important;
+  .contcol.col-lg-6.col-md-6.col-sm-12 {
+    margin-left: -21px !important;
   }
 }
 
- .mb-3{
-   color:white;
-   line-height: 0.5;
- }
+.mb-3 {
+  color: white;
+  line-height: 0.5;
+}
 
- input{
-   color:rgba(255,255,255,.5)!important;
- }
+.contactSection input {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
 
- .form-control{
+.form-control {
   background: transparent;
   border-color: transparent;
-  border-bottom-color:gray;
+  border-bottom-color: gray;
   padding-top: 0px;
   line-height: 0.5;
-  color:rgba(255,255,255,.5)!important;
- }
- .form-control:focus{
-   background-color: transparent;
-   color:rgba(255,255,255,.5)!important;
-   border-color: transparent;
-   border-bottom-color:gray;
-   box-shadow:none;
- }
- .msg{
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+.form-control:focus {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.5) !important;
+  border-color: transparent;
+  border-bottom-color: gray;
+  box-shadow: none;
+}
+.msg {
   border-color: gray;
-  height:80px;
-  margin: bottom 0px!important;
- }
-    
- .capt{
-   margin-top: 0px;
- }
- @media only screen and (max-width: 1200px) and (min-width:992px){
-.sendsms{
-  margin-left:-74%;
-} 
+  height: 80px;
+  margin: bottom 0px !important;
+}
+
+.capt {
+  margin-top: 0px;
+}
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+  .sendsms {
+    margin-left: -74%;
+  }
 }

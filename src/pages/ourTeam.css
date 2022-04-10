@@ -12,6 +12,7 @@
   z-index: 0;
   background-image: url("../assets/images/backgroundimage.webp");
 }
+
 .teamPageContainer::after {
   content: "";
   background-image: linear-gradient(
@@ -29,4 +30,21 @@
 
 .aboutSection {
   height: 100vh;
+}
+
+.teamPage h2 {
+  color: white;
+  font-family: "nexa bold";
+}
+.teamPage h3 {
+  color: white;
+  font-family: "nexa bold";
+}
+.teamPage h1 {
+  color: white;
+  font-family: "nexa bold";
+}
+.teamPage h4 {
+  color: white;
+  font-family: "nexa bold";
 }

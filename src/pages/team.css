@@ -1,4 +1,4 @@
-.row{
+.teamRow{
     justify-content: center;
      display: flex;
      margin-bottom: 20px !important;
@@ -13,6 +13,22 @@
  .col{
      margin-bottom: 20px !important;
  }
+ .teamPage h2{
+    color:white;
+    font-family: 'nexa bold';
+  }
+  .teamPage h3{
+    color:white;
+    font-family: 'nexa bold';
+  }
+  .teamPage h1{
+    color:white;
+    font-family: 'nexa bold';
+  }
+  .teamPage h4{
+    color:white;
+    font-family: 'nexa bold';
+  }
  p{
      padding-top: 10px;
      color: white !important;
@@ -40,7 +56,7 @@
      border: 2px white solid;
      overflow: hidden;
      margin: auto;
-     transform: rotate(180deg);
+     /* transform: rotate(180deg); */
      transition: all 0ms linear; 
  }
  .normal-rotate{
@@ -59,7 +75,7 @@
    
  }
  @media(max-width:768px){
-     .row{
+     .teamRow{
          align-items: center;
          display: flex;
          margin-bottom:25px !important;

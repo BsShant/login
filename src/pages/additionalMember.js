@@ -8,7 +8,7 @@ const FourthPage=(props)=>{
   const { fullpageApi, normalRotate, setNormalRotate } = props;
     return(
         <div className="aboutSection">
-          <div class="row">
+          <div class="row teamRow">
 
           <div className=" col-lg-4 col-md-6 col-sm-12 col-12">
           <div className={`img-holder ${normalRotate? 'normal-rotate' : ""}`}>
@@ -36,7 +36,7 @@ const FourthPage=(props)=>{
           
       </div>
 
-      <div class="row">
+      <div class="row teamRow">
    <div className=" col-lg-4 col-md-6 col-sm-12 col-12">
    <div className={`img-holder ${normalRotate? 'normal-rotate' : ""}`}>
        <img class="leaders" src={ImageFour}></img><br/>

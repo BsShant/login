@@ -13,7 +13,7 @@ const HeroSection=(props)=>{
     return(
         <div className="section heroSection">
          <div className="hero">
-          <h2>
+          <h2 data-aos="fade-right">
             "The person who can't abondon anything, they can't change anything."
           </h2>
           <p className="wel">

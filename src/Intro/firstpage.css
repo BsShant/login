@@ -1,14 +1,13 @@
-body{
-    position:absolute;
-    background:#1d2128;
-    z-index:1100;
-    font-family:'nexa light';
-}
+
 .titleFrontPage{
-    margin-left:100px;
-    margin-top:25%;
+    padding-left:100px;
+    padding-top:25%;
+    height: 100vh;
+    font-family:'nexa light';
+
+    background-color: #1d2128;
 }
-h3{
+.titleFrontPage h3{
     color:white;
     font-family: 'nexa bold';
    
@@ -18,12 +17,12 @@ h3{
     border-color: transparent;
     background: transparent;
 }
-h2{
+.titleFrontPage h2{
     color:white;
     font-size: 26px;
     margin-left: 10px;
 }
-p{
+.titleFrontPage p{
     color:white;
     margin-left: 10px;
 }

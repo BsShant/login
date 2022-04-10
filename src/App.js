@@ -9,7 +9,9 @@ import Speaker from "./assets/audio/intro-speech.mp3";
 import TypingSound from "./assets/audio/typing.mp3";
 import BackgroundAudio from './assets/audio/background.mp3';
 import RouteIndex from "./routes";
+import AOS from "aos";
 
+import "aos/dist/aos.css";
 function App() {
 
   const [displayMainPage, setDisplayMainPage] = useState(false);
@@ -40,6 +42,11 @@ function App() {
     }
   };
   useEffect(() => {
+    AOS.init({});
+    // AOS.refresh();
+  }, []);
+  useEffect(() => {
+
     speakerAudio.addEventListener("ended", moveToMainScreen);
     speakerAudio.addEventListener("playing", speakerAudioPlaying);
 
