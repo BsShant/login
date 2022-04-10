@@ -104,7 +104,13 @@
      overflow: hidden;
      margin: auto;}
  }
-
+ [data-aos="rotate-c"]{
+    transform: rotate(180deg);
+    transition-property: transform;
+}
+[data-aos="rotate-c"].aos-animate{
+    transform: rotate(0deg);
+}
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;

@@ -1,13 +1,12 @@
 import React, { useEffect, useLayoutEffect, useState } from "react";
-import "./team.css";
+import "./leadership.css";
 import ImageFour from "../assets/images/b2.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const SecondPage = (props) => {
-  const { fullpageApi, normalRotate, setNormalRotate } = props;
+  const { fullpageApi} = props;
   useEffect(() => {
-    AOS.init({ duration: 1500, once: false });
   }, []);
   return (
     <div className="aboutSection">
@@ -23,7 +22,6 @@ const SecondPage = (props) => {
           <br />
           <p className="groups"> Managing Director</p>
         </div>
-
         <div className=" col-lg-4 col-md-6 col-sm-12 col-12 leaderShipCol">
           <div className={`img-holder`} data-aos="rotate-c" data-aos-delay="200" data-aos-duration="500">
             <img class="leaders" src={ImageFour}></img>
@@ -34,7 +32,7 @@ const SecondPage = (props) => {
           <p className="groups">CEO</p>
         </div>
 
-        <div className=" col-lg-4 col-md-6 col-sm-12 col-12">
+        <div className=" col-lg-4 col-md-6 col-sm-12 col-12 leaderShipCol">
           <div className={`img-holder`} data-aos="rotate-c" data-aos-delay="300" data-aos-duration="500">
             <img class="leaders" src={ImageFour}></img>
             <br />

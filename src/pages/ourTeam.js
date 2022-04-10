@@ -16,7 +16,6 @@ import AOS from "aos";
 const OurTeamPage = () => {
   const dispatch = useDispatch();
   const [audio, setAudio] = useState(new Audio(ScrollSound));
-  const [normalRotate, setNormalRotate] = useState(false);
 
   const anchors = [
     "ourTeam",
@@ -27,7 +26,7 @@ const OurTeamPage = () => {
   ];
   useEffect(() => {
     dispatch(fetchingOurTeamContentWithSpinnerStarts());
-    AOS.init();
+    AOS.init({ duration: 1500, once: false });
   });
   return (
     <div className="teamPage teamPageContainer">
@@ -48,9 +47,7 @@ const OurTeamPage = () => {
         onLeave={() => {
           audio.play();
           $(".aboutSection [data-aos]").removeClass("aos-animate");
-          // setTimeout(()=>{
-          //   setNormalRotate(false)
-          // },10)
+         
         }}
         onSlideLeave={function () {
           $(".slide [data-aos]").removeClass("aos-animate");
@@ -69,18 +66,15 @@ const OurTeamPage = () => {
                 <FirstPage fullpageApi={fullpageApi} />
                 <SecondPage
                   fullpageApi={fullpageApi}
-                  normalRotate={normalRotate}
-                  setNormalRotate={setNormalRotate}
+                 
                 />
                 <ThirdPage
                   fullpageApi={fullpageApi}
-                  normalRotate={normalRotate}
-                  setNormalRotate={setNormalRotate}
+              
                 />
                 <FourthPage
                   fullpageApi={fullpageApi}
-                  normalRotate={normalRotate}
-                  setNormalRotate={setNormalRotate}
+                 
                 />
                 <div className="aboutSection"></div>
                 <div className="aboutSection"></div>

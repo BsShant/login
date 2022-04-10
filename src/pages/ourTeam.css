@@ -27,6 +27,16 @@
   height: 100vh;
   z-index: -1;
 }
+.teamPageContainer::before{
+  content: '';
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+}
 
 .aboutSection {
   height: 100vh;

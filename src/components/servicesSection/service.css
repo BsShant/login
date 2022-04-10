@@ -1,23 +1,22 @@
 .feel{
-  text-align: left!important;
+  text-align: center!important;
   color: rgba(255,255,255,.5)!important;
-margin-left:62px;
 margin-bottom: 15px;
 }
 .serviceFullScreen{
   width:100%;
 }
-.row.rowl{
+.rowl{
   padding-left: 0px;
   padding-right: 0px;
   justify-content: space-between;
 }
-.row.rowf{
+.rowf{
   padding-left: 0px;
   padding-right: 0px;
   justify-content: space-between;
 }
-.row.rowm{
+.rowm{
   padding-left: 0px;
   padding-right: 0px;
   justify-content: space-between;
@@ -34,9 +33,7 @@ h5{
       align-items: center;
       width: 140% !important;
 }
-.row-md-6{
-  text-align: left;
-}
+
 .serviceNext{
   background: transparent;
     border-radius: 20px;
@@ -84,7 +81,7 @@ ul{
 .serviceSmallScreen{
 display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .serviceFullScreen {
     display: none!important;
   }
@@ -100,8 +97,7 @@ display: none;
     padding:0px 0px 0px 0px;
   }
   .serviceSection{
-    padding-top: 80px;
-    padding-left:43px;
+    padding-top: 124px;
   }
   .servicePrev{
     margin-right:79%;
@@ -151,13 +147,16 @@ transform: translateY(15px);
 @media (max-width:992px){
   .serviceSection{
     width:100%!important;
-  }
-  .serv{
-    margin-left:88px;
+    text-align: left;
   }
 }
 @media only screen and (max-width: 1200px) and (min-width:992px){
 .serviceSection{
   width:100%!important;
 }
+}
+@media only screen and (max-width: 992px) and (min-width:900px){
+  .container{
+    width: 104% !important;
+  }
 }

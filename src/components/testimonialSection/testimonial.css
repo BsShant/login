@@ -19,23 +19,28 @@
 .owl-item{
 width: 250px;
 }
+.owl-carousel .owl-stage-outer{
+    left: 3% !important;
+}
 .imgholder{
-    height:35%;
-    width:50%;
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
     overflow: hidden;
     margin: auto;
 }
 .imgholder img{
     object-fit: cover!important;
+    width: 100%;
+    height: 100%;
 
 }
 .card{  
     width: 17rem !important;
-    height: 21rem !important;
+    height: 20rem !important;
     background: rgba(0,0,0,0.5);
     box-shadow: 0 5px 10px -8px #000000;
-    padding:24px;
+    padding:17px 0;
     margin-right: 211px;
     border:0;
     border-radius: 24px;
@@ -47,7 +52,7 @@ width: 250px;
 }
 .testimonial .owl-item.active.center .card{
     width: 16rem !important;
-    height: 23rem !important;
+    height: auto !important;
     transition: all 0.5s linear;
     transform: scale(1);
     background: rgba(0,0,0,0.9);
@@ -60,7 +65,7 @@ width: 250px;
     display: block;
     width: 100%;
     object-fit: cover;
-    height: 100%;
+
 }
 .owl-theme .testimonial .owl-dots {
     display: flex;
@@ -70,11 +75,23 @@ width: 250px;
 .owl-carousel .owl-item img{
     display:block;
     width:100%;
-    height:100%;
 }
 @media(max-width:768px){
     .almuniSection{
         width: 100%!important;
+    }
+    .card{  
+        width: 17rem !important;
+        height: 20rem !important;
+        background: rgba(0,0,0,0.5);
+        box-shadow: 0 5px 10px -8px #000000;
+        padding:17px 0;
+        margin-right:0;
+        margin:auto;
+        border:0;
+        border-radius: 24px;
+        transition: transform 0.5s linear;
+        transform: scale(0.9);
     }
     .owl-theme .owl-nav {
         display: none;
@@ -88,18 +105,10 @@ width: 250px;
     .owl-theme .owl-dots {
         display: none;
  }
-    .item{
-    padding-left: 256px;
-    }
-  
-    .test{
-        margin-left:49%;
-    }
-   
 }
-@media(max-width:575px){
+/* @media(max-width:575px){
     .item{
-        padding-left: 109px;
+        padding-left: 109px!important;
         } 
         .test{
             margin-left: -458px;
@@ -107,7 +116,7 @@ width: 250px;
         .owl-theme .owl-dots {
            display: none;
     }
-}
+} */
 @media only screen and (max-width: 1200px) and (min-width:992px){
     .section{
         width:83%!important;
@@ -129,9 +138,3 @@ width: 250px;
     margin: left 0px !important;
 }
 }
-/* 
-@media(max-width:1200px){
-.owl-carousel .owl-stage-outer{
-    margin-left: 25px !important;
-}
-} */

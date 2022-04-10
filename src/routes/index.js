@@ -13,11 +13,17 @@ import HomePage from "../pages/homePage/homepage";
 import OurTeamPage from "../pages/ourTeam";
 import ProtectedLayout from "../layout/protectedLayout/layout";
 import OurTeam from "../protectedPages/ourTeam/ourTeam";
+import AnimatingPages from "../animatingPages";
 function IndexRoute() {
+  useEffect(()=>{
+
+    sessionStorage.setItem("opened", "yes");
+
+  },[])
   return (
     <>
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        {/* <Route path="/" element={<HomePage />} />
         <Route path="/our-team" element={<OurTeamPage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/reset-password/:id/:token" element={<ResetPassword />} />
@@ -59,7 +65,8 @@ function IndexRoute() {
               <Setting />
             </SuperRoute>
           }
-        />
+        /> */}
+         <Route path="/" element={<AnimatingPages />} />
       </Routes>
     </>
   );

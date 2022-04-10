@@ -16,15 +16,17 @@ const ServicesSection = (props) => {
   const { fullpageApi } = props;
   return (
     <div className="section serviceSection">
-    
-     
       <div className="serviceFullScreen">
-        <Container class="cont" style={{marginTop:"59px"}}>
-        <p className="feel">
-     We feel privileged to offer creative and innovative services to you.
-   </p>
+        <Container class="cont" style={{ marginTop: "59px" }}>
+          <p className="feel">
+            We feel privileged to offer creative and innovative services to you.
+          </p>
           <div className="row rowl">
-            <div className="column col-sm-6 col-xs-12" style={{textAlign:"left"}}>
+            <div className="col-lg-2 col-md-0"></div>
+            <div
+              className="column col-lg-5 col-md-6 col-xs-12"
+              style={{ textAlign: "left" }}
+            >
               <h5>
                 <FontAwesomeIcon icon={faArrowRight} /> LEGAL SERVICE
               </h5>
@@ -35,9 +37,11 @@ const ServicesSection = (props) => {
                 <li>Trademark Registration</li>
               </ul>
             </div>
-            <div className="column col-sm-6 col-xs-12"  style={{textAlign:"left"}}>
+            <div
+              className="column col-lg-5 col-md-6 col-xs-12"
+              style={{ textAlign: "left" }}
+            >
               <h5>
-              
                 <FontAwesomeIcon icon={faArrowRight} /> MULTIMEDIA SERVICE
               </h5>
 
@@ -50,9 +54,13 @@ const ServicesSection = (props) => {
             </div>
           </div>
           <div className="row rowf">
-            <div className="column col-sm-6 col-xs-12"  style={{textAlign:"left"}}>
+            <div className="col-lg-2 col-md-0"></div>
+
+            <div
+              className="column col-lg-5 col-md-6 col-xs-12"
+              style={{ textAlign: "left" }}
+            >
               <h5>
-           
                 <FontAwesomeIcon icon={faArrowRight} /> FINANCE SERVICE
               </h5>
 
@@ -64,8 +72,10 @@ const ServicesSection = (props) => {
                 <li>Investment</li>
               </ul>
             </div>
-            <div className="column col-sm-6 col-xs-12"  style={{textAlign:"left"}}>
-
+            <div
+              className="column col-lg-5 col-md-6 col-xs-12"
+              style={{ textAlign: "left" }}
+            >
               <h5>
                 <FontAwesomeIcon icon={faArrowRight} /> IT SERVICE
               </h5>
@@ -77,11 +87,15 @@ const ServicesSection = (props) => {
                 <li>Software Development</li>
                 <li>IT Support</li>
               </ul>
-              
             </div>
           </div>
           <div className="row rowm">
-            <div className="column col-sm-6 col-xs-12"  style={{textAlign:"left"}}>
+            <div className="col-lg-2 col-md-0"></div>
+
+            <div
+              className="column col-lg-5 col-md-6 col-xs-12"
+              style={{ textAlign: "left" }}
+            >
               <h5>
                 <FontAwesomeIcon icon={faArrowRight} /> MARKETING SERVICE
               </h5>
@@ -94,7 +108,10 @@ const ServicesSection = (props) => {
                 <li>Product and Service Promotion</li>
               </ul>
             </div>
-            <div className="column col-sm-6 col-xs-12"  style={{textAlign:"left"}}>
+            <div
+              className="column col-lg-5 col-md-6 col-xs-12"
+              style={{ textAlign: "left" }}
+            >
               <h5>
                 <FontAwesomeIcon icon={faArrowRight} /> BUSINESS SERVICE
               </h5>
@@ -107,15 +124,13 @@ const ServicesSection = (props) => {
               </ul>
             </div>
           </div>
-
-
         </Container>
       </div>
       <div className="serviceSmallScreen">
         <div className="slide">
-        <p className="feel">
-     We feel privileged to offer creative and innovative services to you.
-   </p>
+          <p className="feel">
+            We feel privileged to offer creative and innovative services to you.
+          </p>
           <div className="col">
             <div className="row-md-6">
               <h5>
@@ -151,20 +166,19 @@ const ServicesSection = (props) => {
                 <li>Taxation</li>
                 <li>Advisory</li>
                 <li>Investment</li>
-                </ul>
-                  <button class="serviceNext"  onClick={() => fullpageApi.moveSlideRight()}
-                  >
-                    <p> see more</p>
-                  </button>
-
-    
-              
+              </ul>
+              <button
+                class="serviceNext"
+                onClick={() => fullpageApi.moveSlideRight()}
+              >
+                <p> see more</p>
+              </button>
             </div>
           </div>
         </div>
 
         <div className="slide">
-          <div className="col">
+          <div className="col" style={{ textAlign: "left" }}>
             <div className="row-md-6">
               <h5>
                 <FontAwesomeIcon icon={faArrowRight} /> IT SERVICE
@@ -204,22 +218,23 @@ const ServicesSection = (props) => {
               </ul>
             </div>
 
-            <button class="servicePrev" onClick={() => fullpageApi.moveSlideLeft()}>
+            <button
+              class="servicePrev"
+              onClick={() => fullpageApi.moveSlideLeft()}
+            >
               <p>back</p>
             </button>
-
           </div>
         </div>
       </div>
-
-      <button
-        class="bt1 serv endButtonContainer d-md-block d-none"
-        onClick={() => fullpageApi.moveSectionDown()}
-      >
-        <div className="endButton">
-    
-        </div>
-      </button>
+      <div className="endbtncontainer">
+        <button
+          class="bt1 serv endButtonContainer d-md-block d-none" style={{marginLeft:"17%"}}
+          onClick={() => fullpageApi.moveSectionDown()}
+        >
+          <div className="endButton"></div>
+        </button>
+      </div>
     </div>
   );
 };

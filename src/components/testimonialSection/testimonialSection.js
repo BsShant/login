@@ -1,5 +1,5 @@
 import React from "react";
-import "./alumini.css";
+import "./testimonial.css";
 import OwlCarousel from "react-owl-carousel";
 import { Card } from "react-bootstrap";
 import ImageOne from "../../assets/images/b1.jpg";
@@ -21,7 +21,7 @@ const AluminiSection = (props) => {
     <div className="section almuniSection">
      
 
-      <h1 className="test">Testimonials</h1>
+      <h1 className="test" style={{marginLeft:"1%"}}>Testimonials</h1>
       <div>
         <OwlCarousel className="owl-theme testimonial" loop={true} center={true} autoplay={true}  nav={false}
             responsiveClass={true}
@@ -31,13 +31,14 @@ const AluminiSection = (props) => {
             0 : {
               // stagePadding: 0,
               loop: true,
-              center: true,
+              center: false,
               autoplay: true,
               nav: true,
               items: 1
             },
             768 : {
               items: 2,
+              center:false,
               center: false,
 
             },

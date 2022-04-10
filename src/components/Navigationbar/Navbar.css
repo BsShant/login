@@ -1,13 +1,23 @@
 .navbarZIndex{
-  position:absolute;
+  height: 108px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0;
 }
-.navbar.container-fluid{
-  position:fixed;
-  margin-top: 50px;
+.navContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
 }
 .logo{
-  margin-left: 41px;
-  margin-top: 10px;
+  width: 130px;
+}
+.logo img{
+  width: 100%;
 }
 @media(max-width:768px){
   .logo{
@@ -19,28 +29,17 @@
     max-height: auto;
   }
   .team{
-    position:fixed;
-    background-color: transparent;
-    margin-top: 4px;
+    color: white;
+    border: 2px solid white;
     border-radius: 20px;
-    color: beige;
-    border-color:white;
-    border-style:solid;
-    top: 15px;
-    right: 24px;
-    left: 10;
-    padding-left:10px;
-    padding-right:10px;
+    padding: 7px 21px;
     
   }
-  .team a{
-    color:white;
-    text-decoration: none;
-    font-family: 'nexa light'!important;
-  }
+  
   .team:hover{
-    border-color: gray;
-  }
+    border-color: rgba(255,255,255,.5);
+   color:  rgba(255,255,255,.5);
+    }
   .team a:hover{
     color:gray;
   }
@@ -154,8 +153,6 @@ align-items: center;
   font-size: 1rem;
   font-family: "Nexa Regular"!important;
   color: rgba(255,255,255,.5)!important;
-
-
 }
 #linkit li{
   height: 30px;

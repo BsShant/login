@@ -1,6 +1,7 @@
 .animpage {
   position: relative;
   color: white;
+  background-color: #1d2128;
   height: 100vh;
   z-index: 50;
 }

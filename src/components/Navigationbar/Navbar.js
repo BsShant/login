@@ -22,15 +22,13 @@ const Navigation = (props) => {
   const { navigateTo, navigationToName } = props;
   return (
     <Navbar bg="transparent" className="navbarZIndex" expand={false}>
-      <Container fluid>
+      <div className="navContainer">
         <Link to="/">
           <div className="logo">
             <img src={Logo} width="100px"></img>
           </div>
-          <button className="team d-md-block d-none">
-            <Link to={navigateTo}>{navigationToName}</Link>
-          </button>
         </Link>
+            <Link className="team d-md-block d-none" to={navigateTo}>{navigationToName}</Link>
         <Navbar.Toggle
           onClick={handleShow}
           aria-controls="offcanvasNavbar"
@@ -45,9 +43,7 @@ const Navigation = (props) => {
         >
           <Offcanvas.Header closeButton>
             <Offcanvas.Title id="offcanvasNavbarLabel">
-              <button className="teambtn" style={{ borderStyle: "solid" }}>
-                <Link to={navigateTo}>{navigationToName}</Link>
-              </button>
+                <Link className="teambtn" to={navigateTo}>{navigationToName}</Link>
             </Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
@@ -101,7 +97,7 @@ const Navigation = (props) => {
             </ul>
           </Offcanvas.Body>
         </Navbar.Offcanvas>
-      </Container>
+      </div>
     </Navbar>
   );
 };

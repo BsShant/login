@@ -9,7 +9,7 @@ import HeroSection from "../../components/heroSection/heroSection";
 import AboutSection from "../../components/aboutSection/aboutSection";
 import PortofolioSection from "../../components/portofolio/portofolioSection";
 import ServicesSection from "../../components/servicesSection/servicesSection";
-import AluminiSection from "../../components/aluminiSection/aluminiSection";
+import AluminiSection from "../../components/testimonialSection/testimonialSection";
 import ContactSection from "../../components/contactSection/contactSection";
 import ScrollSound from "../../assets/audio/slideGem.mp3";
 import Menu from "../../components/Menu/Menu";
