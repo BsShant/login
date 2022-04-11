@@ -23,7 +23,7 @@ function IndexRoute() {
   return (
     <>
       <Routes>
-        {/* <Route path="/" element={<HomePage />} />
+         <Route path="/" element={<HomePage />} />
         <Route path="/our-team" element={<OurTeamPage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/reset-password/:id/:token" element={<ResetPassword />} />
@@ -65,8 +65,8 @@ function IndexRoute() {
               <Setting />
             </SuperRoute>
           }
-        /> */}
-         <Route path="/" element={<AnimatingPages />} />
+        /> 
+         {/* <Route path="/" element={<AnimatingPages />} /> */}
       </Routes>
     </>
   );

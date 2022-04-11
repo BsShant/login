@@ -9,7 +9,7 @@ const ThirdPage=(props)=>{
   const { fullpageApi, normalRotate, setNormalRotate } = props;
     return(
         <div className="aboutSection">
-          <h1 data-aos="fade-down">
+          <h1 data-aos="fade-down" style={{fontFamily:"nexa light"}}>
             Team
           </h1>
           <div class="row teamRow">

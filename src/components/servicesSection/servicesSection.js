@@ -17,7 +17,7 @@ const ServicesSection = (props) => {
   return (
     <div className="section serviceSection">
       <div className="serviceFullScreen">
-        <Container class="cont" style={{ marginTop: "59px" }}>
+        <Container class="cont" style={{ marginTop: "59px",marginLeft:"-55px" }} data-aos="fade-down" data-aos-duration="200" data-aos-delay="0">
           <p className="feel">
             We feel privileged to offer creative and innovative services to you.
           </p>
@@ -171,7 +171,7 @@ const ServicesSection = (props) => {
                 class="serviceNext"
                 onClick={() => fullpageApi.moveSlideRight()}
               >
-                <p> see more</p>
+                see more
               </button>
             </div>
           </div>
@@ -222,14 +222,14 @@ const ServicesSection = (props) => {
               class="servicePrev"
               onClick={() => fullpageApi.moveSlideLeft()}
             >
-              <p>back</p>
+            back
             </button>
           </div>
         </div>
       </div>
       <div className="endbtncontainer">
         <button
-          class="bt1 serv endButtonContainer d-md-block d-none" style={{marginLeft:"17%"}}
+          class="bt1 serv endButtonContainer d-md-block d-none" style={{marginLeft:"10%"}}
           onClick={() => fullpageApi.moveSectionDown()}
         >
           <div className="endButton"></div>

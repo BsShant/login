@@ -35,45 +35,31 @@ h5{
 }
 
 .serviceNext{
-  background: transparent;
+    color: white;
+    border: 2px solid white;
     border-radius: 20px;
-    border-style:solid;
-    border-color: white!important;
-    height:40px;
+    padding: 2px 21px;
+    padding-bottom: 0px!important;
+    background: transparent;
 }
 .serviceNext:hover{
   border-color:rgba(255,255,255,.5)!important;
-}
-.serviceNext p{
-  color:white!important;
-  margin-top:-5px;
-}
-  .serviceNext p:hover{
-    color:rgba(255,255,255,.5)!important;
-}
-.serviceNext .p:hover{
-  color:white;
+  color:rgba(255,255,255,.5)!important;
 }
 ul{
   line-height: 1.2;
 }
 .servicePrev{
-  background: transparent;
+  color: white;
+  border: 2px solid white;
   border-radius: 20px;
-  border-style:solid;
-  border-color:white;
-  height:40px;
-  width:62px;
-}
-.servicePrev p{
-  color:white;
-  margin-top:-5px;
-}
-.servicePrev p:hover{
-  color:gray;
+  padding: 2px 21px;
+  padding-bottom: 0px!important;
+  background: transparent;
 }
 .servicePrev:hover{
-  border-color:gray;
+  border-color:rgba(255,255,255,.5)!important;
+  color:rgba(255,255,255,.5)!important;
 }
 .serviceFullScreen{
   display: block;
@@ -99,6 +85,7 @@ display: none;
   .serviceSection{
     padding-top: 124px;
   }
+  
   .servicePrev{
     margin-right:79%;
     margin-top:-5px;

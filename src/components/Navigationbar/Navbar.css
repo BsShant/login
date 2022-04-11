@@ -46,26 +46,20 @@
   .teambtn{
     background: transparent;
     border-radius: 20px;
+    border-style:solid;
     color:beige;
+    padding: 7px 21px;
   }
   .teambtn:hover{
-    border-color:white;
-    color:white;
+    border-color:gray;
+    color:gray;
   }
   .teambtn a{
     text-decoration: none;
     color:rgba(255,255,255,.5);
     font-weight: 500;
-  }
-  .teambtn a:hover{
-    color: white !important;
-  }
-  .icon:hover{
-    color: rgba(255,255,255,.1)!important;
-  }
-  .teambtn a:hover{
-    color:gray;
-  }
+  } 
+
 .offcanvas-top{
   height: 68%!important;
 }

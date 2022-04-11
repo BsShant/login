@@ -10,10 +10,10 @@ const SecondPage = (props) => {
   }, []);
   return (
     <div className="aboutSection">
-      <h1 data-aos="fade-down">Leadership</h1>
+      <h1 data-aos="fade-down" style={{fontFamily:"nexa light"}}>Leadership</h1>
       <div class="row leaderShipRow">
         <div className=" col-lg-4 col-md-6 col-sm-12 col-12 leaderShipCol">
-          <div className={`img-holder`} data-aos="rotate-c" data-aos-delay="100" data-aos-duration="500">
+          <div className={`img-holders`} data-aos="rotate-c" data-aos-delay="100" data-aos-duration="500">
             {/* <div className={`img-holder ${normalRotate? 'normal-rotate' : ""}`}> */}
             <img class="leaders" src={ImageFour}></img>
             <br />
@@ -23,7 +23,7 @@ const SecondPage = (props) => {
           <p className="groups"> Managing Director</p>
         </div>
         <div className=" col-lg-4 col-md-6 col-sm-12 col-12 leaderShipCol">
-          <div className={`img-holder`} data-aos="rotate-c" data-aos-delay="200" data-aos-duration="500">
+          <div className={`img-holders`} data-aos="rotate-c" data-aos-delay="200" data-aos-duration="500">
             <img class="leaders" src={ImageFour}></img>
             <br />
           </div>
@@ -33,7 +33,7 @@ const SecondPage = (props) => {
         </div>
 
         <div className=" col-lg-4 col-md-6 col-sm-12 col-12 leaderShipCol">
-          <div className={`img-holder`} data-aos="rotate-c" data-aos-delay="300" data-aos-duration="500">
+          <div className={`img-holders`} data-aos="rotate-c" data-aos-delay="300" data-aos-duration="500">
             <img class="leaders" src={ImageFour}></img>
             <br />
           </div>
@@ -45,7 +45,7 @@ const SecondPage = (props) => {
 
       <div class="row leaderShipRow">
         <div className=" col-lg-4 col-md-6 col-sm-12 col-12 leaderShipCol">
-          <div className={`img-holder`} data-aos="rotate-c" data-aos-delay="400" data-aos-duration="500">
+          <div className={`img-holders`} data-aos="rotate-c" data-aos-delay="400" data-aos-duration="500">
             <img class="leaders" src={ImageFour}></img>
             <br />
           </div>
@@ -55,7 +55,7 @@ const SecondPage = (props) => {
         </div>
 
         <div className=" col-lg-4 col-md-6 col-sm-12 col-12 leaderShipCol">
-          <div className={`img-holder`} data-aos="rotate-c" data-aos-delay="500" data-aos-duration="500">
+          <div className={`img-holders`} data-aos="rotate-c" data-aos-delay="500" data-aos-duration="500">
             <img class="leaders" src={ImageFour}></img>
             <br />
           </div>
@@ -65,7 +65,7 @@ const SecondPage = (props) => {
         </div>
 
         <div className=" col-lg-4 col-md-6 col-sm-12 col-12 leaderShipCol">
-          <div className={`img-holder`} data-aos="rotate-c" data-aos-delay="600" data-aos-duration="500">
+          <div className={`img-holders`} data-aos="rotate-c" data-aos-delay="600" data-aos-duration="500">
             <img class="leaders" src={ImageFour}></img>
             <br />
           </div>

@@ -37,7 +37,7 @@ width: 250px;
 }
 .card{  
     width: 17rem !important;
-    height: 20rem !important;
+    /* height: 20rem !important; */
     background: rgba(0,0,0,0.5);
     box-shadow: 0 5px 10px -8px #000000;
     padding:17px 0;
@@ -65,7 +65,15 @@ width: 250px;
     display: block;
     width: 100%;
     object-fit: cover;
-
+}
+.cardText{
+    text-overflow: ellipsis;
+    height: 115px;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    display: -webkit-box!important;
+    overflow: hidden;
 }
 .owl-theme .testimonial .owl-dots {
     display: flex;
@@ -82,7 +90,6 @@ width: 250px;
     }
     .card{  
         width: 17rem !important;
-        height: 20rem !important;
         background: rgba(0,0,0,0.5);
         box-shadow: 0 5px 10px -8px #000000;
         padding:17px 0;
@@ -93,6 +100,8 @@ width: 250px;
         transition: transform 0.5s linear;
         transform: scale(0.9);
     }
+
+    
     .owl-theme .owl-nav {
         display: none;
         margin-top: 10px;

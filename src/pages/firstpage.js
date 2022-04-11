@@ -17,7 +17,7 @@ const FirstPage = (props) => {
   }, []);
   return (
     <div className="aboutSection">
-      <h2 data-aos="fade-down">Welcome To Login</h2>
+      <h1 data-aos="fade-down" style={{fontSize:"60px",fontFamily:"nexa light",marginBottom:"0px"}}>Welcome To Login</h1>
       <p className="wel">
         Scroll down and find out the ones who will bring your imgination to
         life.

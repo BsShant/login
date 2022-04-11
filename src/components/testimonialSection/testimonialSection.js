@@ -2,10 +2,10 @@ import React from "react";
 import "./testimonial.css";
 import OwlCarousel from "react-owl-carousel";
 import { Card } from "react-bootstrap";
-import ImageOne from "../../assets/images/b1.jpg";
-import ImageTwo from "../../assets/images/b2.jpg";
-import ImageThree from "../../assets/images/b3.jpg";
-import ImageFour from "../../assets/images/b4.jpg";
+import ImageOne from "../../assets/images/pushpaUparkoti.webp";
+import ImageTwo from "../../assets/images/surajJung.webp";
+import ImageThree from "../../assets/images/yugeshChaudhary.webp";
+import ImageFour from "../../assets/images/kamleshShrestha.webp";
 const anchors = [
   "firstPage",
   "secondPage",
@@ -21,7 +21,7 @@ const AluminiSection = (props) => {
     <div className="section almuniSection">
      
 
-      <h1 className="test" style={{marginLeft:"1%"}}>Testimonials</h1>
+      <h1 className="test" style={{marginLeft:"1%"}} data-aos="fade-down" data-aos-duration="300" data-aos-delay="0">Testimonials</h1>
       <div>
         <OwlCarousel className="owl-theme testimonial" loop={true} center={true} autoplay={true}  nav={false}
             responsiveClass={true}
@@ -55,11 +55,10 @@ const AluminiSection = (props) => {
             ><div className="imgholder">
               <img className="photo" src={ImageOne}></img></div>
               <Card.Body>
-                <Card.Title className="head"><h5>Card Title</h5></Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
+                <Card.Title className="head"><h5>Pushpa Uparkoti</h5></Card.Title>
+                <p style={{color:"#ffffff",opacity:"50%"}} className="cardText">
+                 "40% increase in site visits and 17% increases in sales, in just 2 months. What a wonderful turnaround!"
+                </p>
               </Card.Body>
             </Card>
           </div>
@@ -75,11 +74,10 @@ const AluminiSection = (props) => {
               ></img>
               </div>
               <Card.Body>
-                <Card.Title className="head"><h5>Card Title</h5></Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
+                <Card.Title className="head"><h5>Suraj Jung Thapa</h5></Card.Title>
+                <p style={{color:"#ffffff",opacity:"50%"}} className="cardText" >
+                " You guys made it so simple. My new site is just visually so pleasing. Just yesterday some of my customers message me saying how much they liked the new site. Thank you guys!"
+                </p>
               </Card.Body>
             </Card>
           </div>
@@ -96,11 +94,10 @@ const AluminiSection = (props) => {
               </div>
               
               <Card.Body>
-                <Card.Title className="head"><h5>Card Title</h5></Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
+                <Card.Title className="head"><h5>Yugesh Chaudhary</h5></Card.Title>
+                <p style={{color:"#ffffff",opacity:"50%"}} className="cardText" >
+                  "Choosing your services for us is best. Responsibility for client satisfaction is great! Very responsible,very helpful, very suggestive team."
+                </p>
               </Card.Body>
             </Card>
           </div>
@@ -116,11 +113,10 @@ const AluminiSection = (props) => {
               ></img> 
               </div>
               <Card.Body>
-                <Card.Title className="head"><h5>Card Title</h5></Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
+                <Card.Title className="head"><h5>Kamlesh Shrestha</h5></Card.Title>
+                <p style={{color:"#ffffff",opacity:"50%"}} className="cardText" >
+                  "They have done an absolutely grea job for my company's Logo design.Professional and really passionate"
+                </p>
               </Card.Body>
             </Card>
           </div>

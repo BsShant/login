@@ -45,8 +45,8 @@
       opacity: 1;
       margin-right: 10;
     }
-    .items .social:hover{
-      color:white;
+    .items .social:hover svg{
+      color: white !important;
     }
     
     @media only screen and (max-width: 768px) {

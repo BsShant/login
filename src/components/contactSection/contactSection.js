@@ -19,7 +19,7 @@ const ContactSection = (props) => {
     <div className="section">
       <div className="contactService contactSection">
         <div className="slide">
-          <div class="continfo">
+          <div class="continfo" data-aos="fade-right" data-aos-duration="200" data-aos-delay="0">
             <h4 style={{fontFamily:"nexa light"}}>Customer service</h4>
             <h2 style={{ marginLeft: "0px", fontFamily:"nexa light"}}>CUSTOMER</h2>
             <p>
@@ -45,7 +45,7 @@ const ContactSection = (props) => {
             Email:logincorpnepal@gmail.com
           </div>
 
-          <div className="sendButtonContainer">
+          <div className="sendButtonContainer" data-aos="fade-down" data-aos-duration="200" data-aos-delay="0">
             <button
               className="team"
               onClick={() => fullpageApi.moveSlideRight()}

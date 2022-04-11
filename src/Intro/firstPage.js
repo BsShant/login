@@ -78,7 +78,7 @@ const FirstPage = (props) => {
                 // setDisplayMainPage(true);
               }}
             >
-              <p style={{marginLeft:"10px"}}>
+              <p style={{marginLeft:"10px", width:"50%"}}>
                 In the end of the 5th century before our time the first jewels
                 were brought to Europe. Since then many have tried to recreate
                 something similar in value and in beauty.
