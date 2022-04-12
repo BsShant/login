@@ -65,7 +65,7 @@ const ContactSection = (props) => {
               </h2>
               </div>
               <button
-                className="team"
+                className="team intel" style={{marginLeft:"1px"}}
                 onClick={() => fullpageApi.moveSlideLeft()}
               >
               Information
@@ -106,9 +106,15 @@ const ContactSection = (props) => {
                   sitekey="6LeH_AIfAAAAAIeF4Rod6Wofc0KfYB4IUJi7L5L5"
                 />
 
-                <Button  type="submit" style={{width:"82%", marginTop:"15px",backgroundColor:"#ff1a75",borderColor:"transparent",borderRadius:"20px"}}>
+                <Button  className="sendButton" type="submit" style={{width:"99%", marginTop:"15px",backgroundColor:"#ff1a75",borderColor:"transparent",borderRadius:"20px"}}>
                   Send
                 </Button>
+                <button
+                className="team smallteam" style={{display:"none"}}
+                onClick={() => fullpageApi.moveSlideLeft()}
+              >
+              Information
+              </button>
               </Form>
             </div>
             <div className="col-md-1 col-sm-0"></div>

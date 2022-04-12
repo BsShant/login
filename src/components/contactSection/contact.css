@@ -110,7 +110,17 @@ element.style {
   .customer {
     display: none !important;
   }
-  
+  .contactSection .intel {
+    display:none;
+  }
+  .smallteam{
+    display: block !important;
+    margin-left:50%;
+    margin-top:-13%;
+  }  
+  .sendButton{
+    width: 48% !important;
+  }
 .continfo p {
     width: 100%!important;
 }

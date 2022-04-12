@@ -17,12 +17,12 @@ const ServicesSection = (props) => {
   return (
     <div className="section serviceSection">
       <div className="serviceFullScreen">
-        <Container class="cont" style={{ marginTop: "59px",marginLeft:"-55px" }} data-aos="fade-down" data-aos-duration="200" data-aos-delay="0">
+        <Container class="cont" style={{ marginTop: "59px",marginLeft:"31px" }}>
           <p className="feel">
             We feel privileged to offer creative and innovative services to you.
           </p>
           <div className="row rowl">
-            <div className="col-lg-2 col-md-0"></div>
+            {/* <div className="col-lg-2 col-md-0"></div> */}
             <div
               className="column col-lg-5 col-md-6 col-xs-12"
               style={{ textAlign: "left" }}
@@ -54,7 +54,7 @@ const ServicesSection = (props) => {
             </div>
           </div>
           <div className="row rowf">
-            <div className="col-lg-2 col-md-0"></div>
+            {/* <div className="col-lg-2 col-md-0"></div> */}
 
             <div
               className="column col-lg-5 col-md-6 col-xs-12"
@@ -90,7 +90,7 @@ const ServicesSection = (props) => {
             </div>
           </div>
           <div className="row rowm">
-            <div className="col-lg-2 col-md-0"></div>
+            {/* <div className="col-lg-2 col-md-0"></div> */}
 
             <div
               className="column col-lg-5 col-md-6 col-xs-12"

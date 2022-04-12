@@ -61,7 +61,7 @@
   } 
 
 .offcanvas-top{
-  height: 68%!important;
+  height: 55%!important;
 }
 .closeButton{
   color: white!important;
@@ -95,10 +95,13 @@
   border-radius: 0.25rem;
   opacity: .5;
 }
+.btn-close:focus{
+  box-shadow: none;
+}
 .navbar-light .navbar-toggler{
   position:fixed;
   right:20px;
-  
+  border-color:transparent;
 }
 .navbar-light .navbar-toggler-icon {
   background-image: url('../../assets/images/img10.jpg');

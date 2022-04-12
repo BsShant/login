@@ -18,7 +18,7 @@ function App() {
   const [displaySecondLoadingPage, setDisplaySecondLoadingPage] =
     useState(false);
   const [displayFirstLoadingPage, setDisplayFirstLoadingPage] = useState(
-    sessionStorage.getItem("opened") ? false : true
+    sessionStorage.getItem("opened") ? true : true
   );
   const [playSpaceAudio, setPlaySpaceAudio] = useState(true);
  
@@ -74,9 +74,9 @@ function App() {
         />
       ) : (
         <div>
-          <AnimatingPages setDisplayMainPage={setDisplayMainPage}/>
+          <AnimatingPages setDisplayMainPage={setDisplayMainPage} displayMainPage={displayMainPage}/>
         </div>
-      )}
+      )} 
 
     </div>
   );

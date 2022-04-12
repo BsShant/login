@@ -1,21 +1,28 @@
 
 .titleFrontPage{
-    padding-left:100px;
-    padding-top:25%;
     height: 100vh;
     font-family:'nexa light';
-
+    display:flex;
+    align-items:center;
     background-color: #1d2128;
 }
 .titleFrontPage h3{
     color:white;
-    font-family: 'nexa bold';
-   
+    font-family: 'nexa bold'; 
 }
 .btn1{
     color:white;
     border-color: transparent;
     background: transparent;
+}
+.forbtn{
+    display: flex;
+    align-items: center;
+}
+.line{
+    background:white;
+    height:2px;
+    width:86px;
 }
 .titleFrontPage h2{
     color:white;
@@ -24,8 +31,8 @@
 }
 .titleFrontPage p{
     color:white;
-    margin-left: 10px;
 }
 .Login{
-    margin-top:-12%;
+   width:90%;
+   margin-left: auto;
 }

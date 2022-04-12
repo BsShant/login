@@ -2,6 +2,7 @@
   text-align: center!important;
   color: rgba(255,255,255,.5)!important;
 margin-bottom: 15px;
+margin-left:-425px;
 }
 .serviceFullScreen{
   width:100%;
@@ -9,17 +10,17 @@ margin-bottom: 15px;
 .rowl{
   padding-left: 0px;
   padding-right: 0px;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 .rowf{
   padding-left: 0px;
   padding-right: 0px;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 .rowm{
   padding-left: 0px;
   padding-right: 0px;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 h5{
     margin-left: 8px;
@@ -141,6 +142,14 @@ transform: translateY(15px);
 .serviceSection{
   width:100%!important;
 }
+.feel{
+  margin-left:-173px;
+}
+}
+@media only screen and (max-width: 992px) and (min-width:900px){
+  .feel{
+    margin-left:-125px;
+  }
 }
 @media only screen and (max-width: 992px) and (min-width:900px){
   .container{
