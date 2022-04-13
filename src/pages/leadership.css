@@ -102,6 +102,12 @@ p{
 [data-aos="rotate-c"].aos-animate{
     transform: rotate(0deg);
 }
+@media only screen and (max-width: 992px) and (min-width:768px){
+.img-holders{
+    height:150px;
+    width:150px;
+}
+}
 /* 
 [aos="ns"] {
     transform: rotate(-180deg);

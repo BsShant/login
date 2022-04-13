@@ -28,7 +28,7 @@ const FourthPage=(props)=>{
       </div>
           <div class="row teamRow">
 
-          <div className=" col-lg-4 col-md-6 col-sm-12 col-12 teamCol">
+          <div className=" col-lg-4 col-md-4 col-sm-12 col-12 teamCol">
           <div className={`img-holder`} data-aos="rotate-c" data-aos-delay="100" data-aos-duration="500">
           <img class="leaders" src={ImageFour}></img><br/>
           </div>
@@ -36,7 +36,7 @@ const FourthPage=(props)=>{
           <p className="groups">Position</p>
           </div>
 
-          <div className=" col-lg-4 col-md-6 col-sm-12 col-12 teamCol">
+          <div className=" col-lg-4 col-md-4 col-sm-12 col-12 teamCol">
           <div className={`img-holder`} data-aos="rotate-c" data-aos-delay="200" data-aos-duration="500">
           <img class="leaders" src={ImageFour}></img><br/>
           </div>
@@ -44,7 +44,7 @@ const FourthPage=(props)=>{
           <p className="groups">Position</p>
           </div>
         
-          <div className=" col-lg-4 col-md-6 col-sm-12 col-12 teamCol">
+          <div className=" col-lg-4 col-md-4 col-sm-12 col-12 teamCol">
           <div className={`img-holder`} data-aos="rotate-c" data-aos-delay="300" data-aos-duration="500">
           <img class="leaders" src={ImageFour}></img><br/>
           </div>
@@ -55,14 +55,14 @@ const FourthPage=(props)=>{
       </div>
 
       <div class="row teamRow">
-   <div className=" col-lg-4 col-md-6 col-sm-12 col-12 teamCol">
+   <div className=" col-lg-4 col-md-4 col-sm-12 col-12 teamCol">
    <div className={`img-holder`} data-aos="rotate-c" data-aos-delay="400" data-aos-duration="500">
        <img class="leaders" src={ImageFour}></img><br/>
        </div>
        <p>Name</p><br/>
        <p className="groups"> Position</p></div>
 
-    <div className=" col-lg-4 col-md-6 col-sm-12 col-12 teamCol">
+    <div className=" col-lg-4 col-md-4 col-sm-12 col-12 teamCol">
     <div className={`img-holder`} data-aos="rotate-c" data-aos-delay="500" data-aos-duration="500">
 
     <img class="leaders" src={ImageFour}></img><br/>
@@ -71,7 +71,7 @@ const FourthPage=(props)=>{
     <p className="groups">Position</p>
     </div>
 
-      <div className=" col-lg-4 col-md-6 col-sm-12 col-12 teamCol">
+      <div className=" col-lg-4 col-md-4 col-sm-12 col-12 teamCol">
       <div className={`img-holder`} data-aos="rotate-c" data-aos-delay="600" data-aos-duration="500">
       <img class="leaders" src={ImageFour}></img><br/>
       </div>

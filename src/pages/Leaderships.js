@@ -26,7 +26,7 @@ const SecondPage = (props) => {
         </ul>
       </div>
       <div class="row leaderShipRow">
-        <div className=" col-lg-4 col-md-6 col-sm-12 col-12 leaderShipCol">
+        <div className=" col-lg-4 col-md-4 col-sm-12 col-12 leaderShipCol">
           <div className={`img-holders`} data-aos="rotate-c" data-aos-delay="100" data-aos-duration="500">
             {/* <div className={`img-holder ${normalRotate? 'normal-rotate' : ""}`}> */}
             <img class="leaders" src={ImageFour}></img>
@@ -36,7 +36,7 @@ const SecondPage = (props) => {
           <br />
           <p className="groups"> Managing Director</p>
         </div>
-        <div className=" col-lg-4 col-md-6 col-sm-12 col-12 leaderShipCol">
+        <div className=" col-lg-4 col-md-4 col-sm-12 col-12 leaderShipCol">
           <div className={`img-holders`} data-aos="rotate-c" data-aos-delay="200" data-aos-duration="500">
             <img class="leaders" src={ImageFour}></img>
             <br />
@@ -46,7 +46,7 @@ const SecondPage = (props) => {
           <p className="groups">CEO</p>
         </div>
 
-        <div className=" col-lg-4 col-md-6 col-sm-12 col-12 leaderShipCol">
+        <div className=" col-lg-4 col-md-4 col-sm-12 col-12 leaderShipCol">
           <div className={`img-holders`} data-aos="rotate-c" data-aos-delay="300" data-aos-duration="500">
             <img class="leaders" src={ImageFour}></img>
             <br />
@@ -58,7 +58,7 @@ const SecondPage = (props) => {
       </div>
 
       <div class="row leaderShipRow">
-        <div className=" col-lg-4 col-md-6 col-sm-12 col-12 leaderShipCol">
+        <div className=" col-lg-4 col-md-4 col-sm-12 col-12 leaderShipCol">
           <div className={`img-holders`} data-aos="rotate-c" data-aos-delay="400" data-aos-duration="500">
             <img class="leaders" src={ImageFour}></img>
             <br />
@@ -68,7 +68,7 @@ const SecondPage = (props) => {
           <p className="groups">IT Manager</p>
         </div>
 
-        <div className=" col-lg-4 col-md-6 col-sm-12 col-12 leaderShipCol">
+        <div className=" col-lg-4 col-md-4 col-sm-12 col-12 leaderShipCol">
           <div className={`img-holders`} data-aos="rotate-c" data-aos-delay="500" data-aos-duration="500">
             <img class="leaders" src={ImageFour}></img>
             <br />
@@ -78,7 +78,7 @@ const SecondPage = (props) => {
           <p className="groups">Marketing Manager</p>
         </div>
 
-        <div className=" col-lg-4 col-md-6 col-sm-12 col-12 leaderShipCol">
+        <div className=" col-lg-4 col-md-4 col-sm-12 col-12 leaderShipCol">
           <div className={`img-holders`} data-aos="rotate-c" data-aos-delay="600" data-aos-duration="500">
             <img class="leaders" src={ImageFour}></img>
             <br />
