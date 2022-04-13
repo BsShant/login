@@ -31,7 +31,7 @@ const OurTeamPage = () => {
   useEffect(() => {
     dispatch(fetchingOurTeamContentWithSpinnerStarts());
     AOS.init({ duration: 1500, once: false });
-  });
+  },[]);
   return (
     <>
       {displayAnimatingPage ? (

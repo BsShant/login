@@ -37,7 +37,12 @@ const OurTeam = () => {
         onOk={handleOk}
         onCancel={handleCancel}
       >
-        <OurTeamForm title="Add new Member" imageId="newMember" method="POST" />
+        <OurTeamForm
+          setIsModalVisible={setIsModalVisible}
+          title="Add new Member"
+          imageId="newMember"
+          method="POST"
+        />
       </Modal>
       <OurTeamDisplay />
       <GoTOTop />

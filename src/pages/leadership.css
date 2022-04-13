@@ -96,7 +96,7 @@ p{
 
 
 [data-aos="rotate-c"]{
-    transform: rotate(180deg);
+    transform: rotate(90deg);
     transition-property: transform;
 }
 [data-aos="rotate-c"].aos-animate{

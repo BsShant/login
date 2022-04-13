@@ -14,7 +14,7 @@ const OurTeamDisplay = () => {
   const parsedToken = useSelector((state) => state.authStore.userToken);
   const ourTeam = useSelector((state) => state.ourTeamStore.ourTeam);
 
-  console.log("ourTeam", ourTeam)
+  console.log("ourTeam", ourTeam);
   const dispatch = useDispatch();
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [record, setRecord] = useState("");
@@ -57,6 +57,7 @@ const OurTeamDisplay = () => {
   const handleCancel = () => {
     setIsModalVisible(false);
   };
+  let column1, column2;
 
   const columns = [
     {
@@ -116,6 +117,13 @@ const OurTeamDisplay = () => {
       responsive: ["lg"],
     },
     {
+      title: "Type",
+      dataIndex: "type",
+      key: "type",
+      ellipsis: true,
+      responsive: ["lg"],
+    },
+    {
       title: "Role",
       dataIndex: "role",
       key: "role",
@@ -127,6 +135,8 @@ const OurTeamDisplay = () => {
       dataIndex: "rank",
       key: "rank",
       responsive: ["lg"],
+      defaultSortOrder:'ascend',
+      sorter:(a,b)=> a.rank-b.rank
     },
 
     {
@@ -154,10 +164,26 @@ const OurTeamDisplay = () => {
     <div className="row" style={{ width: "100%" }}>
       <div className="col-md-12">
         <h3 style={{ margin: "30px auto 30px", paddingLeft: "15px" }}>
-          Our Team Members
+          Leaders
         </h3>
         <Table
-          dataSource={ourTeam}
+          dataSource={ourTeam?.filter((team) => team.type === "leader")}
+          columns={columns}
+          pagination={{ position: ["bottomCenter"] }}
+        />
+        <h3 style={{ margin: "30px auto 30px", paddingLeft: "15px" }}>
+          Team
+        </h3>
+        <Table
+          dataSource={ourTeam?.filter((team) => team.type === "team")}
+          columns={columns}
+          pagination={{ position: ["bottomCenter"] }}
+        />
+        <h3 style={{ margin: "30px auto 30px", paddingLeft: "15px" }}>
+          Others
+        </h3>
+        <Table
+          dataSource={ourTeam?.filter((team) => team.type === "other")}
           columns={columns}
           pagination={{ position: ["bottomCenter"] }}
         />
