@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Form, Button, message  } from "antd";
+import React, { useRef, useState } from "react";
+import { Form, Button, message, Select } from "antd";
 import FormItem from "../../components/formItem/formItem";
 import { server } from "../../utils/fetch";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -13,8 +13,9 @@ import { fetchingOurTeamContentStarts } from "../../store/ourTeamStore/ourTeamAc
 // import { fetchingPublicationContentStarts } from "../../../store/publicationStore/publication.action";
 const key = "updatable";
 const newServer = `${server}/ourTeam/teamMember`;
-
 const OurPartnersForm = (props) => {
+  const formRef = useRef();
+  const { Option } = Select;
   const dispatch = useDispatch();
   const parsedToken = useSelector((state) => state.authStore.userToken);
 
@@ -67,7 +68,11 @@ const OurPartnersForm = (props) => {
           return dispatch(logoutProcessStarts(data.user));
         }
         console.log(data);
+
         if (data) {
+          formRef.current.resetFields();
+          updateImageFile(imageHolder)
+          props.setIsModalVisible(false);
           message.success({ content: data.message, key, duration: 2 });
         }
         dispatch(fetchingOurTeamContentStarts());
@@ -107,6 +112,9 @@ const OurPartnersForm = (props) => {
         }
         console.log(data);
         if (data) {
+          formRef.current.resetFields();
+          updateImageFile(imageHolder)
+          props.setIsModalVisible(false);
           message.success({ content: data.message, key, duration: 2 });
         }
         dispatch(fetchingOurTeamContentStarts());
@@ -159,6 +167,7 @@ const OurPartnersForm = (props) => {
           labelCol={{
             span: 24,
           }}
+          ref={formRef}
           layout="Vertical"
           initialValues={props.value}
           // initialValues={{
@@ -171,28 +180,26 @@ const OurPartnersForm = (props) => {
           {props.value ? (
             <FormItem hidden="true" label="News Id" name="id" />
           ) : null}
-          <FormItem
-            height="70px"
-            label="Member Name"
-            name="name"
-          />
-          <FormItem
-            label="Member Role"
-            name="role"
-            height="170px"
-          />
-          <FormItem
-            height="70px"
-            label="Member Type"
+          <FormItem label="Member Name" name="name" />
+          <FormItem label="Member Role" name="role" />
+          <Form.Item
             name="type"
-          />
-          <FormItem
-            Textarea="TextArea"
-            height="70px"
-            label="Member Rank"
-            name="rank"
-          />
-         
+            label="Member type"
+            rules={[
+              {
+                required: true,
+                message: `Please choose member type!`,
+              },
+            ]}
+          >
+            <Select placeholder="Select member type" allowClear>
+              <Option value="leader">Leader</Option>
+              <Option value="team">Team</Option>
+              <Option value="other">other</Option>
+            </Select>
+          </Form.Item>
+          {/* <FormItem height="70px" label="Member Type" name="type" /> */}
+          <FormItem label="Member Rank" name="rank" />
 
           <Form.Item
             wrapperCol={{
