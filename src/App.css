@@ -5,7 +5,7 @@ body {
 .section{
   text-align:center;
   font-size: 16px !important;
-  width: 78%!important;
+  width: 90%!important;
   margin-left: auto!important;
   display:flex;
   height:100vh;
@@ -13,6 +13,25 @@ body {
   font-family: "nexa light";
   font-size: 15px;
   color: rgba(255,255,255,.5)!important;
+}
+#fp-nav.fp-right {
+  right: 48px!important;
+}
+#fp-nav ul li a.active span {
+  height: 10px!important;
+  width: 10px!important;
+  margin-left:-5.5px!important;
+  margin: -6px 0 0 -6px;
+  border-radius: 100%;
+  border: 2px solid rgb(170, 167, 167);
+}
+#fp-nav ul li a:active a:hover span{
+  height: 14px!important;
+  width: 14px!important;
+} 
+#fp-nav ul li a:hover span{
+  height: 12px;
+  width: 12px;
 }
 .fixed-top {
   position: fixed;
@@ -64,4 +83,9 @@ body {
 
 .fp-slidesNav{
   display: none;
+}
+@media (max-width: 1075px){
+  #fp-nav.fp-right{
+    display:none;
+  }
 }

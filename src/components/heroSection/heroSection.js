@@ -13,7 +13,7 @@ const HeroSection=(props)=>{
     return(
         <div className="section heroSection">
          <div className="hero">
-          <h2 data-aos="fade-down" data-aos-duration="100" data-aos-delay="0">
+          <h2 data-aos="fade-down" >
             "Let us make our future now and let us make our dreams a reality."
           </h2>
           <p data-aos="fade-up">

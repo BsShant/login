@@ -10,7 +10,21 @@
     padding-right: 30px;
     text-align: center;
 }
-
+#mymenu h2{
+    line-height: 0.8;
+    font-family: "nexa light"!important;
+}
+.lead{
+    position: fixed;
+    left: 2.5%;
+    padding: 0;
+    top: 122vh;
+}
+#mymenu {
+    list-style: none;
+    color:white;
+    display: block !important;
+}
 p{
     padding-top: 10px;
     color: white !important;

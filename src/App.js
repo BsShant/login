@@ -12,15 +12,21 @@ import RouteIndex from "./routes";
 import AOS from "aos";
 
 import "aos/dist/aos.css";
+import { useSelector } from "react-redux";
 function App() {
-
+  const ourTeamSpinner = useSelector(state=> state.ourTeamStore.ourTeamSpinner)
+  const [spaceAudio, setSpaceAudio] = useState(new Audio(BackgroundAudio));
+  const audioEvent = (e) => {
+    spaceAudio.play();
+    spaceAudio.loop = true;
+  };
   const [displayMainPage, setDisplayMainPage] = useState(false);
   const [displaySecondLoadingPage, setDisplaySecondLoadingPage] =
     useState(false);
   const [displayFirstLoadingPage, setDisplayFirstLoadingPage] = useState(
-    sessionStorage.getItem("opened") ? true : true
+    sessionStorage.getItem("opened") ? false : true
   );
-  const [playSpaceAudio, setPlaySpaceAudio] = useState(true);
+  const [playSpaceAudio, setPlaySpaceAudio] = useState(false);
  
   const [speakerAudio, setSpeakerAudio] = useState(new Audio(Speaker));
   const [typingAudio, setTypingAudio] = useState(new Audio(TypingSound));
@@ -38,7 +44,8 @@ function App() {
   const speakerAudioPlaying = () => {
     console.log("hi");
     if (displayMainPage) {
-      speakerAudio.pause();
+      speakerAudio.pause()
+      spaceAudio.play();
     }
   };
   useEffect(() => {
@@ -59,9 +66,9 @@ function App() {
   return (
     <div>
 
-      {displayMainPage ? (
-        <RouteIndex speakerAudio={speakerAudio} typingAudio={typingAudio} />
-      ) : displayFirstLoadingPage ? (
+      {displayMainPage || !displayFirstLoadingPage? (
+        <RouteIndex speakerAudio={speakerAudio} typingAudio={typingAudio} playSpaceAudio={playSpaceAudio}/>
+      ) :  (
         <FirstPage
           playSpaceAudio={playSpaceAudio}
           setPlaySpaceAudio={setPlaySpaceAudio}
@@ -71,12 +78,11 @@ function App() {
           setTypingAudio={setTypingAudio}
           setDisplayMainPage={setDisplayMainPage}
           displayMainPage={displayMainPage}
+          audioEvent={audioEvent}
         />
-      ) : (
-        <div>
-          <AnimatingPages setDisplayMainPage={setDisplayMainPage} displayMainPage={displayMainPage}/>
-        </div>
-      )} 
+     
+      )
+}
 
     </div>
   );

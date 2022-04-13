@@ -11,6 +11,7 @@ const FirstPage = (props) => {
     speakerAudio,
     setSpeakerAudio,
     displayMainPage,
+    audioEvent
   } = props;
 
   const [showDetails, setShowDetails] = useState(false);
@@ -31,6 +32,8 @@ const FirstPage = (props) => {
               class="btn1"
               onClick={() => {
                 setShowDetails(true);
+                setPlaySpaceAudio(true);
+                audioEvent()
               }}
               style={{ fontSize: "18px" }}
             >
@@ -40,7 +43,7 @@ const FirstPage = (props) => {
             <button
               class="btn1 "
               onClick={() => {
-                setPlaySpaceAudio(true);
+                setPlaySpaceAudio(false);
                 setDisplayMainPage(true);
               }}
               style={{ fontSize: "18px" }}
@@ -54,6 +57,7 @@ const FirstPage = (props) => {
           <div className="login">
             <img src={ImageInt} height="113px" width={"330px"} />
           </div>
+          {sessionStorage.setItem("playSound","true")}
           {!displayMainPage ? (
             <Typing
               speed={120}
@@ -80,7 +84,7 @@ const FirstPage = (props) => {
                 }}
                 onFinishedTyping={() => {
                   setPlaySpaceAudio(true);
-                  // setDisplayMainPage(true);
+                  setDisplayMainPage(true);
                 }}
               >
                 <p

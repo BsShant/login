@@ -37,12 +37,12 @@ export const ourTeamReducer = (state = INITIAL_STATE, action) => {
     case OUR_TEAM_SPINNER_STOPS:
       return {
         ...state,
-        publicationSpinner: false,
+        ourTeamSpinner: false,
       };
     case OUR_TEAM_SPINNER_STARTS:
       return {
         ...state,
-        publicationSpinner: true,
+        ourTeamSpinner: true,
       };
 
     default:

@@ -32,7 +32,7 @@
         /* width: 100%; */
 
   }
-  9% {
+  8% {
     opacity: 1;
     content: "LOGO";
     background: transparent;
@@ -40,14 +40,14 @@
         /* width: 100%; */
 
   }
-  18% {
+  16% {
     opacity: 0;
     background-color: transparent;
     background-image: none;
         /* width: 100%; */
 
   }
-  27% {
+  24% {
     opacity: 1;
     content: "GRAPHIC";
     background-color: transparent;
@@ -55,14 +55,14 @@
         /* width: 100%; */
 
   }
-  36% {
+  32% {
     opacity: 0;
     background-color: transparent;
     background-image: none;
         /* width: 100%; */
 
   }
-  45% {
+  40% {
     opacity: 1;
     content: "WEBSITE";
     background-color: transparent;
@@ -70,13 +70,13 @@
         /* width: 100%; */
 
   }
-  54% {
+  48% {
     opacity: 0;
     background-image: none;
         /* width: 100%; */
 
   }
-  63% {
+  56% {
     content: "MOBILE APPLICATION";
     opacity: 1;
     background-color: transparent;
@@ -84,12 +84,12 @@
         /* width: 100%; */
 
   }
-  72% {
+  64% {
     opacity: 0;
         /* width: 100%; */
 
   }
-  81% {
+  72% {
     content: "CREATIVITY";
     opacity: 1;
     background-color: transparent;
@@ -97,16 +97,26 @@
         /* width: 100%; */
 
   }
-  90% {
+  80% {
     opacity: 0;
-    background-image: url("./assets/images/login.png");
+    /* background-image: url("./assets/images/login.png"); */
     background-size: 20%;
     background-position: center;
     background-repeat: no-repeat;
         /* width: 100%; */
-
   }
-  100% {
+  87%{
+   
+      opacity: 1;
+      /* background-image: url("./assets/images/login.png"); */
+      background-size: 20%;
+      background-position: center;
+      background-repeat: no-repeat;
+          /* width: 100%; */
+ 
+  }
+  88%{
+    opacity:1;
     content: " ";
     /* width: 30%; */
     background-image: url("./assets/images/login.png");
@@ -115,13 +125,23 @@
     background-repeat: no-repeat;
     margin: auto;
   }
+  
+  100% {
+    opacity: 0;
+    content: " ";
+    /* width: 30%; */
+    background-image: url("./assets/images/login.png");
+    background-size: 20%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+  
 }
-
-
+}
 .alert-exit {
   opacity: 0.5;
 }
 .alert-exit-active {
   opacity: 0;
-  transition: opacity 300ms;
+  transition: opacity 250ms;
 }

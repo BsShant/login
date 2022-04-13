@@ -14,7 +14,7 @@ import OurTeamPage from "../pages/ourTeam";
 import ProtectedLayout from "../layout/protectedLayout/layout";
 import OurTeam from "../protectedPages/ourTeam/ourTeam";
 import AnimatingPages from "../animatingPages";
-function IndexRoute() {
+function IndexRoute(props) {
   useEffect(()=>{
 
     sessionStorage.setItem("opened", "yes");
@@ -23,8 +23,8 @@ function IndexRoute() {
   return (
     <>
       <Routes>
-         <Route path="/" element={<HomePage />} />
-        <Route path="/our-team" element={<OurTeamPage />} />
+         <Route path="/" element={<HomePage playSpaceAudio={props.playSpaceAudio}/>} />
+        <Route path="/our-team" element={<OurTeamPage playSpaceAudio={props.playSpaceAudio} />} />
         <Route path="/login" element={<Login />} />
         <Route path="/reset-password/:id/:token" element={<ResetPassword />} />
         <Route
@@ -66,7 +66,7 @@ function IndexRoute() {
             </SuperRoute>
           }
         /> 
-         {/* <Route path="/" element={<AnimatingPages />} /> */}
+         <Route path="/" element={<AnimatingPages />} />
       </Routes>
     </>
   );

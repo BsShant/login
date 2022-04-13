@@ -15,7 +15,7 @@
     position:absolute;
     top: 1px;
     right:10;
-    left: 76px;
+    left: 42px;
     height: 500px;
     bottom: 200px;
     color:gray ;
@@ -30,12 +30,12 @@
   .items{
     position:absolute;
     top: 1px;
-    right: 16px;
+    right: 48px;
     left:10;
   
     }
     .items .social svg{
-      margin-right: 10px;
+      margin-right: 17px;
       font-size: 25px;
       color: rgba(255,255,255,.5)!important;
      }

@@ -17,7 +17,7 @@ const ServicesSection = (props) => {
   return (
     <div className="section serviceSection">
       <div className="serviceFullScreen">
-        <Container class="cont" style={{ marginTop: "59px",marginLeft:"31px" }}>
+        <Container class="cont" style={{ marginTop: "59px",marginLeft:"103px" }}>
           <p className="feel">
             We feel privileged to offer creative and innovative services to you.
           </p>

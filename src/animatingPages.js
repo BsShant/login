@@ -19,7 +19,7 @@ const transitionStyles = {
 
 
 function AnimatingPages(props) {
-    const {setDisplayMainPage, displayMainPage} = props
+    const {setDisplayAnimatingPage, setPlaySpaceAudio, displayMainPage} = props
     const [showPage, setShowPage] = useState(true)
     const loadMainPage = ()=>{
         setTimeout(()=>{
@@ -31,11 +31,10 @@ function AnimatingPages(props) {
         in={showPage}
         timeout={300}
         classNames="alert"
-        onExiting={() => setDisplayMainPage(true)}
+        onExiting={() => setDisplayAnimatingPage(false) }
         unmountOnExit
       >
       <div className="animpage">
-       
       {loadMainPage()}
     </div>
 </CSSTransition>
