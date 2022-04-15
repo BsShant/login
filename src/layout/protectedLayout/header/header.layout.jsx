@@ -61,7 +61,7 @@ const HeaderLayout = (props) => {
           >
             <Avatar
               style={{
-                backgroundColor: "#f6b745",
+                backgroundColor: "#1890ff",
                 cursor: "pointer",
                 display: "flex",
                 justifyContent: "center",

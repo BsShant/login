@@ -17,6 +17,7 @@
   background-color: transparent !important;
   margin-top: 30px;
   color: white;
+  font-size: 20px!important;
 }
 ul.ant-menu.ant-menu-root.ant-menu-inline.ant-menu-light.sliderMenu:nth-last-child(1) {
   border-bottom: 1px solid white !important;

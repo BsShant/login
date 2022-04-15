@@ -68,16 +68,16 @@ const SliderLayout = (props) => {
           <Menu.Item
             key="dashboard"
             onClick={() => {
-              toggle();
+              // toggle();
               return navigate("/admin/dashboard");
-            }}
+          }}
           >
             Dashboard
           </Menu.Item>
           <Menu.Item
             key="our-team"
             onClick={() => {
-              toggle();
+              // toggle();
               return navigate("/admin/our-team");
             }}
           >

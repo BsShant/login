@@ -31,9 +31,21 @@
   text-align: center;
   padding: 0 !important;
 }
+.ant-avatar:hover{
+  transform: scale(0.9);
+background:linear-gradient(
+  300deg,
+  rgba(255, 15, 135, 0.6) 0%,
+  rgba(70, 18, 204, 0.6) 100%
+) !important ;
+}
 .headerDropdown .ant-dropdown-menu-item.ant-dropdown-menu-item-only-child {
   margin: 0;
   padding: 10px 0;
+  color:white;
+  font-size :16px;
+  padding-left: 24px;
+  border-radius: 15px;
   background: linear-gradient(
     300deg,
     rgba(255, 15, 135, 0.6) 0%,
@@ -47,6 +59,10 @@
 .headerDropdown .ant-dropdown-menu-item-selected {
   background-color: black !important;
   color: initial;
+}
+.ant-dropdown-menu{
+  background-color: transparent!important;
+  border-radius: 15px;
 }
 .headerDropdown
   .ant-dropdown-menu-item.ant-dropdown-menu-item-only-child:active,
