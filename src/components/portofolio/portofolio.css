@@ -1,0 +1,10 @@
+.owl-stage{
+    transform: none !important;
+    width: 100% !important;
+}
+.Item{
+    height:auto;
+}
+.fp-slides{
+    width:250%;
+}

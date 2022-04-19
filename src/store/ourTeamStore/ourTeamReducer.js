@@ -26,7 +26,7 @@ export const ourTeamReducer = (state = INITIAL_STATE, action) => {
         ...state,
 
         ourTeam: action.payload.ourTeam.data.sort(
-          (a, b) => new Date(b.date) - new Date(a.date)
+          (a, b) => a.rank - b.rank
         ),
       };
     case FETCHING_OUR_TEAM_CONTENT_FAILURE:

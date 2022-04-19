@@ -74,9 +74,9 @@ const OurTeamPage = () => {
                     <FirstPage fullpageApi={fullpageApi} />
                     <SecondPage fullpageApi={fullpageApi} />
                     <ThirdPage fullpageApi={fullpageApi} />
-                    <FourthPage fullpageApi={fullpageApi} />
+                    {/* <FourthPage fullpageApi={fullpageApi} />
                     <div className="aboutSection"></div>
-                    <div className="aboutSection"></div>
+                    <div className="aboutSection"></div> */}
                   </div>
                 </ReactFullpage.Wrapper>
               );

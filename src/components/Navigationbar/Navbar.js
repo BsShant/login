@@ -4,14 +4,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHouse,
   faPhoneSquare,
-  faGears,
   faUserGroup,
   faInfoCircle,
+  faBuilding,
 } from "@fortawesome/free-solid-svg-icons";
 import "./Navbar.css";
 import { Link, NavLink } from "react-router-dom";
 import MenuListItem from "../menuListItem/menuListItem";
-import Logo from "../../assets/images/logo.png";
+import Logo from "../../assets/images/loginLogo.png";
 
 const Navigation = (props) => {
   const offCanvas = useRef();
@@ -74,10 +74,11 @@ const Navigation = (props) => {
                 data-menuanchor="thirdPage"
                 handleClose={handleClose}
                 sideMenu
-                href="#Services"
-                icon={<FontAwesomeIcon icon={faGears} className="icon" />}
-                name="Services"
-              />{" "}
+                closeButton
+                href="#companyPage"
+                icon={<FontAwesomeIcon icon={faBuilding} className="icon" />}
+                name="Our Companies"
+              />
               <MenuListItem
                 data-menuanchor="fourthPage"
                 handleClose={handleClose}
@@ -87,7 +88,7 @@ const Navigation = (props) => {
                 name="Testimonials"
               />{" "}
               <MenuListItem
-                data-menuanchor="fifthPage"
+                data-menuanchor="fifththPage"
                 handleClose={handleClose}
                 sideMenu
                 href="#contactUs"

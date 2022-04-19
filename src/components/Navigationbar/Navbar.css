@@ -14,10 +14,12 @@
   margin: auto;
 }
 .logo{
-  width: 130px;
+  position: fixed;
+  top: -69px;
+  left: -3px;
 }
 .logo img{
-  width: 100%;
+  width:260px;
 }
 @media(max-width:768px){
   .logo{

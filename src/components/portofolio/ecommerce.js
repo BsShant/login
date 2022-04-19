@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import OwlCarousel from "react-owl-carousel";
+import Carousel from 'react-bootstrap/Carousel';
 import "./portofolio.css";
 import { Card } from "react-bootstrap";
 import ImageTen from "../../assets/images/ecommerce1.webp";
@@ -11,23 +11,35 @@ const Ecommerce = (props) => {
 const ecommerce = useRef('ecommerce')
   return (
     <div>
-        <OwlCarousel 
-      ref={ecommerce}
-        className="owl-theme ecommerce"
-        mouseDrag={true}
-        touchDrag={true}
-        pullDrag={true}
-        autoPlay={true}
-        dots={true}
-        nav
-        items={1}
-        draggable={true}
-        loop
-      >
-        <div class="item">1</div>
-        <div class="item">2</div>
-        <div class="item">3</div>
-      </OwlCarousel>
+       
+       <Carousel>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={ImageTen}
+      alt="First slide"
+    />
+  
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={ImageEleven}
+      alt="First slide"
+    />
+ 
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={ImageTwelve}
+      alt="First slide"
+    />
+
+  </Carousel.Item>
+</Carousel>
+       
+     
     </div>
   );
 };

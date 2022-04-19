@@ -14,10 +14,18 @@ import OurTeamPage from "../pages/ourTeam";
 import ProtectedLayout from "../layout/protectedLayout/layout";
 import OurTeam from "../protectedPages/ourTeam/ourTeam";
 import AnimatingPages from "../animatingPages";
+import OurCOmpany from "../protectedPages/ourCompany/ourCompany";
+import { useDispatch } from "react-redux";
+import { fetchingOurCompanyContentWithSpinnerStarts } from "../store/ourCompanyStore/ourCompanyAction";
+import { fetchingOurTeamContentWithSpinnerStarts } from "../store/ourTeamStore/ourTeamAction";
 function IndexRoute(props) {
+  const dispatch = useDispatch()
   useEffect(()=>{
 
     sessionStorage.setItem("opened", "yes");
+    dispatch(fetchingOurCompanyContentWithSpinnerStarts())
+    dispatch(fetchingOurTeamContentWithSpinnerStarts());
+
 
   },[])
   return (
@@ -63,6 +71,14 @@ function IndexRoute(props) {
           element={
             <SuperRoute>
               <Setting />
+            </SuperRoute>
+          }
+        /> 
+         <Route
+          path="/admin/our-company"
+          element={
+            <SuperRoute>
+              <OurCOmpany />
             </SuperRoute>
           }
         /> 

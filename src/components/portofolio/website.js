@@ -1,5 +1,5 @@
 import React from 'react';
-import OwlCarousel from "react-owl-carousel";
+import Carousel from 'react-bootstrap/Carousel';
 import "./portofolio.css";
 import { Card } from "react-bootstrap";
 import ImageFive from "../../assets/images/website1.webp";
@@ -15,58 +15,42 @@ const Website = () => {
         
 
         <div>
-        <OwlCarousel className="inner" loop={true} center={true} autoplay={true} margin={10} nav
-        responsive={{
-            // breakpoint from 0 up
-            0 : {
-              // stagePadding: 0,
-              loop: true,
-              center: true,
-              autoplay: true,
-              // responsiveClass: true,
-              // dots: false,
-              nav: true,
-              // autoHeight: true,
-              items: 4
-            },
-            // breakpoint from 768 up
-            768 : {
-              items: 1,
-              loop: true,
-              center: true,
-              autoplay: true,
-            }
-          }}
-        >
-          <div className="card-p">
+ <Carousel>
+<Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={ImageFive}
+      alt="First slide"
+    />
+ 
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={ImageSix}
+      alt="First slide"
+    />
+    
+  </Carousel.Item> 
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={ImageSeven}
+      alt="First slide"
+    />
 
-              <img className="photoes" src={ImageFive}></img>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={ImageEight}
+      alt="First slide"
+    />
 
-      
-             </div> 
+  </Carousel.Item>
+  </Carousel>
 
-       
-            <div className="card-p">
-            <Card class="cards">
-              <img className="photoes" src={ImageSix}></img>
-              </Card>
-          
-          </div>
-
-        
-          <div className="card-p">
-          <Card class="cards">
-              <img className="photoes" src={ImageSeven}></img>
-              </Card>
-          </div>
-      
-          <div className="card-p">
-          <Card class="cards">
-              <img className="photoes" src={ImageEight}></img>
-              </Card>
-      
-          </div>
-        </OwlCarousel>
+     
       </div>
 
 

@@ -55,13 +55,13 @@
     position: fixed;
     left: 2.5%;
     padding: 0;
-    top:224vh;
+    top: calc(200% + 25% ) 
 }
 .Lead{
     position: fixed;
     left: 2.5%;
     padding: 0; 
-    top:325vh; 
+    top: calc(300% + 25% ) 
 }
 #mymenu {
     list-style: none;
@@ -102,6 +102,12 @@
          margin-right: 10px !important;
          margin-left: 10px !important;
      }
+     .leaD{
+        top: calc(200% + 60% ) 
+    }
+    .Lead{
+        top: calc(300% + 60% ) 
+    }
  .col-sm-12 {
      flex: 0 0 auto;
      width: 100%;

@@ -202,6 +202,8 @@ const OurTeamDisplay = () => {
               value={record}
               imageId="updateMember"
               method="PUT"
+              setIsModalVisible={setIsModalVisible}
+
             />
           </Modal>
         ) : null}

@@ -32,80 +32,57 @@
         /* width: 100%; */
 
   }
-  8% {
+  10% {
     opacity: 1;
-    content: "LOGO";
+    content: "INNOVATION";
     background: transparent;
     background-image: none;
         /* width: 100%; */
 
   }
-  16% {
+  20% {
     opacity: 0;
     background-color: transparent;
     background-image: none;
         /* width: 100%; */
 
   }
-  24% {
+  30% {
     opacity: 1;
-    content: "GRAPHIC";
-    background-color: transparent;
-    background-image: none;
-        /* width: 100%; */
-
-  }
-  32% {
-    opacity: 0;
+    content: "TECHNOLOGY";
     background-color: transparent;
     background-image: none;
         /* width: 100%; */
 
   }
   40% {
-    opacity: 1;
-    content: "WEBSITE";
+    opacity: 0;
     background-color: transparent;
     background-image: none;
         /* width: 100%; */
 
   }
-  48% {
-    opacity: 0;
-    background-image: none;
-        /* width: 100%; */
-
-  }
-  56% {
-    content: "MOBILE APPLICATION";
+  50% {
     opacity: 1;
+    content: "EXCELLENCE";
     background-color: transparent;
     background-image: none;
         /* width: 100%; */
 
   }
-  64% {
-    opacity: 0;
-        /* width: 100%; */
 
-  }
-  72% {
-    content: "CREATIVITY";
-    opacity: 1;
+  60% {
+    opacity: 0;
+    content: "EXCELLENCE";
     background-color: transparent;
     background-image: none;
-        /* width: 100%; */
-
-  }
-  80% {
-    opacity: 0;
     /* background-image: url("./assets/images/login.png"); */
-    background-size: 20%;
+    /* background-size: 20%;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
         /* width: 100%; */
   }
-  87%{
+  70%{
    
       opacity: 1;
       /* background-image: url("./assets/images/login.png"); */

@@ -1,24 +1,22 @@
 import "./style.css";
 
 import ReactFullpage from "@fullpage/react-fullpage";
-import ReactAudioPlayer from "react-audio-player";
 import Particle from "../../components/particle/particle";
 import Navigation from "../../components/Navigationbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import HeroSection from "../../components/heroSection/heroSection";
 import AboutSection from "../../components/aboutSection/aboutSection";
-import PortofolioSection from "../../components/portofolio/portofolioSection";
-import ServicesSection from "../../components/servicesSection/servicesSection";
 import AluminiSection from "../../components/testimonialSection/testimonialSection";
+import CompanySection from "../../components/companySection/companySection";
 import ContactSection from "../../components/contactSection/contactSection";
 import ScrollSound from "../../assets/audio/slideGem.mp3";
 import BackgroundAudio from "../../assets/audio/background.mp3";
 import Menu from "../../components/Menu/Menu";
 import { useEffect, useState } from "react";
-import OwlCarousel from "react-owl-carousel";
 import $ from "jquery";
 import AOS from "aos";
 import AnimatingPages from "../../animatingPages";
+import { useSelector } from "react-redux";
 
 function HomePage(props) {
   const [audio, setAudio] = useState(new Audio(ScrollSound));
@@ -40,7 +38,7 @@ function HomePage(props) {
   const anchors = [
     "homePage",
     "aboutPage",
-    "Services",
+    "companyPage",
     "Testimonials",
     "contactUs",
   ];
@@ -87,7 +85,7 @@ function HomePage(props) {
                   <div className="container">
                     <HeroSection fullpageApi={fullpageApi} />
                     <AboutSection fullpageApi={fullpageApi} />
-                    <ServicesSection fullpageApi={fullpageApi} />
+                    <CompanySection  fullpageApi={fullpageApi} />
                     <AluminiSection fullpageApi={fullpageApi} />
                     <ContactSection fullpageApi={fullpageApi} />
                   </div>

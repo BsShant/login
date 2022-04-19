@@ -15,7 +15,7 @@
     position:absolute;
     top: 1px;
     right:10;
-    left: 42px;
+    left: 76px;
     height: 500px;
     bottom: 200px;
     color:gray ;
@@ -54,7 +54,6 @@
         font-size: 20px!important;
       }
       .copy{
-       left:0px;
         font-size: 13px;
       }
     }

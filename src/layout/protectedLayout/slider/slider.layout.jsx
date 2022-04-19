@@ -83,6 +83,15 @@ const SliderLayout = (props) => {
           >
             Our Team
           </Menu.Item>
+          <Menu.Item
+            key="our-company"
+            onClick={() => {
+              // toggle();
+              return navigate("/admin/our-company");
+            }}
+          >
+            Our Company
+          </Menu.Item>
         </Menu>
       </Sider>
 

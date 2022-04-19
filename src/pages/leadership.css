@@ -18,7 +18,7 @@
     position: fixed;
     left: 2.5%;
     padding: 0;
-    top: 122vh;
+    top: calc(100% + 22% ) 
 }
 #mymenu {
     list-style: none;

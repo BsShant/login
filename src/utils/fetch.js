@@ -1,7 +1,8 @@
-// export const server = 'https://thamibackend.nepalthamisociety.org';
+export const server = 'http://loginbackend.logindesigns.com';
 
 
-export const server = 'http://localhost:5000';
+// export const server = 'http://localhost:5000';
+// export const imageServer = 
 export const token = localStorage.getItem("loginToken")
 
 
