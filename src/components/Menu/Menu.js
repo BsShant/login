@@ -5,8 +5,8 @@ import {
   faHouse,
   faPhoneSquare,
   faInfo,
-  faUserGroup,
   faBuildingColumns,
+  faGraduationCap,
 } from "@fortawesome/free-solid-svg-icons";
 import MenuListItem from "../menuListItem/menuListItem";
 const Menu = () => {
@@ -23,7 +23,7 @@ const Menu = () => {
         data-menuanchor="aboutPage"
         href="#aboutPage"
         icon={<FontAwesomeIcon icon={faInfo} className="icon" />}
-        name="About"
+        name="About us"
       />
        <MenuListItem
         data-menuanchor="companyPage"
@@ -32,11 +32,11 @@ const Menu = () => {
         name="Our Companies"
       />
       <MenuListItem
-        data-menuanchor="Testimonials"
-        href="#Testimonials"
-        icon={<FontAwesomeIcon icon={faUserGroup} className="icon" />}
-        name="Testimonials"
-      />{" "}
+        data-menuanchor="careersPage"
+        href="#careersPage"
+        icon={<FontAwesomeIcon icon={faGraduationCap} className="icon" />}
+        name="Careers"
+      />
       <MenuListItem
         data-menuanchor="contactUs"
         href="#contactUs"

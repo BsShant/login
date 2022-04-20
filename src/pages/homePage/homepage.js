@@ -6,7 +6,7 @@ import Navigation from "../../components/Navigationbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import HeroSection from "../../components/heroSection/heroSection";
 import AboutSection from "../../components/aboutSection/aboutSection";
-import AluminiSection from "../../components/testimonialSection/testimonialSection";
+import CareersSection from "../../components/careersSection/careersSection";
 import CompanySection from "../../components/companySection/companySection";
 import ContactSection from "../../components/contactSection/contactSection";
 import ScrollSound from "../../assets/audio/slideGem.mp3";
@@ -39,7 +39,7 @@ function HomePage(props) {
     "homePage",
     "aboutPage",
     "companyPage",
-    "Testimonials",
+    "careersPage",
     "contactUs",
   ];
   useEffect(() => {
@@ -86,7 +86,7 @@ function HomePage(props) {
                     <HeroSection fullpageApi={fullpageApi} />
                     <AboutSection fullpageApi={fullpageApi} />
                     <CompanySection  fullpageApi={fullpageApi} />
-                    <AluminiSection fullpageApi={fullpageApi} />
+                    <CareersSection fullpageApi={fullpageApi} />
                     <ContactSection fullpageApi={fullpageApi} />
                   </div>
                 </ReactFullpage.Wrapper>

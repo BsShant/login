@@ -77,7 +77,7 @@ const FirstPage = (props) => {
           {secondParagraph ? (
             <>
               <Typing
-                speed={58}
+                speed={65}
                 hideCursor={true}
                 onStartedTyping={() => {
                   speakerAudio.play();

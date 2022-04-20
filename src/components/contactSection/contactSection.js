@@ -19,7 +19,7 @@ const ContactSection = (props) => {
     <div className="section">
       <div className="contactService contactSection">
         <div className="slide">
-          <div class="continfo" data-aos="fade-right" data-aos-duration="200" data-aos-delay="0" >
+          <div class="continfo" data-aos="fade-right" data-aos-duration="200" data-aos-delay="0" style={{width:"90%"}}>
             <h4 style={{fontFamily:"nexa light"}}>Customer service</h4>
             <h2 style={{ marginLeft: "0px", fontFamily:"nexa light"}}>CUSTOMER</h2>
             <p>
@@ -56,7 +56,7 @@ const ContactSection = (props) => {
         </div>
 
         <div className="slide">
-          <div className="row one">
+          <div className="row one"  style={{marginLeft:"8px"}}>
             <div className="col-md-4" style={{textAlign:"left"}}>
               <div className="eml">
               <h4 class="customer cst">Customer service</h4>
@@ -82,10 +82,11 @@ const ContactSection = (props) => {
                 <Form.Group className="mb-3" controlId="FormBasicEmail">
                   <Form.Label>Email</Form.Label>
                   <Form.Control type="email" required />
-                  {/* <Form.Text className="text-muted">
-      We'll never share your email with anyone else.
-    </Form.Text> */}
+               
                 </Form.Group>
+
+             
+
 
                 <Form.Group className="mb-3">
                   <Form.Label>Phone No:</Form.Label>

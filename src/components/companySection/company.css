@@ -22,7 +22,7 @@
   height:auto!important;
 }
 .endButtonContainer{
-  color: white;
+     color: white;
     font-size: 1rem;
     display: flex!important;
     justify-content: flex-start;
@@ -36,7 +36,10 @@ transform: translateY(15px);
 .cmpn{
   background: transparent;
   color:white;
-  border-color: white;
+  border-color: transparent;
+}
+.cmpn:hover{
+  border-color:transparent!important;
 }
 .fp-controlArrow{
   display: none !important;
@@ -75,15 +78,13 @@ transform: scale(1.1);
     display: block !important;
     overflow: hidden;
   }
-  .container{
+  .companySection .container{
     max-width:900px;
   }
   .cmpn{
   margin-bottom:7%;
   }
-  .bck{
-    margin-left:43%!important;
-  }
+
 }
 @media (max-width: 768px) {
 button.bt1.serv.d-md-block.d-none.endButtonContainer {
@@ -99,12 +100,18 @@ button.bt1.serv.d-md-block.d-none.endButtonContainer {
 .companyRow{
   margin-bottom:auto!important;
 }
+.smore{
+  left: 18% !important;
+}
+.bck{
+  left: 69% !important;
+}
 .sendButtonContainer{
   bottom: 0% !important;
 }
-.bck{
+/* .bck{
   margin-left: 38% !important;
-}
+} */
 .img-cover{
   height:63px;
   width:175px;
@@ -119,11 +126,35 @@ button.bt1.serv.d-md-block.d-none.endButtonContainer {
 }
 }
 .companyContainer{
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 @media (max-width: 500px) {
  .company{
   width: 80%;
   height: 84%;
 }
+}
+.anim{
+  animation: no 500ms infinite linear;
+  animation-direction: alternate;
+}
+@keyframes no {
+  0% {
+  transform:translateX(50px)
+  }
+  100% {
+  transform:translateX(0px)
+  }
+}
+.anim2{
+  animation: yes 500ms infinite linear;
+  animation-direction: alternate;
+}
+@keyframes yes {
+  0% {
+  transform:translateX(-50px)
+  }
+  100% {
+  transform:translateX(0px)
+  }
 }

@@ -1,0 +1,47 @@
+.prof{
+    background: transparent;
+}
+.continfo h5{
+    color:rgba(255,255,255,0.5);
+}
+.card-body{
+  height:128px;
+}
+.jobs{
+  border-radius: 10px;
+  background-color:  rgba(255,255,255,0.1);
+}
+.bigScreen{
+  display: block !important;
+}
+.smallScreen{
+  display:none !important;
+}
+.figure-img{
+  margin-bottom: -2.5rem;
+  border-radius: 5px;
+}
+.anim3{
+    animation: no 500ms infinite linear;
+    animation-direction: alternate;
+  }
+  @keyframes no {
+    0% {
+    transform:translateX(50px)
+    }
+    100% {
+    transform:translateX(0px)
+    }
+  }
+  @media (max-width: 768px) {
+  button.bt1.testBtn.d-md-block.d-none.endButtonContainer {
+    display: none!important;
+  }
+  .carr{
+    margin-left: 35%;
+    margin-bottom: 17%;
+  }
+  .quote{
+    margin-bottom: 0px!important;
+  }
+}

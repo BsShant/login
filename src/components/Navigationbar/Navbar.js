@@ -4,9 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHouse,
   faPhoneSquare,
-  faUserGroup,
   faInfoCircle,
   faBuilding,
+  faGraduationCap,
 } from "@fortawesome/free-solid-svg-icons";
 import "./Navbar.css";
 import { Link, NavLink } from "react-router-dom";
@@ -68,7 +68,7 @@ const Navigation = (props) => {
                 sideMenu
                 href="#aboutPage"
                 icon={<FontAwesomeIcon icon={faInfoCircle} className="icon" />}
-                name="About"
+                name="About us"
               />
               <MenuListItem
                 data-menuanchor="thirdPage"
@@ -80,13 +80,13 @@ const Navigation = (props) => {
                 name="Our Companies"
               />
               <MenuListItem
-                data-menuanchor="fourthPage"
+                data-menuanchor="careersPage"
                 handleClose={handleClose}
                 sideMenu
-                href="#Testimonials"
-                icon={<FontAwesomeIcon icon={faUserGroup} className="icon" />}
-                name="Testimonials"
-              />{" "}
+                href="#careersPage"
+                icon={<FontAwesomeIcon icon={faGraduationCap} className="icon" />}
+                name="Careers"
+              />
               <MenuListItem
                 data-menuanchor="fifththPage"
                 handleClose={handleClose}

@@ -11,7 +11,7 @@ import ScrollSound from "../assets/audio/slideGem.mp3";
 import "./ourTeam.css";
 import $ from "jquery";
 import AnimatingPages from "../animatingPages";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { fetchingOurTeamContentWithSpinnerStarts } from "../store/ourTeamStore/ourTeamAction";
 import AOS from "aos";
 const OurTeamPage = () => {
@@ -20,18 +20,33 @@ const OurTeamPage = () => {
   const [displayAnimatingPage, setDisplayAnimatingPage] = useState(
     sessionStorage.getItem("opened") ? true : false
   );
+  const ourTeam = useSelector((state) => state.ourTeamStore.ourTeam);
+  let anchors = ["ourTeam"]
+  if (ourTeam.filter(team => team.type === 'leader').length > 6) {
+    anchors.push('leadership1')
+    anchors.push('leadership2')
+  } else if (ourTeam.filter(team => team.type === 'leader').length > 12) {
+    anchors.push('leadership1')
+    anchors.push('leadership2')
+    anchors.push('leadership3')
+  } else {
+    anchors.push('leadership')
+  }
+  if (ourTeam.filter(team => team.type === 'team').length > 6) {
+    anchors.push('teamMembers1')
+    anchors.push('teamMembers2')
+  } else if (ourTeam.filter(team => team.type === 'team').length > 12) {
+    anchors.push('teamMembers1')
+    anchors.push('teamMembers2')
+    anchors.push('teamMembers3')
+  } else {
+    anchors.push('teamMembers')
+  }
 
-  const anchors = [
-    "ourTeam",
-    "Leaderships",
-    "teamMembers",
-    "additionalMembers",
-    "fifthPage",
-  ];
   useEffect(() => {
     dispatch(fetchingOurTeamContentWithSpinnerStarts());
     AOS.init({ duration: 1500, once: false });
-  },[]);
+  }, []);
   return (
     <>
       {displayAnimatingPage ? (
@@ -72,8 +87,14 @@ const OurTeamPage = () => {
                 <ReactFullpage.Wrapper>
                   <div className="container">
                     <FirstPage fullpageApi={fullpageApi} />
-                    <SecondPage fullpageApi={fullpageApi} />
-                    <ThirdPage fullpageApi={fullpageApi} />
+                    <SecondPage fullpageApi={fullpageApi} ourTeam={ourTeam.length > 0 ? ourTeam.filter(team => team.type === 'leader').slice(0, 6) : []} />
+                    {
+                      ourTeam.length > 6 ? <SecondPage fullpageApi={fullpageApi} ourTeam={ourTeam.length > 0 ? ourTeam.filter(team => team.type === 'leader').slice(6, 12) : []} /> : null
+                    }
+                    <ThirdPage fullpageApi={fullpageApi} team={ourTeam.length > 0 ? ourTeam.filter(team => team.type === 'team').slice(0, 6) : []} />
+                    {
+                      ourTeam.length > 6 ? <ThirdPage fullpageApi={fullpageApi} team={ourTeam.length > 0 ? ourTeam.filter(team => team.type === 'team').slice(6, 12) : []} /> : null
+                    } 
                     {/* <FourthPage fullpageApi={fullpageApi} />
                     <div className="aboutSection"></div>
                     <div className="aboutSection"></div> */}

@@ -1,5 +1,5 @@
 .leaderShipRow{
-   justify-content: center;
+   /* justify-content: center; */
     display: flex;
     margin-bottom: 20px !important;
     margin-right: 20px !important;
@@ -10,15 +10,19 @@
     padding-right: 30px;
     text-align: center;
 }
+.leadership{
+    height: 90%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+} */
+}
+.aboutSection h1{
+    margin-top: 5%!important;
+}
 #mymenu h2{
     line-height: 0.8;
     font-family: "nexa light"!important;
-}
-.lead{
-    position: fixed;
-    left: 2.5%;
-    padding: 0;
-    top: calc(100% + 22% ) 
 }
 #mymenu {
     list-style: none;
@@ -45,8 +49,7 @@ p{
     border: 2px white solid;
     overflow: hidden;
     margin: auto;
-    /* transform: rotate(180deg); */
-    transition: all 1s linear;
+    transition: all 0ms linear;
 
    
 }
@@ -93,27 +96,9 @@ p{
     overflow: hidden;
     margin: auto;}
 }
-
-
-[data-aos="rotate-c"]{
-    transform: rotate(90deg);
-    transition-property: transform;
-}
-[data-aos="rotate-c"].aos-animate{
-    transform: rotate(0deg);
-}
 @media only screen and (max-width: 992px) and (min-width:768px){
 .img-holders{
     height:150px;
     width:150px;
 }
 }
-/* 
-[aos="ns"] {
-    transform: rotate(-180deg);
-    transition-property: transform;
-  }
-  
-  [aos="ns"].aos-animate {
-    transform: rotate(0deg);
-  } */

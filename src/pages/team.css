@@ -50,19 +50,7 @@
  #mymenu h2{
     line-height: 0.8;
     font-family: "nexa light"!important;
-}
-.leaD{
-    position: fixed;
-    left: 2.5%;
-    padding: 0;
-    top: calc(200% + 25% ) 
-}
-.Lead{
-    position: fixed;
-    left: 2.5%;
-    padding: 0; 
-    top: calc(300% + 25% ) 
-}
+ }
 #mymenu {
     list-style: none;
     color:white;
@@ -76,14 +64,8 @@
      border: 2px white solid;
      overflow: hidden;
      margin: auto;
-     /* transform: rotate(180deg); */
      transition: all 0ms linear; 
  }
- /* .normal-rotate{
-    transform: rotate(0deg)!important;
-    transition: all 800ms linear; 
-
-} */
  .img-holder:hover{
      border-width: 8px!important;
      background: white!important;
@@ -102,12 +84,7 @@
          margin-right: 10px !important;
          margin-left: 10px !important;
      }
-     .leaD{
-        top: calc(200% + 60% ) 
-    }
-    .Lead{
-        top: calc(300% + 60% ) 
-    }
+
  .col-sm-12 {
      flex: 0 0 auto;
      width: 100%;
@@ -130,15 +107,14 @@
      overflow: hidden;
      margin: auto;}
  }
- [data-aos="rotate-c"]{
-    transform: rotate(90deg);
-    transition-property: transform;
-}
-[data-aos="rotate-c"].aos-animate{
-    transform: rotate(0deg);
-}
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
   }
- 
+ .member{
+    height: 90%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  */
+ }
