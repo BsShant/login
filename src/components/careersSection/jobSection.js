@@ -9,8 +9,8 @@ const JobSection = (props) => {
   const { title, sub1, sub2, image } = props
   return (
     <div className="card-container">
-      <div className="row">
-        <div className="col-4 col-md-4">
+      <div className="row" style={{height:"100%", width:"100%"}}>
+        <div className="col-6 col-xs-6 col-sm-5 col-md-6 col-lg-4" style={{ height: "100%", display: "flex", alignItems: "flex-start"}}>
           <div className="image-section">
             <LazyLoadImage
               alt="Job Image"
@@ -20,7 +20,7 @@ const JobSection = (props) => {
             {/* <img src={image} alt="Job Image" /> */}
           </div>
         </div>
-        <div className="col-8 col-md-8">
+        <div className="col-6 col-xs-6 col-sm-7 col-md-6 col-lg-8" style={{paddingRight:"0px" }}>
           <div className="card-text-section">
             <div className="job-title">{title}</div>
             <div className="job-description">

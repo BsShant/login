@@ -32,15 +32,15 @@
     top: 1px;
     right: 48px;
     left:10;
+    display:flex;
   
     }
-    .volume{
+    .items .volume{
       color: rgba(255,255,255,.5)!important;
       font-size: 25px;
       display: flex;
-      margin-left: 52%;
       justify-content: flex-end;
-      width: 20%;
+      padding-right:40px;
       z-index:1000!important;
   
     }
@@ -64,10 +64,7 @@
         font-size: 20px!important;
         margin-right:10px;
       }
-      .volume{
-        margin-left: 47%;
-      }
-      .volume svg{
+      .items .volume svg{
         font-size:20px!important;
       }
       .copy{
@@ -78,9 +75,9 @@
         right:17px;
       }
     }
-    @media only screen and (max-width: 360px){
+    /* @media only screen and (max-width: 360px){
    .volume {
     margin-left: -6%;
     margin-top: -6%;
 }
-}
+} */

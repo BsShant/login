@@ -19,6 +19,9 @@ const Footer = (props) => {
       Copyright Login Corporation
     </div>
 
+   
+
+    <div class="items">
     <div class="volume" >
       {playSpaceAudio ? <FontAwesomeIcon icon={faVolumeUp} onClick={() =>{ 
         audioPause()
@@ -27,8 +30,6 @@ const Footer = (props) => {
           audioEvent()
          }} />}
         </div>
-
-    <div class="items">
       <a
         class="social"
         href="https://www.facebook.com/Login-Designs-2284503471807329/"

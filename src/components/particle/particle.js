@@ -31,7 +31,7 @@ function Particle() {
             },
             modes: {
               bubble: {
-                distance: 400,
+                distance: 100,
                 duration: 2,
                 opacity: 0.8,
                 size: 40,

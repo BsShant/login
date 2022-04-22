@@ -46,7 +46,7 @@ const CareersSection = (props) => {
                   < JobSection title="Media Professionals" sub1="Photographer" sub2="Videographer" image={Image4} />
                 </Col>
                 <Col xs={6} md={4} style={{ marginBottom: "20px" }}>
-                  < JobSection title="Musicicians" sub1="Vocalist" sub2="instrumentalist" image={Image5} />
+                  < JobSection title="Musicians" sub1="Vocalist" sub2="instrumentalist" image={Image5} />
                 </Col>
                 <Col xs={6} md={4} style={{ marginBottom: "20px" }}>
                   < JobSection title="Artist" sub1="Painter" sub2="" image={Image6} />
