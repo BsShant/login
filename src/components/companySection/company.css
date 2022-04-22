@@ -77,7 +77,7 @@ transform: scale(1.1);
 }
 @media only screen and (max-width: 992px) and (min-width:768px){
 .companyRow{
-  margin-left: -48px;
+  margin-left: -41px;
     margin-right: 2px
 }
   .companySection .container{
@@ -85,6 +85,7 @@ transform: scale(1.1);
   }
   .cmpn{
   margin-bottom:7%;
+  margin-left:-17%;
   }
 
 }
@@ -97,12 +98,18 @@ button.bt1.serv.d-md-block.d-none.endButtonContainer {
 }
 .companyFullScreen{
   display: block !important;
-  margin-top: 22%;
+  margin-top: 18%;
+  display: flex;
+  justify-content: center;
+}
+.companySection{
+  width:100%!important;
+left: 0% !important;
 }
 .companyRow{
   margin-bottom:auto!important;
-  margin-left:-11%;
-  margin-right: 14%;
+  margin-right: 0%;
+  margin-left: 0%;
 }
 .smore{
   left: 18% !important;

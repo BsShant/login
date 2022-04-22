@@ -31,8 +31,8 @@ function IndexRoute(props) {
   return (
     <>
       <Routes>
-         <Route path="/" element={<HomePage playSpaceAudio={props.playSpaceAudio}/>} />
-        <Route path="/our-team" element={<OurTeamPage playSpaceAudio={props.playSpaceAudio} />} />
+         <Route path="/" element={<HomePage playSpaceAudio={props.playSpaceAudio} audioEvent={props.audioEvent} audioPause={props.audioPause}/>} />
+        <Route path="/our-team" element={<OurTeamPage playSpaceAudio={props.playSpaceAudio} audioEvent={props.audioEvent} audioPause={props.audioPause} />} />
         <Route path="/login" element={<Login />} />
         <Route path="/reset-password/:id/:token" element={<ResetPassword />} />
         <Route
@@ -82,7 +82,7 @@ function IndexRoute(props) {
             </SuperRoute>
           }
         /> 
-         <Route path="/" element={<AnimatingPages />} />
+         <Route path="/" element={<AnimatingPages audioEvent={props.audioEvent} audioPause={props.audioPause} playSpaceAudio={props.playSpaceAudio} />} />
       </Routes>
     </>
   );

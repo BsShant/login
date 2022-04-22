@@ -23,7 +23,7 @@ const CompanySection = (props) => {
       <div className="companyFullScreen">
         <h1
           data-aos="fade-down"
-          style={{ fontFamily: "nexa light", color: "white", marginTop: "32px" }}
+          style={{ fontFamily: "nexa light", color: "white", marginTop: "25px",marginBottom:"0px" }}
         >
           Our Companies
         </h1>
@@ -82,7 +82,7 @@ const CompanySection = (props) => {
         </div>
       </div>
     <button
-          class="bt1 hers endButtonContainer d-md-block d-none " style={{marginLeft:"-11px"}}
+          class="bt1 hers endButtonContainer d-md-block d-none " style={{marginLeft:"-11px",zIndex:"100"}}
           onClick={() => fullpageApi.moveSectionDown()}
         >
           <div className="endButton"></div>

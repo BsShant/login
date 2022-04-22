@@ -114,13 +114,16 @@ element.style {
   .customer {
     display: none !important;
   }
+  .contactSection{
+    margin-left:4%;
+  }
   .contactSection .intel {
     display:none;
   }
   .smallteam{
     display: block !important;
     margin-left:50%;
-    margin-top:-13%;
+    margin-top:-21%;
   }  
   .sendButton{
     width: 48% !important;

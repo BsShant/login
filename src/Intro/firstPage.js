@@ -9,9 +9,11 @@ const FirstPage = (props) => {
     setPlaySpaceAudio,
     typingAudio,
     speakerAudio,
+    playSpaceAudio,
     setSpeakerAudio,
     displayMainPage,
-    audioEvent
+    audioEvent,
+    audioPause
   } = props;
 
   const [showDetails, setShowDetails] = useState(false);
@@ -20,7 +22,7 @@ const FirstPage = (props) => {
   return (
     <div className="titleFrontPage">
       {!showDetails ? (
-        <div style={{width:"90%",marginLeft:"auto"}}>
+        <div style={{ width: "90%", marginLeft: "auto" }}>
           <h3>Hello, Welcome To Login!</h3>
           <p style={{ fontSize: "18px" }}>
             {" "}
@@ -32,7 +34,6 @@ const FirstPage = (props) => {
               class="btn1"
               onClick={() => {
                 setShowDetails(true);
-                setPlaySpaceAudio(true);
                 audioEvent()
               }}
               style={{ fontSize: "18px" }}
@@ -43,7 +44,7 @@ const FirstPage = (props) => {
             <button
               class="btn1 "
               onClick={() => {
-                setPlaySpaceAudio(false);
+                audioPause();
                 setDisplayMainPage(true);
               }}
               style={{ fontSize: "18px" }}
@@ -57,7 +58,7 @@ const FirstPage = (props) => {
           <div className="login">
             <img src={ImageInt} height="113px" width={"330px"} />
           </div>
-          {sessionStorage.setItem("playSound","true")}
+          {sessionStorage.setItem("playSound", "true")}
           {!displayMainPage ? (
             <Typing
               speed={120}
@@ -83,12 +84,12 @@ const FirstPage = (props) => {
                   speakerAudio.play();
                 }}
                 onFinishedTyping={() => {
-                  setPlaySpaceAudio(true);
+                  // setPlaySpaceAudio(true);
                   // setDisplayMainPage(true);
                 }}
               >
                 <p
-                  style={{ marginLeft: "12px", width: "70%", fontSize: "16px",marginRight:"auto" }}
+                  style={{ marginLeft: "12px", width: "70%", fontSize: "16px", marginRight: "auto" }}
                 >
                   In the end of the 5th century before our time the first jewels
                   were brought to Europe. Since then many have tried to recreate
@@ -100,25 +101,25 @@ const FirstPage = (props) => {
                   a different angle.
                 </p>
               </Typing>
-              <div className="forbtn" style={{marginLeft:"12px",position:"absolute",bottom:"13px"}}>
-            <div className="line" />
-            <button
-              class="btn1"
-              onClick={() => {
-                setDisplayMainPage(true);
-                setPlaySpaceAudio(true);
-                typingAudio.pause();
-                speakerAudio.pause();
-              }}
-            >
-              Skip our Story
-            </button>
-          </div>
+              <div className="forbtn" style={{ marginLeft: "12px", position: "absolute", bottom: "13px" }}>
+                <div className="line" />
+                <button
+                  class="btn1"
+                  onClick={() => {
+                    setDisplayMainPage(true);
+                    // setPlaySpaceAudio(true);
+                    typingAudio.pause();
+                    speakerAudio.pause();
+                  }}
+                >
+                  Skip our Story
+                </button>
+              </div>
             </>
           ) : null}
-          
+
         </div>
-        
+
       )}
     </div>
   );

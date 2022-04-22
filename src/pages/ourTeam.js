@@ -14,7 +14,7 @@ import AnimatingPages from "../animatingPages";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchingOurTeamContentWithSpinnerStarts } from "../store/ourTeamStore/ourTeamAction";
 import AOS from "aos";
-const OurTeamPage = () => {
+const OurTeamPage = (props) => {
   const dispatch = useDispatch();
   const [audio, setAudio] = useState(new Audio(ScrollSound));
   const [displayAnimatingPage, setDisplayAnimatingPage] = useState(
@@ -107,7 +107,7 @@ const OurTeamPage = () => {
               );
             }}
           />
-          <Footer />
+          <Footer  audioEvent={props.audioEvent} audioPause={props.audioPause} playSpaceAudio={props.playSpaceAudio} />
         </div>
       )}
     </>

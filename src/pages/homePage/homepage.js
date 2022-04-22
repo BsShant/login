@@ -20,18 +20,21 @@ import { useSelector } from "react-redux";
 
 function HomePage(props) {
   const [audio, setAudio] = useState(new Audio(ScrollSound));
-  const [spaceAudio, setSpaceAudio] = useState(new Audio(BackgroundAudio));
-  const playAudio = () => {
-    spaceAudio.play();
-    spaceAudio.loop = true;
-  };
+  // const [spaceAudio, setSpaceAudio] = useState(new Audio(BackgroundAudio));
+  // const playAudio = () => {
+  //   spaceAudio.play();
+  //   spaceAudio.loop = true;
+  // };
+  useEffect(()=>{
+    // props.audioEvent()
+  },[])
   const [displayAnimatingPage, setDisplayAnimatingPage] = useState(
     sessionStorage.getItem("opened") ? true : false
   );
 
   useEffect(() => {
     if (sessionStorage.getItem("playSound")) {
-      playAudio();
+      
     }
   }, []);
 
@@ -94,7 +97,7 @@ function HomePage(props) {
             }}
           />
           );
-          <Footer />
+          <Footer audioEvent={props.audioEvent} audioPause={props.audioPause} playSpaceAudio={props.playSpaceAudio}/>
         </div>
       )}
     </>

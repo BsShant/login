@@ -3,7 +3,7 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import FirstPage from "./Intro/firstPage";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import AnimatingPages from "./animatingPages";
 import Speaker from "./assets/audio/intro-speech.mp3";
 import TypingSound from "./assets/audio/typing.mp3";
@@ -15,10 +15,15 @@ import "aos/dist/aos.css";
 import { useSelector } from "react-redux";
 function App() {
   const ourTeamSpinner = useSelector(state => state.ourTeamStore.ourTeamSpinner)
-  const [spaceAudio, setSpaceAudio] = useState(new Audio(BackgroundAudio));
+  const spaceAudio = useRef(new Audio(BackgroundAudio));
   const audioEvent = (e) => {
-    spaceAudio.play();
-    spaceAudio.loop = true;
+    setPlaySpaceAudio(true)
+    spaceAudio.current.play();
+    spaceAudio.current.loop = true;
+  };
+  const audioPause = (e) => {
+    setPlaySpaceAudio(false)
+    spaceAudio.current.pause();
   };
   const [displayMainPage, setDisplayMainPage] = useState(false);
   const [displaySecondLoadingPage, setDisplaySecondLoadingPage] =
@@ -42,13 +47,13 @@ function App() {
     }
   }, [displayMainPage]);
   const speakerAudioPlaying = () => {
-    console.log("hi");
     if (displayMainPage) {
       speakerAudio.pause()
-      spaceAudio.play();
+      // spaceAudio.play();
     }
   };
   useEffect(() => {
+    setPlaySpaceAudio(false)
     AOS.init({});
     // AOS.refresh();
   }, []);
@@ -67,7 +72,7 @@ function App() {
     <div>
       <div className="nonVisible"></div>
       {displayMainPage || !displayFirstLoadingPage ? (
-        <RouteIndex speakerAudio={speakerAudio} typingAudio={typingAudio} playSpaceAudio={playSpaceAudio} />
+        <RouteIndex speakerAudio={speakerAudio}  setPlaySpaceAudio={setPlaySpaceAudio}  playSpaceAudio={playSpaceAudio} typingAudio={typingAudio} playSpaceAudio={playSpaceAudio}  audioPause={audioPause} audioEvent={audioEvent}/>
       ) : (
         <FirstPage
           playSpaceAudio={playSpaceAudio}
@@ -79,6 +84,7 @@ function App() {
           setDisplayMainPage={setDisplayMainPage}
           displayMainPage={displayMainPage}
           audioEvent={audioEvent}
+          audioPause={audioPause}
         />
 
       )

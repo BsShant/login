@@ -34,7 +34,8 @@ const SecondPage = (props) => {
                     >
                       <LazyLoadImage
                         alt="Leader"
-                        effect="blur"
+                        effect="blur" 
+                        style={{width:"100%",height:"100%"}}
                         src={`${server}/${leader.image}`} 
                         />
                       <br />

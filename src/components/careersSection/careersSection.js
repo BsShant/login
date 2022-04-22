@@ -57,7 +57,7 @@ const CareersSection = (props) => {
 
           <div className="sendButtonContainer" data-aos="fade-down" data-aos-duration="200" data-aos-delay="0">
             <button
-              className="team prof"
+              className="team prof" style={{paddingTop:"2px",paddingBottom:"2px"}}
               onClick={() => fullpageApi.moveSlideRight()}
             >
               Join Us
@@ -75,7 +75,7 @@ const CareersSection = (props) => {
             </div>
             <button
 
-              className="team prof carr smallteam"
+              className="team prof carr smallteam" style={{paddingTop:"5px",paddingBottom:"5px"}}
               onClick={() => fullpageApi.moveSlideLeft()}
             >
               Back
@@ -131,7 +131,7 @@ const CareersSection = (props) => {
 
       <button
         class="bt1 testBtn d-md-block d-none endButtonContainer"
-        onClick={() => fullpageApi.moveSectionDown()} style={{ left: "48%" }}
+        onClick={() => fullpageApi.moveSectionDown()} style={{ left: "48%",zIndex:"100" }}
       >
         <div className="endButton">
 
