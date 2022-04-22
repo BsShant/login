@@ -17,9 +17,9 @@ const ContactSection = (props) => {
   const { fullpageApi } = props;
   return (
     <div className="section">
-      <div className="contactService contactSection">
+      <div className="contactSection">
         <div className="slide">
-          <div class="continfo" data-aos="fade-right" data-aos-duration="200" data-aos-delay="0" style={{width:"90%"}}>
+          <div class="continfo" data-aos="fade-right" data-aos-duration="200" data-aos-delay="0" >
             <h4 style={{fontFamily:"nexa light"}}>Customer service</h4>
             <h2 style={{ marginLeft: "0px", fontFamily:"nexa light"}}>CUSTOMER</h2>
             <p>
@@ -55,9 +55,9 @@ const ContactSection = (props) => {
           </div>
         </div>
 
-        <div className="slide">
-          <div className="row one"  style={{marginLeft:"8px"}}>
-            <div className="col-md-4" style={{textAlign:"left"}}>
+        <div className="slide secondslide">
+          <div className="row one">
+            <div className="col-md-4 col-lg-5" style={{textAlign:"left"}}>
               <div className="eml">
               <h4 class="customer cst">Customer service</h4>
               <h2 class="customer ail" style={{ marginLeft: "0px" }}>
@@ -72,30 +72,29 @@ const ContactSection = (props) => {
               </button>
             </div>
 
-            <div className="col-md-7" style={{textAlign:"left"}}>
+            <div className="col-md-6 col-lg-7" style={{textAlign:"left"}}>
               <Form className="msgus">
                 <Form.Group className="mb-3">
                   <Form.Label>Name</Form.Label>
-                  <Form.Control type="text" required />
+                  <Form.Control type="text" />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="FormBasicEmail">
                   <Form.Label>Email</Form.Label>
-                  <Form.Control type="email" required />
-               
+                  <Form.Control type="email" />
+                  {/* <Form.Text className="text-muted">
+      We'll never share your email with anyone else.
+    </Form.Text> */}
                 </Form.Group>
-
-             
-
 
                 <Form.Group className="mb-3">
                   <Form.Label>Phone No:</Form.Label>
-                  <Form.Control type="number" required />
+                  <Form.Control type="number"  />
                 </Form.Group>
 
                 <Form.Group className="mb-3">
                   <Form.Label>Messages</Form.Label>
-                  <Form.Control className="msg" type="text" required />
+                  <Form.Control className="msg" type="text"  />
                 </Form.Group>
                 {/* 
   <Form.Group className="mb-3" controlId="FormBasicCheckbox">
@@ -118,7 +117,7 @@ const ContactSection = (props) => {
               </button>
               </Form>
             </div>
-            <div className="col-md-1 col-sm-0"></div>
+            <div className="col-md-2 col-sm-0"></div>
           </div>
         </div>
       </div>

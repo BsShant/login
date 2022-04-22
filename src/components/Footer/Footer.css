@@ -52,9 +52,14 @@
     @media only screen and (max-width: 768px) {
       .items .social svg{
         font-size: 20px!important;
+        margin-right:10px;
       }
       .copy{
         font-size: 13px;
+        left:25px;
+      }
+      .items{
+        right:17px;
       }
     }
     

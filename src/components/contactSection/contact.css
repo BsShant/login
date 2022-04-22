@@ -1,6 +1,11 @@
-
+.contactSection{
+  margin-left:17%;
+}
 h4 {
   color: white;
+}
+.secondSlide{
+  width: 40% !important;
 }
 .servicePrev {
   margin-left: 10px;
@@ -9,8 +14,7 @@ h4 {
   color: transparent;
 }
 .msgus{
-  margin-left: auto;
-  width: 65%;
+  width: 69%;
 }
 element.style {
   margin-left: -50px;
@@ -232,4 +236,9 @@ element.style {
 }
 .eml h4{
   font-family: "nexa light";
+}
+@media (max-width:360px){
+  .smallteam{
+    margin-top: -25%!important;
+  }
 }

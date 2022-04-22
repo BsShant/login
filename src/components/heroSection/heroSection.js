@@ -13,10 +13,10 @@ const HeroSection=(props)=>{
     return(
         <div className="section heroSection">
          <div className="hero">
-          <h2 data-aos="fade-down" >
+          <h2 data-aos="fade-down" data-aos-duration="400" data-aos-offset="30px">
             "Let us make our future now and let us make our dreams a reality."
           </h2>
-          <p data-aos="fade-up">
+          <p data-aos="fade-up" data-aos-duration="400" data-aos-offset="30px">
           - WELCOME TO LOGIN
         </p>
         </div>

@@ -77,14 +77,14 @@ const FirstPage = (props) => {
           {secondParagraph ? (
             <>
               <Typing
-                speed={65}
+                speed={60}
                 hideCursor={true}
                 onStartedTyping={() => {
                   speakerAudio.play();
                 }}
                 onFinishedTyping={() => {
                   setPlaySpaceAudio(true);
-                  setDisplayMainPage(true);
+                  // setDisplayMainPage(true);
                 }}
               >
                 <p

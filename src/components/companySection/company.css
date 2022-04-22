@@ -1,8 +1,6 @@
-
-@media (max-width: 900px) {
-  .endButtonContainer{
-    display: none !important;
-  }
+.companySection{
+  width: 90% !important;
+  left:7%;
 }
 .endButton{
   height: 6px;
@@ -13,6 +11,8 @@
 }
 .companyRow{
   margin-bottom:25px;
+  margin-left:10%;
+  margin-right:12%;
 }
 .companyFullScreen .fp-slides{
   height:auto;
@@ -60,6 +60,8 @@ transform: translateY(15px);
 .img-cover img{
   opacity: 1;
   transition: all 250ms linear; 
+  height: 100%;
+  width: 100%;
 }
 .img-cover:hover{
   border-width: 8px!important;
@@ -74,10 +76,10 @@ transform: scale(1.1);
   width:100%;
 }
 @media only screen and (max-width: 992px) and (min-width:768px){
-  .companyFullScreen{
-    display: block !important;
-    overflow: hidden;
-  }
+.companyRow{
+  margin-left: -48px;
+    margin-right: 2px
+}
   .companySection .container{
     max-width:900px;
   }
@@ -95,10 +97,12 @@ button.bt1.serv.d-md-block.d-none.endButtonContainer {
 }
 .companyFullScreen{
   display: block !important;
-  margin-top: 16%;
+  margin-top: 22%;
 }
 .companyRow{
   margin-bottom:auto!important;
+  margin-left:-11%;
+  margin-right: 14%;
 }
 .smore{
   left: 18% !important;

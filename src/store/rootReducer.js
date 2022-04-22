@@ -8,7 +8,7 @@ import { ourCompanyReducer } from "./ourCompanyStore/ourCompanyReducer";
 const persistConfig = {
   key: "root",
   storage,
-  //   whitelist: [ ],
+    whitelist: [ourTeamReducer],
 };
 const rootReducer = combineReducers({
   authStore: authReducer,

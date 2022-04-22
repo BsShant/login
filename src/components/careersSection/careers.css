@@ -1,3 +1,7 @@
+.careersSection{
+width:80%;
+margin-left:13%;
+}
 .prof{
     background: transparent;
 }
@@ -20,6 +24,25 @@
 .figure-img{
   margin-bottom: -2.5rem;
   border-radius: 5px;
+}
+.form-select{
+  background-color: transparent;
+  padding:0;
+  color:white;
+  /* border: none; */
+  border-top: none;
+  border-right: none;
+  border-left:none;
+  border-bottom-width: 2px;
+  border-bottom-color: rgba(255, 255, 255, 0.5);
+  background-image: url('../../assets/images/dropdown.png');
+}
+.form-select:focus{
+box-shadow: none;
+border-color:rgba(255, 255, 255, 0.5);
+}
+.lists{
+  background-color:gray!important;
 }
 .anim3{
     animation: no 500ms infinite linear;
@@ -44,4 +67,44 @@
   .quote{
     margin-bottom: 0px!important;
   }
+.card-text-section{
+  margin-left:-12px!important;
+}
+}
+@media (max-width: 992px) {
+  .image-section img{
+    height: 53px !important;
+    width: 26px !important;
+    margin-left:-15px !important;
+  }
+}
+
+
+
+.card-container{
+  display: flex;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+
+}
+.image-section{
+  margin-right: 15px;
+}
+.image-section img{
+  height: 70px;
+  aspect-ratio: 6/7;
+}
+
+.job-title{
+  font-family: "Nexa Light";
+  color: white;
+  font-size: 16px;
+  line-height: 1.1;
+  margin-bottom: 5px;
+}
+.job-description{
+  font-size: 14px;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.1;
 }

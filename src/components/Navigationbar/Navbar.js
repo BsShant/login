@@ -25,10 +25,13 @@ const Navigation = (props) => {
       <div className="navContainer">
         <Link to="/">
           <div className="logo">
-            <img src={Logo} width="100px"></img>
+            <div className="container">
+              <img src={Logo} width="100px"></img>
+
+            </div>
           </div>
         </Link>
-            <Link className="team d-md-block d-none" to={navigateTo}>{navigationToName}</Link>
+        <Link className="team d-md-block d-none navteam" to={navigateTo}>{navigationToName}</Link>
         <Navbar.Toggle
           onClick={handleShow}
           aria-controls="offcanvasNavbar"
@@ -43,7 +46,7 @@ const Navigation = (props) => {
         >
           <Offcanvas.Header closeButton>
             <Offcanvas.Title id="offcanvasNavbarLabel">
-                <Link className="teambtn" to={navigateTo}>{navigationToName}</Link>
+              <Link className="teambtn" to={navigateTo}>{navigationToName}</Link>
             </Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>

@@ -14,7 +14,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useSelector } from "react-redux";
 function App() {
-  const ourTeamSpinner = useSelector(state=> state.ourTeamStore.ourTeamSpinner)
+  const ourTeamSpinner = useSelector(state => state.ourTeamStore.ourTeamSpinner)
   const [spaceAudio, setSpaceAudio] = useState(new Audio(BackgroundAudio));
   const audioEvent = (e) => {
     spaceAudio.play();
@@ -27,10 +27,10 @@ function App() {
     sessionStorage.getItem("opened") ? false : true
   );
   const [playSpaceAudio, setPlaySpaceAudio] = useState(false);
- 
+
   const [speakerAudio, setSpeakerAudio] = useState(new Audio(Speaker));
   const [typingAudio, setTypingAudio] = useState(new Audio(TypingSound));
-   
+
   const moveToMainScreen = () => {
     setDisplayMainPage(true);
   };
@@ -65,10 +65,10 @@ function App() {
 
   return (
     <div>
-
-      {displayMainPage || !displayFirstLoadingPage? (
-        <RouteIndex speakerAudio={speakerAudio} typingAudio={typingAudio} playSpaceAudio={playSpaceAudio}/>
-      ) :  (
+      <div className="nonVisible"></div>
+      {displayMainPage || !displayFirstLoadingPage ? (
+        <RouteIndex speakerAudio={speakerAudio} typingAudio={typingAudio} playSpaceAudio={playSpaceAudio} />
+      ) : (
         <FirstPage
           playSpaceAudio={playSpaceAudio}
           setPlaySpaceAudio={setPlaySpaceAudio}
@@ -80,9 +80,9 @@ function App() {
           displayMainPage={displayMainPage}
           audioEvent={audioEvent}
         />
-     
+
       )
-}
+      }
 
     </div>
   );

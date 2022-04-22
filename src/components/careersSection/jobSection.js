@@ -2,31 +2,35 @@ import React from "react";
 import './careers.css';
 import Figure from 'react-bootstrap/Figure';
 import Card from 'react-bootstrap/Card';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
+const JobSection = (props) => {
+  const { title, sub1, sub2, image } = props
+  return (
+    <div className="card-container">
+      <div className="image-section">
+        <LazyLoadImage
+          alt="Job Image"
+          effect="blur"
+          src={image}
+        />
+        {/* <img src={image} alt="Job Image" /> */}
+      </div>
+      <div className="card-text-section">
+        <div className="job-title">{title}</div>
+        <div className="job-description">
+          <div className="job-desc-list">
+            {sub1}
+          </div>
+          <div className="job-desc-list">
+            {sub2}
+          </div>
+        </div>
+      </div>
+    </div>
 
-const JobSection=(props)=>{
-    const {title, sub1, sub2, image} = props
-    return(
-        <Card body className="jobs">
-        <div style={{display:"flex"}}>
-              <Figure style={{display:"inline-block"}}>
-         <Figure.Image
-            width={60}
-            height={120}
-            alt="171x180"
-            src={image}
-            style={{objectFit:"cover",height:"63px"}}
-          /></Figure> 
-        <div style={{marginLeft:"20px",lineHeight:"1"}}><h6 style={{color:"white"}}>{title}</h6>  
-          <ul style={{listStyle:"none",padding:"0"}}>
-          <li>{sub1}</li>
-          <li>{sub2}</li>
-        </ul> 
-        </div>
-        </div>
-         </Card>
-      
-    )
+  )
 }
 
 export default JobSection;
