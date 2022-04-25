@@ -90,9 +90,9 @@ transform: scale(1.1);
 
 }
 @media (max-width: 768px) {
-button.bt1.serv.d-md-block.d-none.endButtonContainer {
+/* button.bt1.serv.d-md-block.d-none.endButtonContainer {
   display: none!important;
-}
+} */
 .companyFullScreen .fp-slides{
   height: 522px !important;
 }
@@ -109,7 +109,7 @@ left: 0% !important;
 .companyRow{
   margin-bottom:auto!important;
   margin-right: 0%;
-  margin-left: 0%;
+  margin-left: -4%;
 }
 .smore{
   left: 18% !important;

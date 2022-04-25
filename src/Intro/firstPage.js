@@ -71,7 +71,7 @@ const FirstPage = (props) => {
                 typingAudio.pause();
               }}
             >
-              <h2>Everyone has Story to Tell,</h2>
+              <h2>Everyone a has Story to Tell,</h2>
             </Typing>
           ) : null}
 

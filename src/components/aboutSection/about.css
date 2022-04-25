@@ -15,12 +15,20 @@ h1{
     left:50%;
 }
 @media (max-width: 768px){
-    button.bt1.abt.d-md-block.d-none.endButtonContainer {
+    /* button.bt1.abt.d-md-block.d-none.endButtonContainer {
         display: none!important;
+    } */
+    .abtSection{
+        width: 93% !important;
+        left:4%;
     }
 }
  @media (max-width: 992px){
     .abtSection{
         width:90%;
+    }
+    .hero p{
+        width: 98% !important;  
+        margin-left:0%!important;
     }
 }

@@ -18,9 +18,9 @@ h2{
     left:50%;
 }
 @media(max-width:768px){
-    button.bt1.hers.d-md-block.d-none.endButtonContainer {
+    /* button.bt1.hers.d-md-block.d-none.endButtonContainer {
         display: none!important;
-    }
+    } */
     .section{
         width: 90% !important;
     }
